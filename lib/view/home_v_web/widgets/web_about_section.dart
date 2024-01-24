@@ -15,36 +15,22 @@ class WebAboutSection extends StatelessWidget {
         width: SizeConfig.screenWidth * 0.7,
         child: const Column(
           mainAxisSize: MainAxisSize.min,
-          mainAxisAlignment: MainAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.start,
           // crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Gap(40),
             Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              crossAxisAlignment: CrossAxisAlignment.center,
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Expanded(
+                  flex: 2,
                   child: SizedBox(
                     // width: SizeConfig.screenWidth * .55,
                     child: Text(LONGABOUT, style: TextStyle(fontSize: 18)),
                   ),
                 ),
                 // const Gap(10),
-
-                // Expanded(
-                //   flex: 1,
-                //   child: SizedBox(
-                //     // width: SizeConfig.screenWidth * .15,
-                //     child: Column(
-                //       children: [
-                //         Socials(
-                //           text: 'ztn.nizar@gmail.com',
-                //           iconData: Icons.mail,
-                //         ),
-                //       ],
-                //     ),
-                //   ),
-                // ),
               ],
             ),
             Gap(40),

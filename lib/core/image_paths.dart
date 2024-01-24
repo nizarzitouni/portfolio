@@ -9,14 +9,11 @@ class ImagesPath {
   static const String iconStackOverflow = "assets/icon_stack_overflow.png";
   static const String iconflutter = "assets/flutter_logo.png";
 
-  static final List<String> tiraImgList = [
-    'assets/tira1.jpg',
-    'assets/tira2.jpg',
-    'assets/tira3.jpg',
-    'assets/tira4.jpg',
-    'assets/tira5.jpg',
-    'assets/tira6.jpg',
-    'assets/tira7.jpg',
+  static final List<String> jdmImgList = [
+    'assets/jdm1.png',
+    'assets/jdm2.png',
+    'assets/jdm3.png',
+    'assets/jdm4.png',
   ];
 
   static final List<String> fyndImgList = [
