@@ -18,16 +18,14 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
-      debugShowCheckedModeBanner: false, scrollBehavior: ScrollConfiguration.of(context).copyWith(scrollbars: false),
+      debugShowCheckedModeBanner: false,
+      scrollBehavior: ScrollConfiguration.of(context).copyWith(scrollbars: false),
       theme: ThemeData.dark().copyWith(
         // colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         scaffoldBackgroundColor: Pallete.blackColor,
         //textTheme: GoogleFonts.montserratTextTheme(ThemeData.dark().textTheme),
       ),
       title: AppInformation.title,
-      // initialBinding: NetworkBinding(),
-      // home: const BotNavBar(),
-      // initialRoute: AppRoutes.MAINSCREEN,
       getPages: AppPages.pages,
       home: const ResponsiveLayout(
         mobileScreen: HomeScreenMob(),

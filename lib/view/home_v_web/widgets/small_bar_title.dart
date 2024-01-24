@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:nizar_ztn_portfolio/core/constants.dart';
 
 import '../../../core/pallete.dart';
+import '../../../core/size_config.dart';
 import '../../../core/utils/app_text_styles.dart';
 
 class SmallBarTitle extends StatelessWidget {
@@ -10,18 +12,18 @@ class SmallBarTitle extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 60,
+      height: barsHight,
+      width: SizeConfig.screenWidth,
       color: Pallete.blackGreyColor,
-      width: double.infinity,
       child: Row(
         mainAxisSize: MainAxisSize.min,
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          SizedBox(width: MediaQuery.of(context).size.width * 0.1),
           Container(
             color: Pallete.blackColor,
             height: 60,
             width: 280,
+            margin: EdgeInsets.only(left: SizeConfig.screenWidth * 0.1),
             child: Center(
               child: Text(
                 text,

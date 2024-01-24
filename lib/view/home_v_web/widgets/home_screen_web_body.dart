@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../../core/global_keys.dart';
 import '../../../core/pallete.dart';
-import '../../../core/size_config.dart';
+import 'small_bar_title.dart';
 import 'web_about_section.dart';
 import 'web_home.dart';
 import 'web_menu_header.dart';
@@ -21,16 +21,14 @@ class HomeScreenWebBody extends StatelessWidget {
             child: SingleChildScrollView(
           child: Container(
             color: Pallete.blackColor,
-            width: MediaQuery.of(context).size.width,
-            child: Container(
-              width: SizeConfig.screenWidth * .7,
-              color: Pallete.blackColor,
-              child: Column(
-                children: [
-                  WebHome(key: GlobalKeys.KEY_WEB_HOME),
-                  WebAboutSection(key: GlobalKeys.KEY_WEB_ABOUTME),
-                ],
-              ),
+            //width: SizeConfig.screenWidth,
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: [
+                WebHome(key: GlobalKeys.KEY_WEB_HOME),
+                const SmallBarTitle(text: 'about'),
+                WebAboutSection(key: GlobalKeys.KEY_WEB_ABOUTME),
+              ],
             ),
           ),
         ))

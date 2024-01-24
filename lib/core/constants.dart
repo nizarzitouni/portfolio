@@ -56,10 +56,25 @@ const SCREEN_PADDING_VALUE = 10.0;
 const String NAME = "Nizar Zitouni";
 const String BASEDIN = "Constantine, Algeria";
 const String POS = "Software Engineer | Flutter Developer | 3D Artist";
-const String ABOUT = '''Crafting software solutions, developing Flutter apps, and creating captivating 3D art.
-    ''';
+const String ABOUT = '''Crafting software solutions, developing Flutter apps, and creating captivating 3D art.''';
+const String LONGABOUT = '''
+SOFTWARE ENGINEER | 3D ARTIST | FLUTTER DEVELOPER
+
+• Proven track record in game development, mobile apps, and IT management.
+
+• Expertise across full-stack, mobile (including Flutter), and blockchain domains.
+
+• Specialized in creating visually stunning 3D environments and assets.
+
+• Passionate about innovation, sustainability, and process automation.
+
+''';
+//Links
 const String LINKEDIN = "https://www.linkedin.com/in/nizar-zitouni/";
 const String GITHUB = "https://github.com/nizarzitouni";
 const String GITLAB = "https://gitlab.com/nizarztn";
 const String SKETCHFAB = "https://sketchfab.com/N1x";
 const String PLAYSTORE = "https://play.google.com/store/apps/dev?id=7726987911219858293";
+
+//
+const double barsHight = 60;

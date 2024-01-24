@@ -11,7 +11,7 @@ class HomeScreenWeb extends StatelessWidget {
   Widget build(BuildContext context) {
     SizeConfig().init(context);
     return const Scaffold(
-      backgroundColor: Pallete.blackGreyColor,
+      //backgroundColor: Pallete.blackGreyColor,
       body: HomeScreenWebBody(),
     );
   }

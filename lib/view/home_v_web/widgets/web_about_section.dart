@@ -1,59 +1,56 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
+import '../../../core/constants.dart';
 import '../../../core/size_config.dart';
-import 'small_bar_title.dart';
+import 'socials.dart';
 
 class WebAboutSection extends StatelessWidget {
   const WebAboutSection({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        const SmallBarTitle(text: 'about'),
-        Column(
+    return Center(
+      child: SizedBox(
+        width: SizeConfig.screenWidth * 0.7,
+        child: const Column(
           mainAxisSize: MainAxisSize.min,
+          mainAxisAlignment: MainAxisAlignment.center,
+          // crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            const Gap(40),
-            Container(
-              color: Colors.red,
-              height: 40,
-              width: SizeConfig.screenWidth * .7,
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  SizedBox(
-                    width: SizeConfig.screenWidth * .5,
-                    child: const Column(
-                      children: [Text('datadatadatadatadatadatadattadatadatadataadatadatadatadatadatadata')],
-                    ),
+            Gap(40),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                Expanded(
+                  child: SizedBox(
+                    // width: SizeConfig.screenWidth * .55,
+                    child: Text(LONGABOUT, style: TextStyle(fontSize: 18)),
                   ),
-                  // const Gap(10),
-                  SizedBox(
-                    width: SizeConfig.screenWidth * .1,
-                    child: const Column(
-                      children: [
-                        Row(
-                          children: [
-                            Icon(Icons.mail),
-                            Gap(5),
-                            Text(
-                              ('Mail@gmail.com'),
-                            ),
-                          ],
-                        )
-                      ],
-                    ),
-                  ),
-                ],
-              ),
+                ),
+                // const Gap(10),
+
+                // Expanded(
+                //   flex: 1,
+                //   child: SizedBox(
+                //     // width: SizeConfig.screenWidth * .15,
+                //     child: Column(
+                //       children: [
+                //         Socials(
+                //           text: 'ztn.nizar@gmail.com',
+                //           iconData: Icons.mail,
+                //         ),
+                //       ],
+                //     ),
+                //   ),
+                // ),
+              ],
             ),
-            const Gap(40),
+            Gap(40),
           ],
         ),
-      ],
+      ),
     );
   }
 }
