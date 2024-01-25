@@ -62,4 +62,26 @@ flutter:
 
   uses-material-design: true
   assets:
-    - assets/
+    - assets/images/
+
+  fonts:
+    - family: Agustina
+      fonts:
+        - asset: assets/fonts/agustina/agustina.otf
+    
+    - family: Montserrat
+      fonts:
+        - asset: assets/fonts/montserrat/montserrat.ttf
+    
+    - family: Poppins
+      fonts:
+        - asset: assets/fonts/poppins/Poppins-Regular.ttf
+        - asset: assets/fonts/poppins/Poppins-Light.ttf
+        - asset: assets/fonts/poppins/Poppins-Bold.ttf
+          weight: 900
+        - asset: assets/fonts/poppins/Poppins-Medium.ttf
+          weight: 300
+        - asset: assets/fonts/poppins/Poppins-SemiBold.ttf
+          weight: 500
+        - asset: assets/fonts/poppins/Poppins-Italic.ttf
+          style: italic

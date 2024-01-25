@@ -1,7 +1,6 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
-import 'package:nizar_ztn_portfolio/view/home_v_web/widgets/section_header.dart';
 
 import '../../../core/functions.dart';
 import '../../../core/size_config.dart';

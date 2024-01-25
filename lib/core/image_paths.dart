@@ -1,69 +1,40 @@
 class ImagesPath {
-  static const String wavingHand = "assets/waving_hand.gif";
-  static const String profileAvatar = "assets/nizar_avatar.jpg";
-  static const String iconLinkedin = "assets/icon_linkedin.png";
-  static const String iconGithub = "assets/icon_github.png";
-  static const String iconGitlab = "assets/icon_gitlab.png";
-  static const String iconSketchfab = "assets/icon_sketchfab.png";
-  static const String iconPlaystore = "assets/icon_playstore.png";
-  static const String iconStackOverflow = "assets/icon_stack_overflow.png";
-  static const String iconflutter = "assets/flutter_logo.png";
+  static const String wavingHand = "assets/images/waving_hand.gif";
+  static const String profileAvatar = "assets/images/nizar_avatar.jpg";
+  static const String iconLinkedin = "assets/images/icon_linkedin.png";
+  static const String iconGithub = "assets/images/icon_github.png";
+  static const String iconGitlab = "assets/images/icon_gitlab.png";
+  static const String iconSketchfab = "assets/images/icon_sketchfab.png";
+  static const String iconPlaystore = "assets/images/icon_playstore.png";
+  static const String iconStackOverflow = "assets/images/icon_stack_overflow.png";
+  static const String iconflutter = "assets/images/flutter_logo.png";
 
   static final List<String> jdmImgList = [
-    'assets/jdm1.png',
-    'assets/jdm2.png',
-    'assets/jdm3.png',
-    'assets/jdm4.png',
+    'assets/images/jdm1.png',
+    'assets/images/jdm2.png',
+    'assets/images/jdm3.png',
+    'assets/images/jdm4.png',
   ];
-
-  static final List<String> fyndImgList = [
-    'assets/fynd1.jpg',
-    'assets/fynd2.jpg',
-    'assets/fynd3.jpg',
-    'assets/fynd4.jpg',
-    'assets/fynd5.jpg',
-    'assets/fynd6.jpg',
-    'assets/fynd7.jpg',
-    'assets/fynd8.jpg',
+  static final List<String> qqpImgList = [
+    'assets/images/qqp1.png',
+    'assets/images/qqp2.png',
+    'assets/images/qqp3.png',
+    'assets/images/qqp4.png',
   ];
-
-  static final List<String> ajioImgList = [
-    'assets/ajio1.jpg',
-    'assets/ajio2.jpg',
-    'assets/ajio3.jpg',
-    'assets/ajio4.jpg',
-    'assets/ajio5.jpg',
-    'assets/ajio6.jpg',
+  static final List<String> igImgList = [
+    'assets/images/ig1.png',
+    'assets/images/ig2.png',
+    'assets/images/ig3.png',
+    'assets/images/ig4.png',
+    'assets/images/ig5.png',
+    'assets/images/ig6.png',
+    'assets/images/ig7.png',
   ];
-
-  static final List<String> dsImgList = [
-    'assets/ds1.jpg',
-    'assets/ds2.jpg',
-    'assets/ds3.jpg',
-    'assets/ds4.jpg',
-    'assets/ds5.jpg',
-    'assets/ds6.jpg',
-    'assets/ds7.jpg',
-  ];
-
-  static final List<String> storeosImgList = [
-    'assets/storeos1.jpg',
-    'assets/storeos2.jpg',
-    'assets/storeos3.jpg',
-    'assets/storeos4.jpg',
-    'assets/storeos5.jpg',
-    'assets/storeos6.jpg',
-    'assets/storeos7.jpg',
-  ];
-
-  static final List<String> helprImgList = [
-    'assets/helpr1.jpg',
-    'assets/helpr2.jpg',
-    'assets/helpr3.jpg',
-    'assets/helpr4.jpg',
-    'assets/helpr5.jpg',
-    'assets/helpr6.jpg',
-    'assets/helpr7.jpg',
-    'assets/helpr8.jpg',
+  static final List<String> saImgList = [
+    'assets/images/sa1.png',
+    'assets/images/sa2.png',
+    'assets/images/sa3.png',
+    'assets/images/sa4.png',
+    'assets/images/sa5.png',
   ];
 }

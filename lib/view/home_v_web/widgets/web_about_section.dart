@@ -3,7 +3,6 @@ import 'package:gap/gap.dart';
 
 import '../../../core/constants.dart';
 import '../../../core/size_config.dart';
-import 'socials.dart';
 
 class WebAboutSection extends StatelessWidget {
   const WebAboutSection({super.key});
