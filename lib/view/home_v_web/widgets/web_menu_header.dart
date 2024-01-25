@@ -21,18 +21,6 @@ class WebMenuHeader extends StatelessWidget {
           mainAxisSize: MainAxisSize.min,
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            // HoverUnderlineText(
-            //   text: "Nizar Zitouni",
-            //   textStyle:
-            //       TextStyle(fontSize: 30, letterSpacing: 1.5, fontWeight: FontWeight.bold, fontFamily: GoogleFonts.teko().fontFamily),
-            //   onClick: () {
-            //     Scrollable.ensureVisible(
-            //       GlobalKeys.KEY_WEB_HOME.currentContext!,
-            //       duration: const Duration(milliseconds: 1000),
-            //       curve: Curves.easeOut,
-            //     );
-            //   },
-            // ),
             const NavBarLogo(),
             SizedBox(width: MediaQuery.of(context).size.width * 0.12),
             Container(

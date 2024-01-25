@@ -24,9 +24,9 @@ String capitalizeFirstLetterOfEachWord(String text) {
   return result;
 }
 
-Future<void> launchWithUri(Uri url) async {
+Future<void> launchWithUri({required String url}) async {
   if (!await launchUrl(
-    url,
+    Uri.parse(url),
     mode: LaunchMode.externalApplication,
   )) {
     throw Exception('Could not launch $url');

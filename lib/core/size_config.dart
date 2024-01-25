@@ -5,6 +5,8 @@ class SizeConfig {
   static late double screenWidth;
   static late double screenHeight;
   //static late double defaultSize;
+  static late double ratio;
+
   static late Orientation orientation;
 
   void init(BuildContext context) {
@@ -12,6 +14,12 @@ class SizeConfig {
     screenWidth = _mediaQueryData.size.width;
     screenHeight = _mediaQueryData.size.height;
     orientation = _mediaQueryData.orientation;
+    ratio = screenWidth / screenHeight;
+  }
+
+  // Add the following method
+  static double normalize(double unit) {
+    return (ratio * unit * 0.77) + unit;
   }
 }
 

@@ -48,15 +48,15 @@ class WebProjects extends StatelessWidget {
                           children: [
                             GestureDetector(
                               onTap: () {
-                                launchWithUri(Uri.parse(item.url));
+                                launchWithUri(url: item.url);
                               },
                               child: kIsWeb
                                   ? HoverUnderlineText(
-                                      text: item.name, textStyle: const TextStyle(fontWeight: FontWeight.bold, fontSize: 24))
-                                  : Text(item.name, style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 24)),
+                                      text: item.titles, textStyle: const TextStyle(fontWeight: FontWeight.bold, fontSize: 24))
+                                  : Text(item.titles, style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 24)),
                             ),
                             const Gap(8),
-                            Text(item.desc, style: const TextStyle(fontWeight: FontWeight.w500, fontSize: 16)),
+                            Text(item.description, style: const TextStyle(fontWeight: FontWeight.w500, fontSize: 16)),
                             const Gap(24),
                             const Text("Techstack:", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18)),
                             const Gap(8),

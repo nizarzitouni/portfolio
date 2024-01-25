@@ -15,17 +15,14 @@ abstract class AssetsConstants {
 
   static const String _png = '.png';
   static const String _svg = '.svg';
-  static const String _jpg = '.jpj';
+  static const String _jpg = '.jpg';
   static const String _json = '.json';
 
 //~~~~~~~~~~~~~~Images~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
   // static const String logoZeroImage = '${_assetImagePath}tuneHub text$_png';
   // static const String logoOneImage = '${_assetImagePath}tuneHub text 1$_png';
-  // static const String logoTwoImage = '${_assetImagePath}tuneHub text 2$_png';
-  // static const String logoThreeImage = '${_assetImagePath}tuneHub text 3$_png';
-  // static const String homeGlitchOneImage = '${_assetImagePath}tuneHub text glitch_1$_png';
-  // static const String homeGlitchTwoImage = '${_assetImagePath}tuneHub text glitch_2$_png';
-  // static const String homeGlitchImage = '${_assetImagePath}tune_hub_text_glitch$_png';
+  static const String placeHolderImage = '${_assetImagePath}place_holder_img$_jpg';
+
 //~~~~~~~~~~~~~~Icons~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // static const String appDrawerImageIcon = '${_assetIconPath}app_drawer$_png';
 //~~~~~~~~~~~~~~SVGS~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

@@ -6,6 +6,7 @@ import 'small_bar_title.dart';
 import 'web_about_section.dart';
 import 'web_home.dart';
 import 'web_menu_header.dart';
+import 'web_mobile_protfolio.dart';
 import 'web_projects.dart';
 
 class HomeScreenWebBody extends StatelessWidget {
@@ -29,8 +30,11 @@ class HomeScreenWebBody extends StatelessWidget {
                 WebHome(key: GlobalKeys.KEY_WEB_HOME),
                 const SmallBarTitle(text: 'about'),
                 WebAboutSection(key: GlobalKeys.KEY_WEB_ABOUTME),
-                const SmallBarTitle(text: 'mobile projects'),
-                WebProjects(key: GlobalKeys.KEY_WEB_PROJECTS),
+                const SmallBarTitle(text: 'mobile portfolio'),
+                //WebProjects(key: GlobalKeys.KEY_WEB_PROJECTS),
+                WebMobileProtfolio(key: GlobalKeys.KEY_WEB_MOBILEPORTFOLIO),
+                const SmallBarTitle(text: '3D portfolio'),
+                const SmallBarTitle(text: 'Game Design portfolio'),
               ],
             ),
           ),

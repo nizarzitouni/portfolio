@@ -49,7 +49,7 @@ class ProfileInfo extends StatelessWidget {
               for (final wActions in webActions!)
                 IconButton(
                   onPressed: () {
-                    launchWithUri(Uri.parse(wActions.webUrl));
+                    launchWithUri(url: wActions.webUrl);
                   },
                   icon: ImageIcon(
                     wActions.assetImage,
