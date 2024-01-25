@@ -74,4 +74,4 @@ const String SKETCHFAB = "https://sketchfab.com/N1x";
 const String PLAYSTORE = "https://play.google.com/store/apps/dev?id=7726987911219858293";
 
 //
-const double barsHight = 60;
+const double barsHight = 50;

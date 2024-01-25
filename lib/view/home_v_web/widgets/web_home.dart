@@ -26,7 +26,7 @@ class WebHome extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.start,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Gap(SizeConfig.screenWidth * 0.04),
+                  Gap(SizeConfig.screenWidth * 0.08),
                   const ProfileInfo(
                     name: NAME,
                     position: POS,
@@ -55,7 +55,7 @@ class WebHome extends StatelessWidget {
                       ),
                     ],
                   ),
-                  Gap(SizeConfig.screenWidth * 0.04),
+                  Gap(SizeConfig.screenWidth * 0.08),
                 ],
               ),
             ),
