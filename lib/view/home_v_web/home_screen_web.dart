@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:nizar_ztn_portfolio/core/size_config.dart';
 
 import 'widgets/home_screen_web_body.dart';
 
@@ -8,7 +7,6 @@ class HomeScreenWeb extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // SizeConfig().init(context);
     return const Scaffold(
       body: HomeScreenWebBody(),
     );

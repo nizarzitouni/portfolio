@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-import '../../../core/constants.dart';
 import '../../../models/projects_data.dart';
 import 'project_card.dart';
 
@@ -24,14 +23,7 @@ class WebMobileProtfolio extends StatelessWidget {
                 spacing: 10,
                 direction: Axis.horizontal,
                 children: projectModelsList.map((project) {
-                  return ProjectCard(
-                    banner:
-                        AssetsConstants.placeHolderImage, //project.images[0], // Assuming 'url' is equivalent to 'banner' in ProjectCard
-                    projectIcon: project.images[0], // Replace with appropriate logic
-                    projectLink: project.url, // Replace with appropriate logic
-                    projectTitle: project.titles, // Replace with appropriate logic
-                    projectDescription: project.description, // Replace with appropriate logic
-                  );
+                  return ProjectCard(projectModel: project);
                 }).toList(),
               ),
             ),

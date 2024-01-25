@@ -7,7 +7,6 @@ import 'web_about_section.dart';
 import 'web_home.dart';
 import 'web_menu_header.dart';
 import 'web_mobile_protfolio.dart';
-import 'web_projects.dart';
 
 class HomeScreenWebBody extends StatelessWidget {
   const HomeScreenWebBody({Key? key}) : super(key: key);
@@ -31,10 +30,11 @@ class HomeScreenWebBody extends StatelessWidget {
                 const SmallBarTitle(text: 'about'),
                 WebAboutSection(key: GlobalKeys.KEY_WEB_ABOUTME),
                 const SmallBarTitle(text: 'mobile portfolio'),
-                //WebProjects(key: GlobalKeys.KEY_WEB_PROJECTS),
                 WebMobileProtfolio(key: GlobalKeys.KEY_WEB_MOBILEPORTFOLIO),
                 const SmallBarTitle(text: '3D portfolio'),
+                WebMobileProtfolio(key: GlobalKeys.KEY_WEB_3DPORTFOLIO),
                 const SmallBarTitle(text: 'Game Design portfolio'),
+                WebMobileProtfolio(key: GlobalKeys.KEY_WEB_GAMEDESIGNPORTFOLIO),
               ],
             ),
           ),

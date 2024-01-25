@@ -1,17 +1,22 @@
+import 'project_image_model.dart';
+
 class ProjectModel {
-  final String titles;
-  final String url;
-  final String description;
+  final String projectTitle;
+  final String projectUrl;
+  final String projectDescription;
   final String role;
   final List<String> techStacks;
-  final List<String> images;
+  // final List<String>? appScreens;
+  final ProjectImageModel projectImageModel;
 
-  const ProjectModel({
-    required this.titles,
-    required this.url,
-    required this.description,
+  const ProjectModel(
+      // this.appScreens,
+      {
+    required this.projectTitle,
+    required this.projectUrl,
+    required this.projectDescription,
     required this.role,
     required this.techStacks,
-    required this.images,
+    required this.projectImageModel,
   });
 }
