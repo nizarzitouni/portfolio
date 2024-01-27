@@ -35,6 +35,7 @@ abstract class AssetsConstants {
   static const String linkedinSvg = '${_assetSvgPath}linkedin$_svg';
   static const String sketchfabSvg = '${_assetSvgPath}sketchfab$_svg';
   static const String playstoreSvg = '${_assetSvgPath}playstore$_svg';
+  static const String quoteSvg = '${_assetSvgPath}quote$_svg';
   // static const String searchSvg = '${_assetSvgPath}search$_svg';
 //~~~~~~~~~~~~~~LottieAnimations~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
   // static const String uploadAnim = '${_assetLottieAnimPath}uploading_anim$_json';

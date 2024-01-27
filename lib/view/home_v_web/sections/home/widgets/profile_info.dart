@@ -4,8 +4,8 @@ import 'package:gap/gap.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:nizar_ztn_portfolio/core/pallete.dart';
 
-import '../../../core/functions.dart';
-import '../../../models/web_action_model.dart';
+import '../../../../../core/functions.dart';
+import '../../../../../models/web_action_model.dart';
 
 class ProfileInfo extends StatelessWidget {
   final String name;

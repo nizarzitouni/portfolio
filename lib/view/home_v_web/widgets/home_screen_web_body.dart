@@ -8,7 +8,7 @@ import 'made_with_flutter.dart';
 import 'small_bar_title.dart';
 import 'web_about_section.dart';
 import 'web_conatct.dart';
-import 'web_home.dart';
+import '../sections/home/web_home.dart';
 import 'web_menu_header.dart';
 import 'web_mobile_protfolio.dart';
 
