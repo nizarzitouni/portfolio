@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
+import '../../../core/constants.dart';
 import '../../../core/global_keys.dart';
 import '../../../core/pallete.dart';
 import 'hover_underline.dart';
@@ -35,7 +36,7 @@ class WebMenuHeader extends StatelessWidget {
                   child: Row(
                     children: [
                       HoverUnderlineText(
-                          text: "Home",
+                          text: HOME_HEADER,
                           textStyle: const TextStyle(
                             fontSize: 16.0,
                           ),
@@ -45,7 +46,7 @@ class WebMenuHeader extends StatelessWidget {
                           }),
                       const Gap(30),
                       HoverUnderlineText(
-                          text: "About",
+                          text: ABOUT_HEADER,
                           textStyle: const TextStyle(
                             fontSize: 16.0,
                           ),
@@ -55,7 +56,7 @@ class WebMenuHeader extends StatelessWidget {
                           }),
                       const Gap(30),
                       HoverUnderlineText(
-                          text: "Dev Projects",
+                          text: MOBILEPROJECTS_HEADER,
                           textStyle: const TextStyle(
                             fontSize: 16.0,
                           ),
@@ -65,7 +66,7 @@ class WebMenuHeader extends StatelessWidget {
                           }),
                       const Gap(30),
                       HoverUnderlineText(
-                          text: "3D Projects",
+                          text: THREED_HEADER,
                           textStyle: const TextStyle(
                             fontSize: 16.0,
                           ),
@@ -76,7 +77,7 @@ class WebMenuHeader extends StatelessWidget {
 
                       const Gap(30),
                       HoverUnderlineText(
-                          text: "Contact",
+                          text: CONTACT_HEADER,
                           textStyle: const TextStyle(
                             fontSize: 16.0,
                           ),

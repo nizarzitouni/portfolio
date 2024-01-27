@@ -28,7 +28,7 @@ class SmallBarTitle extends StatelessWidget {
               child: Text(
                 text,
                 textAlign: TextAlign.center,
-                style: AppTextStyles.smallBarsTitle600style24,
+                style: AppTextStyles.smallBarsTitle600style24firaCode,
               ),
             ),
           )

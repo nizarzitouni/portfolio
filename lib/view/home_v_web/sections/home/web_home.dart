@@ -38,7 +38,7 @@ class WebHome extends StatelessWidget {
                             name: NAME,
                             position: POS,
                             basedIn: BASEDIN,
-                            about: ABOUT,
+                            about: ABOUTPROFILE,
                             webActions: [
                               WebActionModel(
                                 webUrl: LINKEDIN,

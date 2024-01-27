@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
-import '../../../core/constants.dart';
+import '../../../../core/constants.dart';
 
-class WebAboutSection extends StatelessWidget {
-  const WebAboutSection({super.key});
+class WebAbout extends StatelessWidget {
+  const WebAbout({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -20,18 +20,14 @@ class WebAboutSection extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.start,
               children: [
                 Gap(40),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  crossAxisAlignment: CrossAxisAlignment.start,
+                Wrap(
+                  alignment: WrapAlignment.spaceBetween,
+                  runAlignment: WrapAlignment.center,
                   children: [
-                    Expanded(
-                      flex: 2,
-                      child: SizedBox(
-                        // width: SizeConfig.screenWidth * .55,
-                        child: Text(LONGABOUT, style: TextStyle(fontSize: 18)),
-                      ),
+                    SizedBox(
+                      // width: SizeConfig.screenWidth * .55,
+                      child: Text(LONGABOUT, style: TextStyle(fontSize: 18)),
                     ),
-                    // const Gap(10),
                   ],
                 ),
                 Gap(40),

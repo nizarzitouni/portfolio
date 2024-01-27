@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:nizar_ztn_portfolio/core/pallete.dart';
 import 'package:nizar_ztn_portfolio/core/size_config.dart';
 
-import '../../../core/functions.dart';
-import '../../../models/project_model.dart';
+import '../../../../../core/functions.dart';
+import '../../../../../models/project_model.dart';
 
 class ProjectCard extends StatefulWidget {
   final ProjectModel projectModel;

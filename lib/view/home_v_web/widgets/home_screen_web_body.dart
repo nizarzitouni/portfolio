@@ -1,16 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
+import '../../../core/constants.dart';
 import '../../../core/global_keys.dart';
 import '../../../core/pallete.dart';
 import '../../../models/projects_data.dart';
-import 'made_with_flutter.dart';
+import '../sections/made_with_flutter.dart';
 import 'small_bar_title.dart';
-import 'web_about_section.dart';
-import 'web_conatct.dart';
+import '../sections/about/web_about.dart';
+import '../sections/contact/web_conatct.dart';
 import '../sections/home/web_home.dart';
 import 'web_menu_header.dart';
-import 'web_mobile_protfolio.dart';
+import '../sections/projects/web_mobile_projects.dart';
 
 class HomeScreenWebBody extends StatelessWidget {
   const HomeScreenWebBody({Key? key}) : super(key: key);
@@ -31,13 +32,13 @@ class HomeScreenWebBody extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
                 WebHome(key: GlobalKeys.KEY_WEB_HOME),
-                const SmallBarTitle(text: 'about'),
-                WebAboutSection(key: GlobalKeys.KEY_WEB_ABOUTME),
-                const SmallBarTitle(text: 'mobile portfolio'),
-                WebMobileProtfolio(key: GlobalKeys.KEY_WEB_MOBILEPORTFOLIO, projectModelsList: ProjectData.mobileDevProjectList),
-                const SmallBarTitle(text: '3D portfolio'),
-                WebMobileProtfolio(key: GlobalKeys.KEY_WEB_3DPORTFOLIO, projectModelsList: ProjectData.threeDProjectList),
-                const SmallBarTitle(text: 'Contact'),
+                const SmallBarTitle(text: ABOUT_HEADER),
+                WebAbout(key: GlobalKeys.KEY_WEB_ABOUTME),
+                const SmallBarTitle(text: MOBILEPROJECTS_HEADER),
+                WebMobileProjects(key: GlobalKeys.KEY_WEB_MOBILEPORTFOLIO, projectModelsList: ProjectData.mobileDevProjectList),
+                const SmallBarTitle(text: THREED_HEADER),
+                WebMobileProjects(key: GlobalKeys.KEY_WEB_3DPORTFOLIO, projectModelsList: ProjectData.threeDProjectList),
+                const SmallBarTitle(text: CONTACT_HEADER),
                 WebContact(key: GlobalKeys.KEY_WEB_CONTACTME),
                 const Gap(40),
                 const MadeWithFlutterButton(),

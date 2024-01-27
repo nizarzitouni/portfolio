@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:nizar_ztn_portfolio/models/project_model.dart';
 
-import 'project_card.dart';
+import 'widgets/project_card.dart';
 
-class WebMobileProtfolio extends StatelessWidget {
-  const WebMobileProtfolio({Key? key, required this.projectModelsList}) : super(key: key);
+class WebMobileProjects extends StatelessWidget {
+  const WebMobileProjects({Key? key, required this.projectModelsList}) : super(key: key);
   final List<ProjectModel> projectModelsList;
 
   @override

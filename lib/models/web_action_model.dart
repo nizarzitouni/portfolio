@@ -1,4 +1,4 @@
-import 'package:flutter/cupertino.dart';
+// ignore_for_file: constant_identifier_names
 
 class WebActionModel {
   final String webUrl;
