@@ -22,11 +22,19 @@ abstract class AssetsConstants {
   // static const String logoZeroImage = '${_assetImagePath}tuneHub text$_png';
   // static const String logoOneImage = '${_assetImagePath}tuneHub text 1$_png';
   static const String placeHolderImage = '${_assetImagePath}place_holder_img$_jpg';
+  static const String flutterImage = '${_assetIconPath}flutter_logo$_png';
+  static const String emailIcon = '${_assetIconPath}email$_png';
 
 //~~~~~~~~~~~~~~Icons~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // static const String appDrawerImageIcon = '${_assetIconPath}app_drawer$_png';
 //~~~~~~~~~~~~~~SVGS~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
   // static const String voidSvg = '${_assetSvgPath}void$_svg';
+  static const String emailSvg = '${_assetSvgPath}email$_svg';
+  static const String githubSvg = '${_assetSvgPath}github$_svg';
+  static const String gitlabSvg = '${_assetSvgPath}gitlab$_svg';
+  static const String linkedinSvg = '${_assetSvgPath}linkedin$_svg';
+  static const String sketchfabSvg = '${_assetSvgPath}sketchfab$_svg';
+  static const String playstoreSvg = '${_assetSvgPath}playstore$_svg';
   // static const String searchSvg = '${_assetSvgPath}search$_svg';
 //~~~~~~~~~~~~~~LottieAnimations~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
   // static const String uploadAnim = '${_assetLottieAnimPath}uploading_anim$_json';
@@ -66,12 +74,6 @@ SOFTWARE ENGINEER | 3D ARTIST | FLUTTER DEVELOPER
 • Passionate about innovation, sustainability, and process automation.
 
 ''';
-//Links
-const String LINKEDIN = "https://www.linkedin.com/in/nizar-zitouni/";
-const String GITHUB = "https://github.com/nizarzitouni";
-const String GITLAB = "https://gitlab.com/nizarztn";
-const String SKETCHFAB = "https://sketchfab.com/N1x";
-const String PLAYSTORE = "https://play.google.com/store/apps/dev?id=7726987911219858293";
 
 //
 const double barsHight = 50;

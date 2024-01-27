@@ -41,7 +41,7 @@ class ProjectCardState extends State<ProjectCard> {
         }
       },
       child: LayoutBuilder(builder: (context, constraints) {
-        double aspectRatio = 45 / 9; // Set your desired aspect ratio (width / height)
+        double aspectRatio = 40 / 9; // Set your desired aspect ratio (width / height)
         double containerWidth = SizeConfig.screenWidth * 0.22; // Set your desired width percentage
         double containerHeight = constraints.maxWidth * (1 / aspectRatio);
 
@@ -137,7 +137,7 @@ class ProjectCardState extends State<ProjectCard> {
                   fit: BoxFit.fill,
                   child: Image.asset(
                     widget.projectModel.projectImageModel.projectCover,
-                    fit: BoxFit.fill,
+                    fit: BoxFit.cover,
                   ),
                 ),
               ),

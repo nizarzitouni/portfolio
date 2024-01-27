@@ -35,22 +35,12 @@ class WebMenuHeader extends StatelessWidget {
                   child: Row(
                     children: [
                       HoverUnderlineText(
-                          text: "Projects",
+                          text: "Home",
                           textStyle: const TextStyle(
                             fontSize: 16.0,
                           ),
                           onClick: () {
-                            Scrollable.ensureVisible(GlobalKeys.KEY_WEB_PROJECTS.currentContext!,
-                                duration: const Duration(milliseconds: 1000), curve: Curves.easeOut);
-                          }),
-                      const Gap(30),
-                      HoverUnderlineText(
-                          text: "Skills",
-                          textStyle: const TextStyle(
-                            fontSize: 16.0,
-                          ),
-                          onClick: () {
-                            Scrollable.ensureVisible(GlobalKeys.KEY_WEB_SKILLS.currentContext!,
+                            Scrollable.ensureVisible(GlobalKeys.KEY_WEB_HOME.currentContext!,
                                 duration: const Duration(milliseconds: 1000), curve: Curves.easeOut);
                           }),
                       const Gap(30),
@@ -63,6 +53,27 @@ class WebMenuHeader extends StatelessWidget {
                             Scrollable.ensureVisible(GlobalKeys.KEY_WEB_ABOUTME.currentContext!,
                                 duration: const Duration(milliseconds: 1000), curve: Curves.easeOut);
                           }),
+                      const Gap(30),
+                      HoverUnderlineText(
+                          text: "Dev Projects",
+                          textStyle: const TextStyle(
+                            fontSize: 16.0,
+                          ),
+                          onClick: () {
+                            Scrollable.ensureVisible(GlobalKeys.KEY_WEB_MOBILEPORTFOLIO.currentContext!,
+                                duration: const Duration(milliseconds: 1000), curve: Curves.easeOut);
+                          }),
+                      const Gap(30),
+                      HoverUnderlineText(
+                          text: "3D Projects",
+                          textStyle: const TextStyle(
+                            fontSize: 16.0,
+                          ),
+                          onClick: () {
+                            Scrollable.ensureVisible(GlobalKeys.KEY_WEB_3DPORTFOLIO.currentContext!,
+                                duration: const Duration(milliseconds: 1000), curve: Curves.easeOut);
+                          }),
+
                       const Gap(30),
                       HoverUnderlineText(
                           text: "Contact",

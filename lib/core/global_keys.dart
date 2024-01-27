@@ -10,5 +10,4 @@ class GlobalKeys {
   static final KEY_WEB_CONTACTME = GlobalKey();
   static final KEY_WEB_MOBILEPORTFOLIO = GlobalKey();
   static final KEY_WEB_3DPORTFOLIO = GlobalKey();
-  static final KEY_WEB_GAMEDESIGNPORTFOLIO = GlobalKey();
 }

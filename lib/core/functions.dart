@@ -25,10 +25,21 @@ String capitalizeFirstLetterOfEachWord(String text) {
 }
 
 Future<void> launchWithUri({required String url}) async {
-  if (!await launchUrl(
-    Uri.parse(url),
-    mode: LaunchMode.externalApplication,
-  )) {
+  if (!await launchUrl(Uri.parse(url), mode: LaunchMode.externalApplication)) {
     throw Exception('Could not launch $url');
   }
+}
+
+String? encodeQueryParameters(Map<String, String> params) {
+  return params.entries.map((MapEntry<String, String> e) => '${Uri.encodeComponent(e.key)}=${Uri.encodeComponent(e.value)}').join('&');
+}
+
+void sendEmail() {
+  final Uri emailLaunchUri = Uri(
+      scheme: 'mailto',
+      path: 'edirinmuogho@gmail.com',
+      query: encodeQueryParameters(<String, String>{
+        'subject': '',
+      }));
+  launchUrl(emailLaunchUri);
 }
