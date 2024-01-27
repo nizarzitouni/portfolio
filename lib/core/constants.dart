@@ -4,8 +4,6 @@
 
 // ignore_for_file: unused_field, constant_identifier_names
 
-import 'package:get_storage/get_storage.dart';
-
 abstract class AssetsConstants {
   static const String _assetImagePath = 'assets/images/';
   static const String _assetIconPath = 'assets/icons/';
@@ -44,18 +42,6 @@ abstract class AssetsConstants {
 //~~~~~~~~~~~~~~Audio~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
   // static const String localSound = '${_assetSoundPath}ccc.mp3';
 }
-
-// FirebaseFirestore firestore = FirebaseFirestore.instance;
-
-//Storage init
-final GetStorage storageBox = GetStorage();
-const bookmarkBoxKey = "BookmarkList";
-// Get a reference your Supabase client
-
-const TRENDING_CATEGORY = 1;
-const KIDS_CATEGORY = 2;
-const POP_CATEGORY = 3;
-const SCREEN_PADDING_VALUE = 10.0;
 
 //__________________________________________________________________________________________________
 
