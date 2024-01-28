@@ -24,6 +24,7 @@ dependencies:
   flutter_svg: ^2.0.9
   responsive_grid_list: ^1.4.0
 
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
