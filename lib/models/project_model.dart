@@ -2,21 +2,23 @@ import 'project_image_model.dart';
 
 class ProjectModel {
   final String projectTitle;
-  final String projectUrl;
+  String? liveUrl;
+  final bool isLive;
   final String projectDescription;
   final String role;
   final List<String> techStacks;
   // final List<String>? appScreens;
   final ProjectImageModel projectImageModel;
+  String? githubUrl;
 
-  const ProjectModel(
-      // this.appScreens,
-      {
+  ProjectModel({
     required this.projectTitle,
-    required this.projectUrl,
+    required this.liveUrl,
+    required this.isLive,
     required this.projectDescription,
     required this.role,
     required this.techStacks,
     required this.projectImageModel,
+    required this.githubUrl,
   });
 }

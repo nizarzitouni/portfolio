@@ -2,11 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:responsive_grid_list/responsive_grid_list.dart';
 import 'package:url_launcher/url_launcher.dart';
 
-import '../../../../models/project_model.dart';
+import '../../../../../models/project_model.dart';
 
-class ProjectCardd extends StatelessWidget {
+class ProjectCard extends StatelessWidget {
   final ProjectModel projectModel;
-  const ProjectCardd({
+  const ProjectCard({
     Key? key,
     required this.projectModel,
   }) : super(key: key);
@@ -48,23 +48,26 @@ class ProjectCardd extends StatelessWidget {
                 height: 100,
                 child: ResponsiveGridList(
                   // Vertical space around the grid
-                  minItemWidth: 100, // The minimum item width (can be smaller, if the layout constraints are smaller)
+                  minItemWidth: 60, // The minimum item width (can be smaller, if the layout constraints are smaller)
                   minItemsPerRow: 1, // The minimum items to show in a single row. Takes precedence over minItemWidth
-                  maxItemsPerRow: 4, // The maximum items to show in a single row. Can be useful on large screens
+                  maxItemsPerRow: 2, // The maximum items to show in a single row. Can be useful on large screens
                   listViewBuilderOptions: ListViewBuilderOptions(
                       shrinkWrap: true,
                       physics: const NeverScrollableScrollPhysics()), // Options that are getting passed to the ListView.builder() function
                   children: List.generate(
                     projectModel.techStacks.length,
-                    (index) => Padding(
-                      padding: const EdgeInsets.all(0.0),
-                      child: Text(
-                        projectModel.techStacks[index],
-                        style: const TextStyle(
-                          color: Color(0xFFABB2BF),
-                          fontSize: 16,
-                          //fontFamily: 'Fira Code',
-                          fontWeight: FontWeight.w400,
+                    (index) => Center(
+                      child: Padding(
+                        padding: const EdgeInsets.all(0.0),
+                        child: Text(
+                          projectModel.techStacks[index],
+                          style: const TextStyle(
+                            color: Color(0xFFABB2BF),
+                            fontSize: 16,
+                            //fontFamily: 'Fira Code',
+                            fontWeight: FontWeight.w400,
+                          ),
+                          textAlign: TextAlign.center,
                         ),
                       ),
                     ),
@@ -112,65 +115,67 @@ class ProjectCardd extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.start,
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        RawMaterialButton(
-                          onPressed: () {
-                            _launchUrl(projectModel.projectUrl);
-                          },
-                          hoverColor: Theme.of(context).primaryColor,
-                          child: Container(
-                            padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-                            decoration: const ShapeDecoration(
-                              shape: RoundedRectangleBorder(
-                                side: BorderSide(width: 0.50, color: Color(0xFFC778DD)),
+                        if (projectModel.liveUrl != null)
+                          RawMaterialButton(
+                            onPressed: () {
+                              _launchUrl(projectModel.liveUrl!);
+                            },
+                            hoverColor: Theme.of(context).primaryColor,
+                            child: Container(
+                              padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                              decoration: const ShapeDecoration(
+                                shape: RoundedRectangleBorder(
+                                  side: BorderSide(width: 0.50, color: Color(0xFFC778DD)),
+                                ),
+                              ),
+                              child: const Row(
+                                mainAxisSize: MainAxisSize.min,
+                                mainAxisAlignment: MainAxisAlignment.start,
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Text(
+                                    'Live <~>',
+                                    style: TextStyle(
+                                      color: Colors.white,
+                                      fontSize: 16,
+                                      fontWeight: FontWeight.w500,
+                                    ),
+                                  ),
+                                ],
                               ),
                             ),
-                            child: const Row(
-                              mainAxisSize: MainAxisSize.min,
-                              mainAxisAlignment: MainAxisAlignment.start,
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Text(
-                                  'Live <~>',
-                                  style: TextStyle(
-                                    color: Colors.white,
-                                    fontSize: 16,
-                                    fontWeight: FontWeight.w500,
-                                  ),
-                                ),
-                              ],
-                            ),
                           ),
-                        ),
                         const SizedBox(width: 16),
-                        RawMaterialButton(
-                          onPressed: () {
-                            _launchUrl(projectModel.projectUrl);
-                          },
-                          hoverColor: Theme.of(context).primaryColor,
-                          child: Container(
-                            padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-                            decoration: const ShapeDecoration(
-                              shape: RoundedRectangleBorder(
-                                side: BorderSide(width: 0.50, color: Color(0xFFABB2BF)),
+                        if (projectModel.githubUrl != null)
+                          RawMaterialButton(
+                            onPressed: () {
+                              _launchUrl(projectModel.githubUrl!);
+                            },
+                            hoverColor: Theme.of(context).primaryColor,
+                            child: Container(
+                              padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                              decoration: const ShapeDecoration(
+                                shape: RoundedRectangleBorder(
+                                  side: BorderSide(width: 0.50, color: Color(0xFFABB2BF)),
+                                ),
+                              ),
+                              child: const Row(
+                                mainAxisSize: MainAxisSize.min,
+                                mainAxisAlignment: MainAxisAlignment.start,
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Text(
+                                    'Github >=',
+                                    style: TextStyle(
+                                      color: Color(0xFFABB2BF),
+                                      fontSize: 16,
+                                      fontWeight: FontWeight.w500,
+                                    ),
+                                  ),
+                                ],
                               ),
                             ),
-                            child: const Row(
-                              mainAxisSize: MainAxisSize.min,
-                              mainAxisAlignment: MainAxisAlignment.start,
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Text(
-                                  'Github >=',
-                                  style: TextStyle(
-                                    color: Color(0xFFABB2BF),
-                                    fontSize: 16,
-                                    fontWeight: FontWeight.w500,
-                                  ),
-                                ),
-                              ],
-                            ),
                           ),
-                        ),
                       ],
                     ),
                   ),
