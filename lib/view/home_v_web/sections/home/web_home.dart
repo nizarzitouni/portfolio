@@ -34,7 +34,7 @@ class WebHome extends StatelessWidget {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Gap(SizeConfig.screenWidth * 0.08),
-                          const ProfileInfo(
+                          ProfileInfo(
                             name: NAME,
                             position: POS,
                             basedIn: BASEDIN,
@@ -59,6 +59,11 @@ class WebHome extends StatelessWidget {
                               WebActionModel(
                                 webUrl: PLAYSTORE,
                                 assetImagePath: AssetsConstants.playstoreSvg,
+                              ),
+                              WebActionModel(
+                                webUrl: RESUMEURL,
+                                assetImagePath: AssetsConstants.downloadSvg,
+                                text: "Resume",
                               ),
                             ],
                           ),

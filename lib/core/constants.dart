@@ -34,6 +34,7 @@ abstract class AssetsConstants {
   static const String sketchfabSvg = '${_assetSvgPath}sketchfab$_svg';
   static const String playstoreSvg = '${_assetSvgPath}playstore$_svg';
   static const String quoteSvg = '${_assetSvgPath}quote$_svg';
+  static const String downloadSvg = '${_assetSvgPath}download$_svg';
   // static const String searchSvg = '${_assetSvgPath}search$_svg';
 //~~~~~~~~~~~~~~LottieAnimations~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
   // static const String uploadAnim = '${_assetLottieAnimPath}uploading_anim$_json';
@@ -45,6 +46,7 @@ abstract class AssetsConstants {
 
 //__________________________________________________________________________________________________
 
+//Profile Data
 const String NAME = "Nizar Zitouni";
 const String BASEDIN = "Constantine, Algeria";
 const String POS = "Software Engineer | Flutter Developer | 3D Artist";

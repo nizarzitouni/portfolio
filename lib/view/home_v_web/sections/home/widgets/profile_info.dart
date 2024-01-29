@@ -3,6 +3,7 @@ import 'package:flutter_svg/svg.dart';
 import 'package:gap/gap.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:nizar_ztn_portfolio/core/pallete.dart';
+import 'package:universal_html/html.dart' as html;
 
 import '../../../../../core/functions.dart';
 import '../../../../../models/web_action_model.dart';
@@ -48,28 +49,71 @@ class ProfileInfo extends StatelessWidget {
             spacing: 0,
             children: [
               for (final wActions in webActions!)
-                RawMaterialButton(
-                  constraints: const BoxConstraints(
-                    maxWidth: 30.0, // Set the minimum width
-                    minWidth: 30.0,
-                    maxHeight: 30,
-                    minHeight: 30,
-                  ),
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(8.0),
-                  ),
-                  hoverColor: Pallete.whiteColor.withOpacity(.4), // Set the hover color
+                wActions.text == null
+                    ? RawMaterialButton(
+                        constraints: const BoxConstraints(
+                          maxWidth: 30.0, // Set the minimum width
+                          minWidth: 30.0,
+                          maxHeight: 30,
+                          minHeight: 30,
+                        ),
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(8.0),
+                        ),
+                        hoverColor: Pallete.whiteColor.withOpacity(.4), // Set the hover color
 
-                  onPressed: () {
-                    launchWithUri(url: wActions.webUrl);
-                  },
-                  child: SvgPicture.asset(
-                    wActions.assetImagePath,
-                    height: 20,
-                    width: 20,
-                    colorFilter: const ColorFilter.mode(Pallete.whiteColor, BlendMode.srcIn),
-                  ),
-                ),
+                        onPressed: () {
+                          launchWithUri(url: wActions.webUrl);
+                        },
+                        child: SvgPicture.asset(
+                          wActions.assetImagePath,
+                          height: 20,
+                          width: 20,
+                          colorFilter: const ColorFilter.mode(Pallete.whiteColor, BlendMode.srcIn),
+                        ),
+                      )
+                    : Padding(
+                        padding: const EdgeInsets.only(left: 20),
+                        child: RawMaterialButton(
+                          // constraints: const BoxConstraints(
+                          //   maxWidth: 30.0, // Set the minimum width
+                          //   minWidth: 30.0,
+                          //   maxHeight: 30,
+                          //   minHeight: 30,
+                          // ),
+                          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8.0)),
+                          hoverColor: Pallete.whiteColor.withOpacity(.4), // Set the hover color
+                          fillColor: Pallete.whiteColor.withOpacity(.2),
+                          onPressed: () {
+                            launchWithUri(url: wActions.webUrl);
+                            html.window.open(
+                              wActions.webUrl,
+                              "pdf",
+                            );
+                          },
+                          child: Row(
+                            mainAxisSize: MainAxisSize.min,
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            children: [
+                              SvgPicture.asset(
+                                wActions.assetImagePath,
+                                height: 20,
+                                width: 20,
+                                colorFilter: const ColorFilter.mode(Pallete.whiteColor, BlendMode.srcIn),
+                              ),
+                              const SizedBox(width: 6.0),
+                              Text(
+                                wActions.text!,
+                                style: const TextStyle(
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.w400,
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
             ],
           ),
       ],

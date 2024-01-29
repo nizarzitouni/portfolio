@@ -3,8 +3,11 @@
 class WebActionModel {
   final String webUrl;
   final String assetImagePath;
+  final String? text;
 
-  const WebActionModel({required this.webUrl, required this.assetImagePath});
+  WebActionModel({required this.webUrl, required this.assetImagePath, this.text});
+
+  // const WebActionModel({required this.webUrl, required this.assetImagePath});
 }
 
 //WebAction Links
@@ -13,3 +16,4 @@ const String GITHUB = "https://github.com/nizarzitouni";
 const String GITLAB = "https://gitlab.com/nizarztn";
 const String SKETCHFAB = "https://sketchfab.com/N1x";
 const String PLAYSTORE = "https://play.google.com/store/apps/dev?id=7726987911219858293";
+const String RESUMEURL = "https://drive.google.com/file/d/18F8UOVVrzO-z7WjHiwuhVYo3NURpEmDp/view?usp=sharing";
