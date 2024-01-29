@@ -2,14 +2,14 @@ import 'package:flutter/material.dart';
 
 import '../core/config/app_information.dart';
 import '../core/pallete.dart';
-import '../core/routes/app_router.dart';
+import 'responsive_layout.dart';
 
 class PortfolioApp extends StatelessWidget {
   const PortfolioApp({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp.router(
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
       scrollBehavior: ScrollConfiguration.of(context).copyWith(scrollbars: false),
       theme: ThemeData.dark().copyWith(
@@ -17,7 +17,7 @@ class PortfolioApp extends StatelessWidget {
         //textTheme: GoogleFonts.montserratTextTheme(ThemeData.dark().textTheme),
       ),
       title: AppInformation.title,
-      routerConfig: AppRouter.router,
+      home: const ResponsiveLayout(),
     );
   }
 }

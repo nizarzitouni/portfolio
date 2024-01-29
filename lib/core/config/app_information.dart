@@ -1,6 +1,6 @@
 class AppInformation {
-  static const name = 'Tune Hub';
-  static const title = 'Tune Hub';
+  static const name = 'Nizar Zitouni';
+  static const title = 'Nizar Zitouni';
   static const appIdAndroid = 'nz.dev.tunehub';
   static const appIdIos = 'nz.dev.tunehub';
   static const masterAdminEmail = 'nzdev25@gmail.com';
