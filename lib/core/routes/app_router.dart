@@ -23,12 +23,9 @@ abstract class AppRouter {
       GoRoute(
         path: kProjectView,
         builder: (context, state) {
-          // Retrieve project ID from state.params['projectId']
-          final projectId = state.pathParameters['projectId'];
-          // Return the project details page with the project ID
           return ResponsiveLayout(
-            screenWeb: ProjectDeatailsWeb(projectId: projectId!),
-            screenMobile: ProjectDetailsMob(projectId: projectId),
+            screenWeb: ProjectDeatailsWeb(projectId: state.pathParameters['projectId']!),
+            screenMobile: ProjectDetailsMob(projectId: state.pathParameters['projectId']!),
           );
         },
       ),

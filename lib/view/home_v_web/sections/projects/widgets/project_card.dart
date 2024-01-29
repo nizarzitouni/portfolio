@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:nizar_ztn_portfolio/core/pallete.dart';
 import 'package:nizar_ztn_portfolio/core/routes/app_router.dart';
 import 'package:responsive_grid_list/responsive_grid_list.dart';
-import 'package:url_launcher/url_launcher.dart';
 
 import '../../../../../models/project_model.dart';
+import '../../../widgets/live_or_github_widget.dart';
 
 class ProjectCard extends StatefulWidget {
   final ProjectModel projectModel;
@@ -29,9 +29,7 @@ class _ProjectCardState extends State<ProjectCard> {
         splashColor: Colors.transparent,
         highlightColor: Colors.transparent,
         onTap: () {
-          // sendEmail();
-          //GoRouter.of(context).push('/project/${widget.projectModel.projectId}');
-          AppRouter.router.go('/projects/${widget.projectModel.projectId}'); // Replace 123 with the actual project ID
+          AppRouter.router.go('/projects/${widget.projectModel.projectId}');
         },
         onHover: (isHovering) {
           if (isHovering) {
@@ -152,76 +150,8 @@ class _ProjectCardState extends State<ProjectCard> {
                       ),
                     ),
                     const SizedBox(height: 16),
-                    Container(
-                      child: Row(
-                        mainAxisSize: MainAxisSize.min,
-                        mainAxisAlignment: MainAxisAlignment.start,
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          if (widget.projectModel.liveUrl != null)
-                            RawMaterialButton(
-                              onPressed: () {
-                                _launchUrl(widget.projectModel.liveUrl!);
-                              },
-                              hoverColor: Theme.of(context).primaryColor,
-                              child: Container(
-                                padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-                                decoration: const ShapeDecoration(
-                                  shape: RoundedRectangleBorder(
-                                    side: BorderSide(width: 0.50, color: Color(0xFFC778DD)),
-                                  ),
-                                ),
-                                child: const Row(
-                                  mainAxisSize: MainAxisSize.min,
-                                  mainAxisAlignment: MainAxisAlignment.start,
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
-                                    Text(
-                                      'Live <~>',
-                                      style: TextStyle(
-                                        color: Colors.white,
-                                        fontSize: 16,
-                                        fontWeight: FontWeight.w500,
-                                      ),
-                                    ),
-                                  ],
-                                ),
-                              ),
-                            ),
-                          const SizedBox(width: 16),
-                          if (widget.projectModel.githubUrl != null)
-                            RawMaterialButton(
-                              onPressed: () {
-                                _launchUrl(widget.projectModel.githubUrl!);
-                              },
-                              hoverColor: Theme.of(context).primaryColor,
-                              child: Container(
-                                padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-                                decoration: const ShapeDecoration(
-                                  shape: RoundedRectangleBorder(
-                                    side: BorderSide(width: 0.50, color: Color(0xFFABB2BF)),
-                                  ),
-                                ),
-                                child: const Row(
-                                  mainAxisSize: MainAxisSize.min,
-                                  mainAxisAlignment: MainAxisAlignment.start,
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
-                                    Text(
-                                      'Github >=',
-                                      style: TextStyle(
-                                        color: Color(0xFFABB2BF),
-                                        fontSize: 16,
-                                        fontWeight: FontWeight.w500,
-                                      ),
-                                    ),
-                                  ],
-                                ),
-                              ),
-                            ),
-                        ],
-                      ),
-                    ),
+                    //
+                    LiveOrGithubWidget(projectModel: widget.projectModel),
                   ],
                 ),
               ),
@@ -230,11 +160,5 @@ class _ProjectCardState extends State<ProjectCard> {
         ),
       ),
     );
-  }
-
-  Future<void> _launchUrl(String url) async {
-    if (!await launchUrl(Uri.parse(url))) {
-      throw Exception('Could not launch $url');
-    }
   }
 }
