@@ -13,3 +13,5 @@ class GlobalKeys {
   static final KEY_WEB_MOBILEPORTFOLIO = GlobalKey();
   static final KEY_WEB_3DPORTFOLIO = GlobalKey();
 }
+
+GlobalKey<ScaffoldState> KEY_DRAWER = GlobalKey<ScaffoldState>();

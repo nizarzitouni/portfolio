@@ -4,7 +4,7 @@ abstract class Pallete {
   static const Color blackColor = Color(0xFF121212);
   static const Color blackGreyColor = Color(0xFF292929);
 
-  static const Color mainColor = Color(0xFF0E1636);
+  static const Color mainColor = Color(0xFFf91181);
   static const Color mainTwoColor = Color(0xFF090f27);
   static const Color secondColor = Color(0xFFf91181);
 
