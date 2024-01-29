@@ -1,17 +1,21 @@
+import 'package:nizar_ztn_portfolio/core/constants.dart';
+
 import 'project_image_model.dart';
 
 class ProjectModel {
+  final String projectId;
   final String projectTitle;
-  String? liveUrl;
   final bool isLive;
   final String projectDescription;
   final String role;
   final List<String> techStacks;
-  // final List<String>? appScreens;
   final ProjectImageModel projectImageModel;
+  final List<String>? appScreens;
+  String? liveUrl;
   String? githubUrl;
 
   ProjectModel({
+    required this.projectId,
     required this.projectTitle,
     required this.liveUrl,
     required this.isLive,
@@ -20,5 +24,8 @@ class ProjectModel {
     required this.techStacks,
     required this.projectImageModel,
     required this.githubUrl,
+    required this.appScreens,
   });
 }
+
+final List<String> appScreensEmpty = [AssetsConstants.placeHolderImage];

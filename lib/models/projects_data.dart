@@ -1,9 +1,11 @@
+import '../core/image_paths.dart';
 import 'project_image_model.dart';
 import 'project_model.dart';
 
 abstract class ProjectData {
   static List<ProjectModel> mobileDevProjectList = [
     ProjectModel(
+      projectId: '0',
       projectTitle: "Just Delete Me",
       liveUrl: "https://play.google.com/store/apps/details?id=com.nizarztn.justdeleteme",
       projectDescription:
@@ -17,8 +19,10 @@ abstract class ProjectData {
       projectImageModel: jdmImges,
       isLive: true,
       githubUrl: null,
+      appScreens: ImagesPath.jdmImgListScreens,
     ),
     ProjectModel(
+      projectId: '1',
       projectTitle: "Quick Qr Pro",
       liveUrl: "https://play.google.com/store/apps/details?id=com.nizarztn.quickqrpro",
       projectDescription:
@@ -33,8 +37,10 @@ abstract class ProjectData {
       projectImageModel: qqpImges,
       isLive: true,
       githubUrl: null,
+      appScreens: ImagesPath.qqpImgListScreens,
     ),
     ProjectModel(
+      projectId: '2',
       projectTitle: "Speedy Invoice",
       liveUrl: "https://play.google.com/store/apps/details?id=com.nizarztn.speedyInvoice",
       projectDescription:
@@ -49,8 +55,10 @@ abstract class ProjectData {
       projectImageModel: igImges,
       isLive: true,
       githubUrl: null,
+      appScreens: ImagesPath.qqpImgListScreens,
     ),
     ProjectModel(
+      projectId: '3',
       projectTitle: "Sa3arli",
       liveUrl: "https://play.google.com/store/apps/details?id=nx.nizarztn.carimp",
       projectDescription:
@@ -63,8 +71,10 @@ abstract class ProjectData {
       projectImageModel: saImges,
       isLive: true,
       githubUrl: null,
+      appScreens: ImagesPath.saImgListScreens,
     ),
     ProjectModel(
+      projectId: '4',
       projectTitle: "Tiktok Clone",
       liveUrl: "https://github.com/nizarzitouni/Tiktok-flutter-clone",
       projectDescription: "In this app i created a tiktok clone with firebase as a database",
@@ -78,8 +88,10 @@ abstract class ProjectData {
       projectImageModel: tiktokCloneImges,
       isLive: false,
       githubUrl: "https://github.com/nizarzitouni/Tiktok-flutter-clone",
+      appScreens: appScreensEmpty,
     ),
     ProjectModel(
+      projectId: '5',
       projectTitle: "NX Shop",
       liveUrl: "https://github.com/nizarzitouni/NX-Shop",
       projectDescription: "An Ecomerce app with an admin app also",
@@ -94,6 +106,7 @@ abstract class ProjectData {
       projectImageModel: nxShopImges,
       isLive: false,
       githubUrl: "https://github.com/nizarzitouni/NX-Shop",
+      appScreens: appScreensEmpty,
     ),
   ];
 
@@ -113,6 +126,7 @@ abstract class ProjectData {
 
   static List<ProjectModel> threeDProjectList = [
     ProjectModel(
+      projectId: '50',
       projectTitle: "PolyTown",
       liveUrl: "https://sketchfab.com/3d-models/polytown-low-poly-city-pack-699546b57f3e4b38986061e995ac20ad",
       projectDescription:
@@ -124,8 +138,10 @@ abstract class ProjectData {
       projectImageModel: polyTownImges,
       isLive: true,
       githubUrl: null,
+      appScreens: appScreensEmpty,
     ),
     ProjectModel(
+      projectId: '51',
       projectTitle: "Medieval Pack",
       liveUrl: "https://assetstore.unity.com/packages/3d/environments/historic/medieval-indoor-kit-3d-224308",
       projectDescription: "A package of modular architecture assets, props, and walls for creating medieval-themed interiors in your game.",
@@ -136,8 +152,10 @@ abstract class ProjectData {
       projectImageModel: medievalImges,
       isLive: true,
       githubUrl: null,
+      appScreens: appScreensEmpty,
     ),
     ProjectModel(
+      projectId: '52',
       projectTitle: "Blaster Pranks - Epic Toys",
       liveUrl: "https://apkcombo.com/blaster-pranks-epic-toys/com.blaster.prank.epic.toys.blast/",
       projectDescription: "I created all the levels of the game from greyboxing to the assets",
@@ -148,8 +166,10 @@ abstract class ProjectData {
       projectImageModel: blasterImges,
       isLive: true,
       githubUrl: null,
+      appScreens: appScreensEmpty,
     ),
     ProjectModel(
+      projectId: '53',
       projectTitle: "Double Jump",
       liveUrl: "https://www.doublejump.wtf/",
       projectDescription: "I worked as a level designer for Blank labs studio",
@@ -160,6 +180,7 @@ abstract class ProjectData {
       projectImageModel: djImges,
       isLive: true,
       githubUrl: null,
+      appScreens: appScreensEmpty,
     ),
   ];
 }

@@ -21,7 +21,6 @@ abstract class AssetsConstants {
   // static const String logoOneImage = '${_assetImagePath}tuneHub text 1$_png';
   static const String placeHolderImage = '${_assetImagePath}place_holder_img$_jpg';
   static const String flutterImage = '${_assetIconPath}flutter_logo$_png';
-  static const String emailIcon = '${_assetIconPath}email$_png';
 
 //~~~~~~~~~~~~~~Icons~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // static const String appDrawerImageIcon = '${_assetIconPath}app_drawer$_png';
