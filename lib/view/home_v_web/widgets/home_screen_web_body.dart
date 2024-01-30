@@ -11,7 +11,7 @@ import '../sections/about/web_about.dart';
 import '../sections/contact/web_conatct.dart';
 import '../sections/home/web_home.dart';
 import 'web_menu_header.dart';
-import '../sections/projects/web_mobile_projects.dart';
+import '../sections/projects/web_flutter_projects.dart';
 
 class HomeScreenWebBody extends StatelessWidget {
   const HomeScreenWebBody({Key? key}) : super(key: key);
@@ -35,9 +35,9 @@ class HomeScreenWebBody extends StatelessWidget {
                 const SmallBarTitle(text: ABOUT_HEADER),
                 WebAbout(key: GlobalKeys.KEY_WEB_ABOUTME),
                 const SmallBarTitle(text: MOBILEPROJECTS_HEADER),
-                WebMobileProjects(key: GlobalKeys.KEY_WEB_MOBILEPORTFOLIO, projectModelsList: ProjectData.mobileDevProjectList),
+                WebFlutterProjects(key: GlobalKeys.KEY_WEB_MOBILEPORTFOLIO, projectModelsList: ProjectData.mobileDevProjectList),
                 const SmallBarTitle(text: THREED_HEADER),
-                WebMobileProjects(key: GlobalKeys.KEY_WEB_3DPORTFOLIO, projectModelsList: ProjectData.threeDProjectList),
+                WebFlutterProjects(key: GlobalKeys.KEY_WEB_3DPORTFOLIO, projectModelsList: ProjectData.threeDProjectList),
                 const SmallBarTitle(text: CONTACT_HEADER),
                 WebContact(key: GlobalKeys.KEY_WEB_CONTACTME),
                 const Gap(40),

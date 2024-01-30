@@ -72,7 +72,6 @@ class _ProjectCardState extends State<ProjectCard> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Container(
-                //  width: 330.58,
                 height: 300,
                 decoration: BoxDecoration(
                   image: DecorationImage(
@@ -84,7 +83,6 @@ class _ProjectCardState extends State<ProjectCard> {
               Padding(
                 padding: const EdgeInsets.only(left: 8, right: 8, top: 8),
                 child: SizedBox(
-                  //  width: 100,
                   height: 100,
                   child: ResponsiveGridList(
                     // Vertical space around the grid

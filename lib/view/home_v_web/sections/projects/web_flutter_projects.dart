@@ -4,8 +4,8 @@ import 'package:responsive_grid_list/responsive_grid_list.dart';
 
 import 'widgets/project_card.dart';
 
-class WebMobileProjects extends StatelessWidget {
-  const WebMobileProjects({Key? key, required this.projectModelsList}) : super(key: key);
+class WebFlutterProjects extends StatelessWidget {
+  const WebFlutterProjects({Key? key, required this.projectModelsList}) : super(key: key);
   final List<ProjectModel> projectModelsList;
 
   @override
