@@ -1,3 +1,5 @@
+// ignore_for_file: deprecated_member_use
+
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:gap/gap.dart';
@@ -32,12 +34,7 @@ class ProfileInfo extends StatelessWidget {
         const Gap(20),
         Text(
           position,
-          style: TextStyle(
-            fontSize: 34,
-            fontWeight: FontWeight.w500,
-            fontFamily: GoogleFonts.teko().fontFamily,
-            color: Pallete.whiteColor,
-          ),
+          style: TextStyle(fontSize: 34, fontWeight: FontWeight.w500, fontFamily: GoogleFonts.teko().fontFamily, color: Pallete.whiteColor),
         ),
         Text("Based in $basedIn", style: const TextStyle(fontSize: 18)),
         const Gap(10),
@@ -52,66 +49,50 @@ class ProfileInfo extends StatelessWidget {
                 wActions.text == null
                     ? RawMaterialButton(
                         constraints: const BoxConstraints(
-                          maxWidth: 30.0, // Set the minimum width
-                          minWidth: 30.0,
-                          maxHeight: 30,
-                          minHeight: 30,
+                          maxWidth: 20,
+                          minWidth: 20,
+                          maxHeight: 20,
+                          minHeight: 20,
                         ),
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(8.0),
-                        ),
-                        hoverColor: Pallete.whiteColor.withOpacity(.4), // Set the hover color
-
+                        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8.0)),
+                        hoverColor: Pallete.whiteColor.withOpacity(.4),
                         onPressed: () {
                           launchWithUri(url: wActions.webUrl);
                         },
                         child: SvgPicture.asset(
                           wActions.assetImagePath,
-                          height: 20,
-                          width: 20,
-                          colorFilter: const ColorFilter.mode(Pallete.whiteColor, BlendMode.srcIn),
+                          height: 18,
+                          width: 18,
+                          color: Pallete.whiteColor,
+                          //colorFilter: const ColorFilter.mode(Pallete.whiteColor, BlendMode.srcIn),
                         ),
                       )
-                    : Padding(
-                        padding: const EdgeInsets.only(left: 20),
-                        child: RawMaterialButton(
-                          // constraints: const BoxConstraints(
-                          //   maxWidth: 30.0, // Set the minimum width
-                          //   minWidth: 30.0,
-                          //   maxHeight: 30,
-                          //   minHeight: 30,
-                          // ),
-                          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8.0)),
-                          hoverColor: Pallete.whiteColor.withOpacity(.4), // Set the hover color
-                          fillColor: Pallete.whiteColor.withOpacity(.2),
-                          onPressed: () {
-                            launchWithUri(url: wActions.webUrl);
-                            html.window.open(
-                              wActions.webUrl,
-                              "pdf",
-                            );
-                          },
-                          child: Row(
-                            mainAxisSize: MainAxisSize.min,
-                            mainAxisAlignment: MainAxisAlignment.start,
-                            crossAxisAlignment: CrossAxisAlignment.center,
-                            children: [
-                              SvgPicture.asset(
-                                wActions.assetImagePath,
-                                height: 20,
-                                width: 20,
-                                colorFilter: const ColorFilter.mode(Pallete.whiteColor, BlendMode.srcIn),
-                              ),
-                              const SizedBox(width: 6.0),
-                              Text(
-                                wActions.text!,
-                                style: const TextStyle(
-                                  color: Colors.white,
-                                  fontWeight: FontWeight.w400,
-                                ),
-                              ),
-                            ],
-                          ),
+                    : RawMaterialButton(
+                        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8.0)),
+                        hoverColor: Pallete.whiteColor.withOpacity(.2), // Set the hover color
+                        fillColor: Pallete.whiteColor.withOpacity(.1),
+                        onPressed: () {
+                          launchWithUri(url: wActions.webUrl);
+                          html.window.open(wActions.webUrl, "pdf");
+                        },
+                        child: Row(
+                          mainAxisSize: MainAxisSize.min,
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          children: [
+                            SvgPicture.asset(
+                              wActions.assetImagePath,
+                              height: 20,
+                              width: 20,
+                              // colorFilter: const ColorFilter.mode(Pallete.whiteColor, BlendMode.srcIn),
+                              color: Pallete.whiteColor,
+                            ),
+                            const SizedBox(width: 6.0),
+                            Text(
+                              wActions.text!,
+                              style: const TextStyle(color: Colors.white, fontWeight: FontWeight.w400),
+                            ),
+                          ],
                         ),
                       ),
             ],

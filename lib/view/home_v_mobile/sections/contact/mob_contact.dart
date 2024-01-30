@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:gap/gap.dart';
 
-import '../../../core/constants.dart';
-import '../../../core/functions.dart';
-import '../../../core/pallete.dart';
+import '../../../../core/constants.dart';
+import '../../../../core/functions.dart';
+import '../../../../core/pallete.dart';
 
 class MobContact extends StatelessWidget {
   const MobContact({Key? key}) : super(key: key);
@@ -57,10 +57,7 @@ class MobContact extends StatelessWidget {
                       const SizedBox(width: 12.0),
                       const Text(
                         'ztn.nizar@gmail.com',
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontWeight: FontWeight.w400,
-                        ),
+                        style: TextStyle(color: Colors.white, fontWeight: FontWeight.w400),
                       ),
                     ],
                   ),

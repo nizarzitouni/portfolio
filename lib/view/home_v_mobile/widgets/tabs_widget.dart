@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 
 import '../../../core/pallete.dart';
 import '../../../models/projects_data.dart';
-import '../about/mob_about.dart';
-import '../contact/mob_contact.dart';
-import '../home/mob_home.dart';
-import '../projects/mob_flutter_projects.dart';
+import '../sections/about/mob_about.dart';
+import '../sections/contact/mob_contact.dart';
+import '../sections/home/mob_home.dart';
+import '../sections/projects/mob_flutter_projects.dart';
 
 class TabsWidget extends StatefulWidget {
   const TabsWidget({Key? key}) : super(key: key);

@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
-import '../../../core/constants.dart';
-import '../../../core/image_paths.dart';
-import '../../../models/web_action_model.dart';
-import '../../home_v_web/sections/home/widgets/circular_dashed_border.dart';
-import '../../home_v_web/sections/home/widgets/profile_info.dart';
-import '../../home_v_web/sections/home/widgets/quote_widget.dart';
+import '../../../../core/constants.dart';
+import '../../../../core/image_paths.dart';
+import '../../../../models/web_action_model.dart';
+import '../../../home_v_web/sections/home/widgets/circular_dashed_border.dart';
+import '../../../home_v_web/sections/home/widgets/profile_info.dart';
+import 'widgets/mob_wuote_widget.dart';
 
 class MobHome extends StatelessWidget {
   const MobHome({Key? key}) : super(key: key);
@@ -59,8 +59,8 @@ class MobHome extends StatelessWidget {
               imagePadding: MediaQuery.of(context).size.width * 0.05,
             ),
             // const Gap(20),
-            const Gap(10),
-            const QuoteWidget(),
+            const Gap(30),
+            const MobWuoteWidget(),
           ],
         ),
       ),

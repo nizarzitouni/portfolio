@@ -5,10 +5,10 @@ import '../../../core/constants.dart';
 import '../../../core/global_keys.dart';
 import '../../../core/pallete.dart';
 import '../../../models/projects_data.dart';
+import '../sections/about/about_web.dart';
 import '../sections/made_with_flutter.dart';
 import 'small_bar_title.dart';
-import '../sections/about/web_about.dart';
-import '../sections/contact/web_conatct.dart';
+import '../sections/contact/conatct_web.dart';
 import '../sections/home/web_home.dart';
 import 'web_menu_header.dart';
 import '../sections/projects/web_flutter_projects.dart';
@@ -33,13 +33,13 @@ class HomeScreenWebBody extends StatelessWidget {
               children: [
                 WebHome(key: GlobalKeys.KEY_WEB_HOME),
                 const SmallBarTitle(text: ABOUT_HEADER),
-                WebAbout(key: GlobalKeys.KEY_WEB_ABOUTME),
+                AboutWeb(key: GlobalKeys.KEY_WEB_ABOUTME),
                 const SmallBarTitle(text: MOBILEPROJECTS_HEADER),
                 WebFlutterProjects(key: GlobalKeys.KEY_WEB_MOBILEPORTFOLIO, projectModelsList: ProjectData.mobileDevProjectList),
                 const SmallBarTitle(text: THREED_HEADER),
                 WebFlutterProjects(key: GlobalKeys.KEY_WEB_3DPORTFOLIO, projectModelsList: ProjectData.threeDProjectList),
                 const SmallBarTitle(text: CONTACT_HEADER),
-                WebContact(key: GlobalKeys.KEY_WEB_CONTACTME),
+                ContactWeb(key: GlobalKeys.KEY_WEB_CONTACTME),
                 const Gap(40),
                 const MadeWithFlutterButton(),
                 const Gap(30),

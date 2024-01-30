@@ -6,8 +6,8 @@ import 'package:nizar_ztn_portfolio/core/constants.dart';
 import '../../../../core/functions.dart';
 import '../../../../core/pallete.dart';
 
-class WebContact extends StatelessWidget {
-  const WebContact({super.key});
+class ContactWeb extends StatelessWidget {
+  const ContactWeb({super.key});
 
   @override
   Widget build(BuildContext context) {

@@ -1,6 +1,6 @@
 import 'package:flutter/widgets.dart';
 
-import '../../../core/constants.dart';
+import '../../../../core/constants.dart';
 
 class MobAbout extends StatelessWidget {
   const MobAbout({Key? key}) : super(key: key);

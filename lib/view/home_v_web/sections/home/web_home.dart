@@ -8,7 +8,7 @@ import '../../../../core/size_config.dart';
 import '../../../../models/web_action_model.dart';
 import 'widgets/circular_dashed_border.dart';
 import 'widgets/profile_info.dart';
-import 'widgets/quote_widget.dart';
+import 'widgets/web_quote_widget.dart';
 
 class WebHome extends StatelessWidget {
   const WebHome({super.key});
@@ -83,7 +83,7 @@ class WebHome extends StatelessWidget {
                   ],
                 ),
                 // const Gap(20),
-                const QuoteWidget(),
+                const WebQuoteWidget(),
                 const Gap(40),
               ],
             ),

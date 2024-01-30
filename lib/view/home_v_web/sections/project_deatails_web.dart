@@ -1,14 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
+import 'package:go_router/go_router.dart';
 import 'package:nizar_ztn_portfolio/core/routes/app_router.dart';
 import 'package:nizar_ztn_portfolio/models/project_model.dart';
 import 'package:nizar_ztn_portfolio/view/home_v_web/widgets/live_or_github_widget.dart';
 
-import '../../core/size_config.dart';
-import '../../models/projects_data.dart';
-import 'widgets/center_top_widget.dart';
-import 'widgets/crousal_indicator.dart';
-import 'widgets/hover_underline.dart';
+import '../../../core/size_config.dart';
+import '../../../models/projects_data.dart';
+import '../widgets/center_top_widget.dart';
+import '../widgets/crousal_indicator.dart';
+import '../widgets/hover_underline.dart';
 
 class ProjectDeatailsWeb extends StatelessWidget {
   const ProjectDeatailsWeb({Key? key, required this.projectId}) : super(key: key);
@@ -16,11 +17,18 @@ class ProjectDeatailsWeb extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    ProjectModel projectModel;
+    if (int.parse(projectId) < 50) {
+      projectModel = ProjectData.mobileDevProjectList.firstWhere((project) => project.projectId == projectId);
+    } else {
+      projectModel = ProjectData.threeDProjectList.firstWhere((project) => project.projectId == projectId);
+    }
+
     return Scaffold(
       body: LayoutBuilder(
         builder: (context, constraints) {
           double containerWidth = constraints.maxWidth * 0.7;
-          ProjectModel projectModel = ProjectData.mobileDevProjectList[int.parse(projectId)];
+
           return CenterTopWidget(
             myWidget: SizedBox(
               width: containerWidth,
@@ -35,7 +43,7 @@ class ProjectDeatailsWeb extends StatelessWidget {
                       Padding(
                         padding: const EdgeInsets.only(right: 15),
                         child: IconButton(
-                          onPressed: () => AppRouter.router.push(kHomeView),
+                          onPressed: () => context.go(kHomeView),
                           icon: const Icon(Icons.arrow_back_ios_new_outlined),
                         ),
                       ),

@@ -6,18 +6,18 @@ import 'package:responsive_grid_list/responsive_grid_list.dart';
 import '../../../../../models/project_model.dart';
 import '../../../widgets/live_or_github_widget.dart';
 
-class ProjectCard extends StatefulWidget {
+class WebProjectCard extends StatefulWidget {
   final ProjectModel projectModel;
-  const ProjectCard({
+  const WebProjectCard({
     Key? key,
     required this.projectModel,
   }) : super(key: key);
 
   @override
-  State<ProjectCard> createState() => _ProjectCardState();
+  State<WebProjectCard> createState() => _WebProjectCardState();
 }
 
-class _ProjectCardState extends State<ProjectCard> {
+class _WebProjectCardState extends State<WebProjectCard> {
   bool isHover = false;
 
   @override

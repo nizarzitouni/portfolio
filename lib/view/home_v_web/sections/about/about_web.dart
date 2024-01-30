@@ -3,8 +3,8 @@ import 'package:gap/gap.dart';
 
 import '../../../../core/constants.dart';
 
-class WebAbout extends StatelessWidget {
-  const WebAbout({super.key});
+class AboutWeb extends StatelessWidget {
+  const AboutWeb({super.key});
 
   @override
   Widget build(BuildContext context) {

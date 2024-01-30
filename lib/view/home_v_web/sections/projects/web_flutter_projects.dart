@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:nizar_ztn_portfolio/models/project_model.dart';
 import 'package:responsive_grid_list/responsive_grid_list.dart';
 
-import 'widgets/project_card.dart';
+import 'widgets/web_project_card.dart';
 
 class WebFlutterProjects extends StatelessWidget {
   const WebFlutterProjects({Key? key, required this.projectModelsList}) : super(key: key);
@@ -27,13 +27,14 @@ class WebFlutterProjects extends StatelessWidget {
               minItemsPerRow: 1, // The minimum items to show in a single row. Takes precedence over minItemWidth
               maxItemsPerRow: 5, // The maximum items to show in a single row. Can be useful on large screens
               listViewBuilderOptions: ListViewBuilderOptions(
-                  shrinkWrap: true,
-                  physics: const NeverScrollableScrollPhysics()), // Options that are getting passed to the ListView.builder() function
+                shrinkWrap: true,
+                physics: const BouncingScrollPhysics(),
+              ), // Options that are getting passed to the ListView.builder() function
               children: List.generate(
                 projectModelsList.length,
                 (index) {
                   ProjectModel project = projectModelsList[index];
-                  return ProjectCard(
+                  return WebProjectCard(
                     projectModel: project,
                   );
                 },
