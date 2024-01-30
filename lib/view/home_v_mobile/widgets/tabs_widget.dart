@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:nizar_ztn_portfolio/core/pallete.dart';
 
 import '../../../core/constants.dart';
+import '../home/mob_home.dart';
 
 class TabsWidget extends StatefulWidget {
   const TabsWidget({Key? key}) : super(key: key);
@@ -30,23 +32,27 @@ class _TabsWidgetState extends State<TabsWidget> with SingleTickerProviderStateM
   Widget build(BuildContext context) {
     return Column(
       children: [
-        TabBar(
-          isScrollable: true,
-          tabAlignment: TabAlignment.start,
-          controller: _tabController,
-          tabs: const [
-            Tab(text: "Home"),
-            Tab(text: "About"),
-            Tab(text: "Mobile Projects"),
-            Tab(text: "3D Project"),
-            Tab(text: "Contact"),
-          ],
+        Container(
+          color: Pallete.blackGreyColor,
+          child: TabBar(
+            isScrollable: true,
+            tabAlignment: TabAlignment.start,
+            controller: _tabController,
+            indicatorColor: Colors.blue, // Change the color to your preference
+            tabs: const [
+              Tab(text: "Home"),
+              Tab(text: "About"),
+              Tab(text: "Mobile Projects"),
+              Tab(text: "3D Project"),
+              Tab(text: "Contact"),
+            ],
+          ),
         ),
         Expanded(
           child: TabBarView(
             controller: _tabController,
             children: const [
-              Center(child: Text(HOME_HEADER)),
+              MobHome(),
               Center(child: Text(ABOUT_HEADER)),
               Center(child: Text(MOBILEPROJECTS_HEADER)),
               Center(child: Text(THREED_HEADER)),
