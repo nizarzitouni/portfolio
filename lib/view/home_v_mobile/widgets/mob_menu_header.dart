@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:gap/gap.dart';
-import 'package:nizar_ztn_portfolio/core/global_keys.dart';
 
-import '../../../core/size_config.dart';
+import '../../../core/pallete.dart';
 import '../../home_v_web/widgets/navbar_logo.dart';
 
 class MobMenuHeader extends StatelessWidget {
@@ -10,25 +8,16 @@ class MobMenuHeader extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.all(8.0),
-      child: Row(
-        mainAxisSize: MainAxisSize.min,
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+    return Container(
+      color: Pallete.blackGreyColor,
+      height: 60,
+      padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+      child: const Row(
+        mainAxisSize: MainAxisSize.max,
+        mainAxisAlignment: MainAxisAlignment.start,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          IconButton(
-            highlightColor: Colors.white54,
-            splashRadius: 10.0,
-            onPressed: () {
-              KEY_DRAWER.currentState!.openDrawer();
-            },
-            icon: const Icon(
-              Icons.menu,
-            ),
-          ),
-          Gap(SizeConfig.screenWidth * .6),
-          const NavBarLogo(),
+          NavBarLogo(),
         ],
       ),
     );
