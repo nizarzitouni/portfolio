@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:nizar_ztn_portfolio/core/pallete.dart';
+import 'package:nizar_ztn_portfolio/view/home_v_mobile/about/mob_about.dart';
 
 import '../../../core/constants.dart';
 import '../home/mob_home.dart';
@@ -53,7 +54,7 @@ class _TabsWidgetState extends State<TabsWidget> with SingleTickerProviderStateM
             controller: _tabController,
             children: const [
               MobHome(),
-              Center(child: Text(ABOUT_HEADER)),
+              MobAbout(),
               Center(child: Text(MOBILEPROJECTS_HEADER)),
               Center(child: Text(THREED_HEADER)),
               Center(child: Text(CONTACT_HEADER)),

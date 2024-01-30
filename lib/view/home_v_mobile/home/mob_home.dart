@@ -3,7 +3,6 @@ import 'package:gap/gap.dart';
 
 import '../../../core/constants.dart';
 import '../../../core/image_paths.dart';
-import '../../../core/size_config.dart';
 import '../../../models/web_action_model.dart';
 import '../../home_v_web/sections/home/widgets/circular_dashed_border.dart';
 import '../../home_v_web/sections/home/widgets/profile_info.dart';

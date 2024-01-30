@@ -14,14 +14,14 @@ class QuoteWidget extends StatelessWidget {
           Positioned(
             left: 0,
             right: 0,
-            top: 30,
+            top: 40,
             child: Container(
               decoration: BoxDecoration(border: Border.all(color: Colors.white)),
               child: const Padding(
                 padding: EdgeInsets.all(12.0),
                 child: Text(
                   "Overthinking is the enemy of execution.",
-                  style: TextStyle(fontWeight: FontWeight.w500, fontSize: 24),
+                  style: TextStyle(fontWeight: FontWeight.w500, fontSize: 20),
                 ),
               ),
             ),
@@ -35,7 +35,7 @@ class QuoteWidget extends StatelessWidget {
                 padding: EdgeInsets.all(11.0),
                 child: Text(
                   "- Tony Robbins",
-                  style: TextStyle(fontWeight: FontWeight.w500, fontSize: 24),
+                  style: TextStyle(fontWeight: FontWeight.w500, fontSize: 20),
                 ),
               ),
             ),
