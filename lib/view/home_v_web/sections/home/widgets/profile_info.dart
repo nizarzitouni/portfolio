@@ -63,8 +63,8 @@ class ProfileInfo extends StatelessWidget {
                           wActions.assetImagePath,
                           height: 18,
                           width: 18,
-                          color: Pallete.whiteColor,
-                          //colorFilter: const ColorFilter.mode(Pallete.whiteColor, BlendMode.srcIn),
+                          // color: Pallete.whiteColor,
+                          colorFilter: const ColorFilter.mode(Pallete.whiteColor, BlendMode.srcIn),
                         ),
                       )
                     : RawMaterialButton(
@@ -84,8 +84,8 @@ class ProfileInfo extends StatelessWidget {
                               wActions.assetImagePath,
                               height: 20,
                               width: 20,
-                              // colorFilter: const ColorFilter.mode(Pallete.whiteColor, BlendMode.srcIn),
-                              color: Pallete.whiteColor,
+                              colorFilter: const ColorFilter.mode(Pallete.whiteColor, BlendMode.srcIn),
+                              // color: Pallete.whiteColor,
                             ),
                             const SizedBox(width: 6.0),
                             Text(

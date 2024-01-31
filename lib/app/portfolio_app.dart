@@ -15,8 +15,6 @@ class PortfolioApp extends StatelessWidget {
       theme: ThemeData.dark().copyWith(scaffoldBackgroundColor: Pallete.blackColor),
       title: AppInformation.title,
       routerConfig: AppRouter.router,
-      // routerDelegate: AppRouter.router.routerDelegate,
-      // routeInformationParser: AppRouter.router.routeInformationParser,
     );
   }
 }

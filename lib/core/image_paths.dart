@@ -40,4 +40,22 @@ class ImagesPath {
     'assets/images/sa4.png',
     'assets/images/sa5.png',
   ];
+  static final List<String> nxShopistScreens = [
+    'assets/images/nx1.png',
+    'assets/images/nx2.png',
+    'assets/images/nx3.png',
+    'assets/images/nx4.png',
+    'assets/images/nx5.png',
+    'assets/images/nx6.png',
+  ];
+  static final List<String> foodAppScreens = [
+    'assets/images/foodapp1.jpg',
+    'assets/images/foodapp2.jpg',
+  ];
+  static final List<String> psScreens = [
+    'assets/images/ps.jpg',
+    'assets/images/ps2.jpg',
+    'assets/images/ps3.jpg',
+    'assets/images/ps4.jpg',
+  ];
 }

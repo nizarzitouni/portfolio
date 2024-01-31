@@ -9,13 +9,13 @@ abstract class ProjectData {
       projectTitle: "Just Delete Me",
       liveUrl: "https://play.google.com/store/apps/details?id=com.nizarztn.justdeleteme",
       projectDescription:
-          "\"JUST DELETE ME\" is a directory simplifying the account deletion process by countering dark pattern techniques used by companies.",
+          "\"JUST DELETE ME\" is a directory simplifying the account deletion process by countering dark pattern techniques used by companies. With over 10k downloads on the store, this Flutter app has successfully provided users with a straightforward solution for managing their online presence.",
       techStacks: [
         "Flutter",
         "GetX",
         "Shared Preferences",
       ],
-      role: "I was the creator of the whole app",
+      role: "Sole creator of the entire app",
       projectImageModel: jdmImges,
       isLive: true,
       githubUrl: null,
@@ -23,17 +23,17 @@ abstract class ProjectData {
     ),
     ProjectModel(
       projectId: '1',
-      projectTitle: "Quick Qr Pro",
+      projectTitle: "Quick QR Pro",
       liveUrl: "https://play.google.com/store/apps/details?id=com.nizarztn.quickqrpro",
       projectDescription:
-          "Quick QR Pro: The ultimate QR code app with easy scanning and custom code creation, featuring logo integration for personalized and branded code experiences.",
+          "Quick QR Pro: The ultimate QR code app with easy scanning and custom code creation. Featuring logo integration, this app offers personalized and branded code experiences for various needs.",
       techStacks: [
         "Flutter",
         "GetX",
         "SqLite",
         "Storage",
       ],
-      role: "I was the creator of the whole app",
+      role: "Sole creator of the entire app",
       projectImageModel: qqpImges,
       isLive: true,
       githubUrl: null,
@@ -44,14 +44,14 @@ abstract class ProjectData {
       projectTitle: "Speedy Invoice",
       liveUrl: "https://play.google.com/store/apps/details?id=com.nizarztn.speedyInvoice",
       projectDescription:
-          "Speedy Invoice: Streamlined mobile tool for swift bill and estimate creation, ideal for small businesses and freelancers seeking efficient on-the-go billing management.",
+          "Speedy Invoice: A streamlined mobile tool for swift bill and estimate creation. Ideal for small businesses and freelancers, offering efficient on-the-go billing management.",
       techStacks: [
         "Flutter",
         "GetX",
         "SqLite",
         "Storage",
       ],
-      role: "I was the creator of the whole app",
+      role: "Sole creator of the entire app",
       projectImageModel: igImges,
       isLive: true,
       githubUrl: null,
@@ -62,12 +62,12 @@ abstract class ProjectData {
       projectTitle: "Sa3arli",
       liveUrl: "https://play.google.com/store/apps/details?id=nx.nizarztn.carimp",
       projectDescription:
-          "Importing a car to Algeria? Our app provides quick and accurate cost estimates, factoring in customs tariffs. Download now for confidence in your import decisions!",
+          "Facilitating car imports to Algeria! Our Flutter app provides quick and accurate cost estimates, incorporating customs tariffs. Download now for confidence in your import decisions.",
       techStacks: [
         "Flutter",
         "Bloc",
       ],
-      role: "I was the creator of the whole app",
+      role: "Sole creator of the entire app",
       projectImageModel: saImges,
       isLive: true,
       githubUrl: null,
@@ -76,15 +76,16 @@ abstract class ProjectData {
     ProjectModel(
       projectId: '4',
       projectTitle: "Tiktok Clone",
-      liveUrl: "https://github.com/nizarzitouni/Tiktok-flutter-clone",
-      projectDescription: "In this app i created a tiktok clone with firebase as a database",
+      liveUrl: null,
+      projectDescription:
+          "Developed a TikTok Clone using Flutter, GetX, Firebase, and Firestore DB. This app replicates the key functionalities of TikTok, allowing users to create, upload, and interact with short videos. As the sole creator, I implemented features such as video playback, user interactions, and seamless video uploads. Explore the source code on GitHub to understand the inner workings of this Flutter project.",
       techStacks: [
         "Flutter",
-        "GetْX",
+        "GetX",
         "Firebase",
         "Firestore DB",
       ],
-      role: "I was the creator of the whole app",
+      role: "Sole creator of the entire app",
       projectImageModel: tiktokCloneImges,
       isLive: false,
       githubUrl: "https://github.com/nizarzitouni/Tiktok-flutter-clone",
@@ -93,20 +94,53 @@ abstract class ProjectData {
     ProjectModel(
       projectId: '5',
       projectTitle: "NX Shop",
-      liveUrl: "https://github.com/nizarzitouni/NX-Shop",
-      projectDescription: "An Ecomerce app with an admin app also",
+      liveUrl: null,
+      projectDescription:
+          "Developed a revolutionary E-commerce app with a dedicated admin companion. The client app ensures a seamless shopping experience, while the admin app empowers administrators with essential CRUD functionalities for efficient product management. Tech stack includes Flutter, Dio, GetX, SQLite, Shared Preferences, Firebase, and Firestore for dynamic data storage. As the sole creator, I led the development of both client and admin apps.",
       techStacks: [
         "Flutter",
-        "Dio",
         "GetX",
+        "GetStorage",
         "SqlLite",
-        "Shared Prefrences",
+        "Shared Preferences",
+        "Firebase",
+        "Firestore",
       ],
-      role: "I was the creator of the whole app",
+      role: "Sole creator of both client and admin apps",
       projectImageModel: nxShopImges,
       isLive: false,
       githubUrl: "https://github.com/nizarzitouni/NX-Shop",
-      appScreens: appScreensEmpty,
+      appScreens: ImagesPath.nxShopistScreens,
+    ),
+    ProjectModel(
+      projectId: '6',
+      projectTitle: "Food App UI",
+      liveUrl: null,
+      projectDescription:
+          "Created a Flutter UI project for a visually appealing food app. Explore my GitHub repository to witness my skills in crafting intuitive and aesthetically pleasing user interfaces.",
+      techStacks: [
+        "Flutter",
+      ],
+      role: "Sole developer for UI design and implementation",
+      projectImageModel: foodAppImages,
+      isLive: false,
+      githubUrl: "https://github.com/nizarzitouni/Food-Flutter-App-UI",
+      appScreens: ImagesPath.foodAppScreens,
+    ),
+    ProjectModel(
+      projectId: '7',
+      projectTitle: "Sneakers Shop",
+      liveUrl: null,
+      projectDescription:
+          "Prototype app for a local peak sneakers store. Check out the code on GitHub for a glimpse into the development process.",
+      techStacks: [
+        "Flutter",
+      ],
+      role: "Sole developer for UI design and implementation",
+      projectImageModel: psImages,
+      isLive: false,
+      githubUrl: "https://github.com/nizarzitouni/sneakerzi",
+      appScreens: ImagesPath.psScreens,
     ),
   ];
 
@@ -172,11 +206,13 @@ abstract class ProjectData {
       projectId: '53',
       projectTitle: "Double Jump",
       liveUrl: "https://www.doublejump.wtf/",
-      projectDescription: "I worked as a level designer for Blank labs studio",
+      projectDescription:
+          "As the dedicated Level Designer at Blank Labs Gaming Studio from 2023 to present, I played a pivotal role in shaping the gaming experience. Leveraging my expertise in Unity 3D and Blender 3D, I crafted and fine-tuned captivating game levels. In a collaborative team of 20, I actively contributed to building pipelines, introducing innovative features, and meticulously optimizing game performance for both web and mobile platforms.",
       techStacks: [
-        "Blender",
+        "Unity",
+        "Blender 3D",
       ],
-      role: "I was the creator of the whole app",
+      role: "Level Designer in a team of 20",
       projectImageModel: djImges,
       isLive: true,
       githubUrl: null,
@@ -207,8 +243,16 @@ final ProjectImageModel tiktokCloneImges = ProjectImageModel(
   projectCover: 'assets/images/tiktok_clone_cover.jpeg',
 );
 final ProjectImageModel nxShopImges = ProjectImageModel(
-  projectIcon: 'assets/images/nx_shop_icon.png',
-  projectCover: 'assets/images/place_holder_img.jpg',
+  projectIcon: 'assets/images/nx_icon.png',
+  projectCover: 'assets/images/nx_cover.jpg',
+);
+final ProjectImageModel foodAppImages = ProjectImageModel(
+  projectIcon: 'assets/images/foodapp_icon.png',
+  projectCover: 'assets/images/foodapp_cover.png',
+);
+final ProjectImageModel psImages = ProjectImageModel(
+  projectIcon: 'assets/images/ps_icon.png',
+  projectCover: 'assets/images/ps_cover.png',
 );
 
 //threeDProjectList

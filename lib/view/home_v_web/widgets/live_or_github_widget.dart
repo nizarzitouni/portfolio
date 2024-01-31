@@ -13,7 +13,7 @@ class LiveOrGithubWidget extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.start,
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        if (projectModel.liveUrl != null)
+        if (projectModel.isLive)
           RawMaterialButton(
             onPressed: () {
               launchWithUri(url: projectModel.liveUrl!);
