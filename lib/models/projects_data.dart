@@ -166,6 +166,7 @@ abstract class ProjectData {
       projectDescription:
           "An Epic Low Poly asset pack of Buildings, Characters, Props, Viehcules and Environment assets to create a low poly themed polygonal style game",
       techStacks: [
+        "Unity",
         "Blender",
       ],
       role: "I was the creator of the whole app",
@@ -180,6 +181,7 @@ abstract class ProjectData {
       liveUrl: "https://assetstore.unity.com/packages/3d/environments/historic/medieval-indoor-kit-3d-224308",
       projectDescription: "A package of modular architecture assets, props, and walls for creating medieval-themed interiors in your game.",
       techStacks: [
+        "Unity",
         "Blender",
       ],
       role: "I was the creator of the whole app",
@@ -192,8 +194,15 @@ abstract class ProjectData {
       projectId: '52',
       projectTitle: "Blaster Pranks - Epic Toys",
       liveUrl: "https://apkcombo.com/blaster-pranks-epic-toys/com.blaster.prank.epic.toys.blast/",
-      projectDescription: "I created all the levels of the game from greyboxing to the assets",
+      projectDescription:
+          "As the Game Level Designer at Blaster Pranks - Epic Toys in 2018, I spearheaded the entire level design process, showcasing my proficiency in greyboxing, asset creation, and character design. My commitment to crafting engaging gaming experiences resulted in the successful creation and implementation of over 90 unique game levels.\n\n"
+          "Key Achievements:\n\n"
+          "♦ End-to-End Design Responsibility: Held complete responsibility for the level design process, from conceptualization through greyboxing to the final touches of asset creation and character design.\n"
+          "♦ Quantifiable Impact: Contributed to the success of the project by creating and implementing a substantial number of 90+ game levels, each designed to captivate and challenge players.\n"
+          "♦ Quantifiable Impact: Contributed to the success of the project by creating and implementing a substantial number of 90+ game levels, each designed to captivate and challenge players.\n\n"
+          "My tenure at Blaster Pranks - Epic Toys was characterized by a commitment to delivering exceptional gaming content and a passion for pushing creative boundaries within the field of game design.\n",
       techStacks: [
+        "Unity",
         "Blender",
       ],
       role: "I was the creator of the whole app",
@@ -207,7 +216,13 @@ abstract class ProjectData {
       projectTitle: "Double Jump",
       liveUrl: "https://www.doublejump.wtf/",
       projectDescription:
-          "As the dedicated Level Designer at Blank Labs Gaming Studio from 2023 to present, I played a pivotal role in shaping the gaming experience. Leveraging my expertise in Unity 3D and Blender 3D, I crafted and fine-tuned captivating game levels. In a collaborative team of 20, I actively contributed to building pipelines, introducing innovative features, and meticulously optimizing game performance for both web and mobile platforms.",
+          "As a Level Designer at Blank Labs Gaming Studio, I've played a pivotal role in bringing the creative visions of game designers to life. My primary responsibilities involve utilizing the powerful combination of Blender and Unity to craft immersive game scenes that resonate with the intended user experience.\n\n"
+          "Key Contributions:\n\n"
+          "♦ Creative Implementation: Translated game designer concepts into tangible game scenes, showcasing a diverse range of game types such as platformers, royal games, hybrid puzzles, and easy-to-play games.\n"
+          "♦ Collaborative Development: Fostered effective communication with developers, leveraging my background in software engineering to ensure seamless collaboration within the team. Embraced Agile methodology for testing and refining early versions of game levels.\n"
+          "♦ Project Management: Utilized Jira within an Agile framework for streamlined collaboration and organized project management. This involved tasks such as receiving final art from 3D artists and personally implementing it into the game scenes.\n"
+          "♦ Visual Integration: Ensured a visually appealing and seamless integration of final art received from 3D artists into the game scenes, contributing to the overall aesthetic quality of the gaming experience.\n\n"
+          "My journey at Blank Labs has been marked by a commitment to excellence, creativity, and effective teamwork. I take pride in contributing to the development of captivating games that engage and entertain users.\n",
       techStacks: [
         "Unity",
         "Blender 3D",
@@ -244,7 +259,7 @@ final ProjectImageModel tiktokCloneImges = ProjectImageModel(
 );
 final ProjectImageModel nxShopImges = ProjectImageModel(
   projectIcon: 'assets/images/nx_icon.png',
-  projectCover: 'assets/images/nx_cover.jpg',
+  projectCover: 'assets/images/nx_cover.png',
 );
 final ProjectImageModel foodAppImages = ProjectImageModel(
   projectIcon: 'assets/images/foodapp_icon.png',

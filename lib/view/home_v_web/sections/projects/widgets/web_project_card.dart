@@ -140,6 +140,8 @@ class _WebProjectCardState extends State<WebProjectCard> {
                       width: double.infinity,
                       child: Text(
                         widget.projectModel.projectDescription,
+                        maxLines: 4,
+                        overflow: TextOverflow.ellipsis,
                         style: const TextStyle(
                           color: Color(0xFFABB2BF),
                           fontSize: 16,
