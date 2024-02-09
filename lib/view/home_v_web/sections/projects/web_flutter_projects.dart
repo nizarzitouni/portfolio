@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:nizar_ztn_portfolio/models/project_model.dart';
 import 'package:responsive_grid_list/responsive_grid_list.dart';
 
+import '../../../../models/project_model.dart';
 import 'widgets/web_project_card.dart';
 
 class WebFlutterProjects extends StatelessWidget {

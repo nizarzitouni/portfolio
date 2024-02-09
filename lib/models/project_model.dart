@@ -1,5 +1,4 @@
-import 'package:nizar_ztn_portfolio/core/constants.dart';
-
+import '../core/constants.dart';
 import 'project_image_model.dart';
 
 class ProjectModel {

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:nizar_ztn_portfolio/core/routes/app_router.dart';
 
+import '../core/routes/app_router.dart';
 import '../core/config/app_information.dart';
 import '../core/pallete.dart';
 

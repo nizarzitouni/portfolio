@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import 'package:nizar_ztn_portfolio/view/home_v_mobile/home_screen_mob.dart';
-import 'package:nizar_ztn_portfolio/view/home_v_web/home_screen_web.dart';
 
 import '../../app/responsive_layout.dart';
+import '../../view/home_v_mobile/home_screen_mob.dart';
 import '../../view/home_v_mobile/sections/project_details_mob.dart';
+import '../../view/home_v_web/home_screen_web.dart';
 import '../../view/home_v_web/sections/project_deatails_web.dart';
 import 'error_page.dart';
 

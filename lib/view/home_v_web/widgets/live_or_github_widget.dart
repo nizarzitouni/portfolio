@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:nizar_ztn_portfolio/models/project_model.dart';
 
+import '../../../models/project_model.dart';
 import '../../../core/functions.dart';
 
 class LiveOrGithubWidget extends StatelessWidget {

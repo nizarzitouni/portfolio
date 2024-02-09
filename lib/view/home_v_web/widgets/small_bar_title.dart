@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:nizar_ztn_portfolio/core/constants.dart';
 
+import '../../../core/constants.dart';
 import '../../../core/pallete.dart';
 import '../../../core/size_config.dart';
 import '../../../core/utils/app_text_styles.dart';

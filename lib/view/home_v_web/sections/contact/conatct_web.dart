@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:gap/gap.dart';
-import 'package:nizar_ztn_portfolio/core/constants.dart';
 
+import '../../../../core/constants.dart';
 import '../../../../core/functions.dart';
 import '../../../../core/pallete.dart';
 

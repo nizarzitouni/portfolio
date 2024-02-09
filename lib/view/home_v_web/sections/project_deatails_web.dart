@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import 'package:go_router/go_router.dart';
-import 'package:nizar_ztn_portfolio/core/routes/app_router.dart';
-import 'package:nizar_ztn_portfolio/models/project_model.dart';
-import 'package:nizar_ztn_portfolio/view/home_v_web/widgets/live_or_github_widget.dart';
 
+import '../../../core/routes/app_router.dart';
+import '../../../models/project_model.dart';
+import '../widgets/live_or_github_widget.dart';
 import '../../../core/size_config.dart';
 import '../../../models/projects_data.dart';
 import '../widgets/center_top_widget.dart';

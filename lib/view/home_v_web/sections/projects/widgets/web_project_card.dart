@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:nizar_ztn_portfolio/core/pallete.dart';
-import 'package:nizar_ztn_portfolio/core/routes/app_router.dart';
 import 'package:responsive_grid_list/responsive_grid_list.dart';
 
+import '../../../../../core/pallete.dart';
+import '../../../../../core/routes/app_router.dart';
 import '../../../../../models/project_model.dart';
 import '../../../widgets/live_or_github_widget.dart';
 
