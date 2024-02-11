@@ -200,66 +200,6 @@ abstract class ProjectData {
   static List<ProjectModel> threeDProjectList = [
     ProjectModel(
       projectId: '50',
-      projectTitle: "PolyTown",
-      isLive: true,
-      liveUrl: "https://sketchfab.com/3d-models/polytown-low-poly-city-pack-699546b57f3e4b38986061e995ac20ad",
-      projectDescription:
-          "An Epic Low Poly asset pack of Buildings, Characters, Props, Viehcules and Environment assets to create a low poly themed polygonal style game",
-      techStacks: [
-        "Unity",
-        "Blender",
-      ],
-      role: "I was the creator of the whole app",
-      projectImageModel: polyTownImges,
-      appScreens: ImagesPath.polyTownScreens,
-      githubUrl: null,
-      carouselFullWidth: false,
-      behanceLink: null,
-    ),
-    ProjectModel(
-      projectId: '51',
-      projectTitle: "Medieval Pack",
-      isLive: true,
-      liveUrl: "https://assetstore.unity.com/packages/3d/environments/historic/medieval-indoor-kit-3d-224308",
-      projectDescription:
-          "Introducing my latest creation: a comprehensive asset pack tailored for game developers seeking to infuse their projects with the allure of medieval interiors. With over 100 meticulously crafted assets including modular walls, floors, and props, this pack offers boundless opportunities for creating immersive game environments.\n",
-      techStacks: [
-        "Unity",
-        "Blender",
-        "Gimp",
-      ],
-      role: "I was the creator of the whole app",
-      projectImageModel: medievalImges,
-      githubUrl: null,
-      appScreens: ImagesPath.medievalPackScreens,
-      carouselFullWidth: true,
-      behanceLink: "https://www.behance.net/gallery/190658551/Level-Desing-Medieval-Indoor-Kit-3D",
-    ),
-    ProjectModel(
-      projectId: '52',
-      projectTitle: "Blaster Pranks - Epic Toys",
-      liveUrl: "https://apkcombo.com/blaster-pranks-epic-toys/com.blaster.prank.epic.toys.blast/",
-      projectDescription:
-          "As the Game Level Designer at Blaster Pranks - Epic Toys in 2018, I spearheaded the entire level design process, showcasing my proficiency in greyboxing, asset creation, and character design. My commitment to crafting engaging gaming experiences resulted in the successful creation and implementation of over 90 unique game levels.\n\n"
-          "Key Achievements:\n\n"
-          "♦ End-to-End Design Responsibility: Held complete responsibility for the level design process, from conceptualization through greyboxing to the final touches of asset creation and character design.\n"
-          "♦ Quantifiable Impact: Contributed to the success of the project by creating and implementing a substantial number of 90+ game levels, each designed to captivate and challenge players.\n"
-          "♦ Quantifiable Impact: Contributed to the success of the project by creating and implementing a substantial number of 90+ game levels, each designed to captivate and challenge players.\n\n"
-          "My tenure at Blaster Pranks - Epic Toys was characterized by a commitment to delivering exceptional gaming content and a passion for pushing creative boundaries within the field of game design.\n",
-      techStacks: [
-        "Unity",
-        "Blender",
-      ],
-      role: "I was the creator of the whole app",
-      projectImageModel: blasterImges,
-      isLive: true,
-      githubUrl: null,
-      appScreens: ImagesPath.blasterPranksScreens,
-      carouselFullWidth: false,
-      behanceLink: null,
-    ),
-    ProjectModel(
-      projectId: '53',
       projectTitle: "Double Jump",
       liveUrl: "https://www.doublejump.wtf/",
       projectDescription:
@@ -281,6 +221,66 @@ abstract class ProjectData {
       appScreens: ImagesPath.doubleJumpScreens,
       carouselFullWidth: true,
       behanceLink: "https://www.behance.net/gallery/191290675/Double-Jump-Level-Design-Showcase",
+    ),
+    ProjectModel(
+      projectId: '51',
+      projectTitle: "PolyTown",
+      isLive: true,
+      liveUrl: "https://sketchfab.com/3d-models/polytown-low-poly-city-pack-699546b57f3e4b38986061e995ac20ad",
+      projectDescription:
+          "An Epic Low Poly asset pack of Buildings, Characters, Props, Viehcules and Environment assets to create a low poly themed polygonal style game",
+      techStacks: [
+        "Unity",
+        "Blender",
+      ],
+      role: "I was the creator of the whole app",
+      projectImageModel: polyTownImges,
+      appScreens: ImagesPath.polyTownScreens,
+      githubUrl: null,
+      carouselFullWidth: true,
+      behanceLink: null,
+    ),
+    ProjectModel(
+      projectId: '52',
+      projectTitle: "Medieval Pack",
+      isLive: true,
+      liveUrl: "https://assetstore.unity.com/packages/3d/environments/historic/medieval-indoor-kit-3d-224308",
+      projectDescription:
+          "Introducing my latest creation: a comprehensive asset pack tailored for game developers seeking to infuse their projects with the allure of medieval interiors. With over 100 meticulously crafted assets including modular walls, floors, and props, this pack offers boundless opportunities for creating immersive game environments.\n",
+      techStacks: [
+        "Unity",
+        "Blender",
+        "Gimp",
+      ],
+      role: "I was the creator of the whole app",
+      projectImageModel: medievalImges,
+      githubUrl: null,
+      appScreens: ImagesPath.medievalPackScreens,
+      carouselFullWidth: true,
+      behanceLink: "https://www.behance.net/gallery/190658551/Level-Desing-Medieval-Indoor-Kit-3D",
+    ),
+    ProjectModel(
+      projectId: '53',
+      projectTitle: "Blaster Pranks - Epic Toys",
+      liveUrl: "https://apkcombo.com/blaster-pranks-epic-toys/com.blaster.prank.epic.toys.blast/",
+      projectDescription:
+          "As the Game Level Designer at Blaster Pranks - Epic Toys in 2018, I spearheaded the entire level design process, showcasing my proficiency in greyboxing, asset creation, and character design. My commitment to crafting engaging gaming experiences resulted in the successful creation and implementation of over 90 unique game levels.\n\n"
+          "Key Achievements:\n\n"
+          "♦ End-to-End Design Responsibility: Held complete responsibility for the level design process, from conceptualization through greyboxing to the final touches of asset creation and character design.\n"
+          "♦ Quantifiable Impact: Contributed to the success of the project by creating and implementing a substantial number of 90+ game levels, each designed to captivate and challenge players.\n"
+          "♦ Quantifiable Impact: Contributed to the success of the project by creating and implementing a substantial number of 90+ game levels, each designed to captivate and challenge players.\n\n"
+          "My tenure at Blaster Pranks - Epic Toys was characterized by a commitment to delivering exceptional gaming content and a passion for pushing creative boundaries within the field of game design.\n",
+      techStacks: [
+        "Unity",
+        "Blender",
+      ],
+      role: "I was the creator of the whole app",
+      projectImageModel: blasterImges,
+      isLive: true,
+      githubUrl: null,
+      appScreens: ImagesPath.blasterPranksScreens,
+      carouselFullWidth: false,
+      behanceLink: null,
     ),
   ];
 }

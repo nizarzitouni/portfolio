@@ -38,10 +38,11 @@ flutter:
 
   assets:
     - assets/images/
-    - assets/images/blaster_pranks/
-    - assets/images/double_jump/
     - assets/images/tune_hub/
+    - assets/images/poly_town/
+    - assets/images/blaster_pranks/
     - assets/images/medieval_pack/
+    - assets/images/double_jump/
     - assets/icons/
     - assets/fonts/
     - assets/svgs/
