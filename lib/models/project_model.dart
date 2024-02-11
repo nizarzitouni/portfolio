@@ -10,8 +10,10 @@ class ProjectModel {
   final List<String> techStacks;
   final ProjectImageModel projectImageModel;
   final List<String>? appScreens;
+  final bool carouselFullWidth;
   String? liveUrl;
   String? githubUrl;
+  String? behanceLink;
 
   ProjectModel({
     required this.projectId,
@@ -22,8 +24,10 @@ class ProjectModel {
     required this.role,
     required this.techStacks,
     required this.projectImageModel,
+    required this.carouselFullWidth,
     required this.githubUrl,
     required this.appScreens,
+    required this.behanceLink,
   });
 }
 

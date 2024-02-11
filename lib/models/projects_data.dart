@@ -20,6 +20,8 @@ abstract class ProjectData {
       isLive: true,
       githubUrl: null,
       appScreens: ImagesPath.jdmImgListScreens,
+      carouselFullWidth: false,
+      behanceLink: null,
     ),
     ProjectModel(
       projectId: '1',
@@ -38,6 +40,8 @@ abstract class ProjectData {
       isLive: true,
       githubUrl: null,
       appScreens: ImagesPath.qqpImgListScreens,
+      carouselFullWidth: false,
+      behanceLink: null,
     ),
     ProjectModel(
       projectId: '2',
@@ -56,6 +60,8 @@ abstract class ProjectData {
       isLive: true,
       githubUrl: null,
       appScreens: ImagesPath.qqpImgListScreens,
+      carouselFullWidth: false,
+      behanceLink: null,
     ),
     ProjectModel(
       projectId: '3',
@@ -72,6 +78,8 @@ abstract class ProjectData {
       isLive: true,
       githubUrl: null,
       appScreens: ImagesPath.saImgListScreens,
+      carouselFullWidth: false,
+      behanceLink: null,
     ),
     ProjectModel(
       projectId: '4',
@@ -90,6 +98,8 @@ abstract class ProjectData {
       isLive: false,
       githubUrl: "https://github.com/nizarzitouni/Tiktok-flutter-clone",
       appScreens: appScreensEmpty,
+      carouselFullWidth: false,
+      behanceLink: null,
     ),
     ProjectModel(
       projectId: '5',
@@ -111,6 +121,8 @@ abstract class ProjectData {
       isLive: false,
       githubUrl: "https://github.com/nizarzitouni/NX-Shop",
       appScreens: ImagesPath.nxShopistScreens,
+      carouselFullWidth: false,
+      behanceLink: null,
     ),
     ProjectModel(
       projectId: '6',
@@ -126,6 +138,8 @@ abstract class ProjectData {
       isLive: false,
       githubUrl: "https://github.com/nizarzitouni/Food-Flutter-App-UI",
       appScreens: ImagesPath.foodAppScreens,
+      carouselFullWidth: false,
+      behanceLink: null,
     ),
     ProjectModel(
       projectId: '7',
@@ -141,6 +155,8 @@ abstract class ProjectData {
       isLive: false,
       githubUrl: "https://github.com/nizarzitouni/sneakerzi",
       appScreens: ImagesPath.psScreens,
+      carouselFullWidth: false,
+      behanceLink: null,
     ),
   ];
 
@@ -154,7 +170,8 @@ abstract class ProjectData {
   //       "Blender",
   //     ],
   //     role: "I was the creator of the whole app",
-  //     projectImageModel: polyTownImges,
+  //     projectImageModel: polyTownImges,      behanceLink:null,
+
   //   ),
   // ];
 
@@ -174,6 +191,8 @@ abstract class ProjectData {
       isLive: true,
       githubUrl: null,
       appScreens: appScreensEmpty,
+      carouselFullWidth: false,
+      behanceLink: null,
     ),
     ProjectModel(
       projectId: '51',
@@ -189,6 +208,8 @@ abstract class ProjectData {
       isLive: true,
       githubUrl: null,
       appScreens: appScreensEmpty,
+      carouselFullWidth: false,
+      behanceLink: "https://www.behance.net/gallery/190658551/Level-Desing-Medieval-Indoor-Kit-3D",
     ),
     ProjectModel(
       projectId: '52',
@@ -210,6 +231,8 @@ abstract class ProjectData {
       isLive: true,
       githubUrl: null,
       appScreens: appScreensEmpty,
+      carouselFullWidth: false,
+      behanceLink: null,
     ),
     ProjectModel(
       projectId: '53',
@@ -231,7 +254,9 @@ abstract class ProjectData {
       projectImageModel: djImges,
       isLive: true,
       githubUrl: null,
-      appScreens: appScreensEmpty,
+      appScreens: ImagesPath.djScreens,
+      carouselFullWidth: true,
+      behanceLink: "https://www.behance.net/gallery/191290675/Double-Jump-Level-Design-Showcase",
     ),
   ];
 }

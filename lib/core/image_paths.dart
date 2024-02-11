@@ -58,4 +58,16 @@ class ImagesPath {
     'assets/images/ps3.jpg',
     'assets/images/ps4.jpg',
   ];
+  static final List<String> djScreens = [
+    'assets/images/dj1.png',
+    'assets/images/dj2.png',
+    'assets/images/dj3.png',
+    'assets/images/dj4.png',
+    'assets/images/dj5.png',
+    'assets/images/dj6.png',
+    'assets/images/dj7.png',
+    'assets/images/dj8.png',
+    'assets/images/dj9.png',
+    'assets/images/dj10.png',
+  ];
 }
