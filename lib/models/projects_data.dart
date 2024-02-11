@@ -201,6 +201,7 @@ abstract class ProjectData {
     ProjectModel(
       projectId: '50',
       projectTitle: "PolyTown",
+      isLive: true,
       liveUrl: "https://sketchfab.com/3d-models/polytown-low-poly-city-pack-699546b57f3e4b38986061e995ac20ad",
       projectDescription:
           "An Epic Low Poly asset pack of Buildings, Characters, Props, Viehcules and Environment assets to create a low poly themed polygonal style game",
@@ -210,27 +211,28 @@ abstract class ProjectData {
       ],
       role: "I was the creator of the whole app",
       projectImageModel: polyTownImges,
-      isLive: true,
+      appScreens: ImagesPath.polyTownScreens,
       githubUrl: null,
-      appScreens: appScreensEmpty,
       carouselFullWidth: false,
       behanceLink: null,
     ),
     ProjectModel(
       projectId: '51',
       projectTitle: "Medieval Pack",
+      isLive: true,
       liveUrl: "https://assetstore.unity.com/packages/3d/environments/historic/medieval-indoor-kit-3d-224308",
-      projectDescription: "A package of modular architecture assets, props, and walls for creating medieval-themed interiors in your game.",
+      projectDescription:
+          "Introducing my latest creation: a comprehensive asset pack tailored for game developers seeking to infuse their projects with the allure of medieval interiors. With over 100 meticulously crafted assets including modular walls, floors, and props, this pack offers boundless opportunities for creating immersive game environments.\n",
       techStacks: [
         "Unity",
         "Blender",
+        "Gimp",
       ],
       role: "I was the creator of the whole app",
       projectImageModel: medievalImges,
-      isLive: true,
       githubUrl: null,
-      appScreens: appScreensEmpty,
-      carouselFullWidth: false,
+      appScreens: ImagesPath.medievalPackScreens,
+      carouselFullWidth: true,
       behanceLink: "https://www.behance.net/gallery/190658551/Level-Desing-Medieval-Indoor-Kit-3D",
     ),
     ProjectModel(
@@ -314,7 +316,7 @@ final ProjectImageModel foodAppImages = ProjectImageModel(
 );
 final ProjectImageModel tuneHubImages = ProjectImageModel(
   projectIcon: 'assets/images/tune_hub/th_icon.png',
-  projectCover: 'assets/images/tune_hub/th_cover.png',
+  projectCover: 'assets/images/tune_hub/th_icon.png',
 );
 final ProjectImageModel psImages = ProjectImageModel(
   projectIcon: 'assets/images/ps_icon.png',
@@ -324,7 +326,7 @@ final ProjectImageModel psImages = ProjectImageModel(
 //threeDProjectList
 final ProjectImageModel oneImges = ProjectImageModel(
   projectIcon: 'assets/images/dj_icon.png',
-  projectCover: 'assets/images/dj_icon.png',
+  projectCover: 'assets/images/dj_cover.png',
 );
 
 //gameDesignProjectList

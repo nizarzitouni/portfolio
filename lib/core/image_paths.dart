@@ -67,6 +67,11 @@ class ImagesPath {
   ];
 
   //Game Disegn Screens ------------------------------------------------------------------------------
+
+  static final List<String> polyTownScreens = [
+    'assets/images/poly_town/pt1.png',
+    'assets/images/poly_town/pt2.png',
+  ];
   static final List<String> doubleJumpScreens = [
     'assets/images/double_jump/dj1.png',
     'assets/images/double_jump/dj2.png',
@@ -78,6 +83,13 @@ class ImagesPath {
     'assets/images/double_jump/dj8.png',
     'assets/images/double_jump/dj9.png',
     'assets/images/double_jump/dj10.png',
+  ];
+
+  static final List<String> medievalPackScreens = [
+    'assets/images/medieval_pack/mp1.png',
+    'assets/images/medieval_pack/mp2.png',
+    'assets/images/medieval_pack/mp3.png',
+    'assets/images/medieval_pack/mp4.png',
   ];
   static final List<String> blasterPranksScreens = [
     'assets/images/blaster_pranks/bp1.png',

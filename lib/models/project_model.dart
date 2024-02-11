@@ -5,21 +5,21 @@ class ProjectModel {
   final String projectId;
   final String projectTitle;
   final bool isLive;
+  String? liveUrl;
   final String projectDescription;
   final String role;
   final List<String> techStacks;
   final ProjectImageModel projectImageModel;
   final List<String>? appScreens;
   final bool carouselFullWidth;
-  String? liveUrl;
   String? githubUrl;
   String? behanceLink;
 
   ProjectModel({
     required this.projectId,
     required this.projectTitle,
-    required this.liveUrl,
     required this.isLive,
+    required this.liveUrl,
     required this.projectDescription,
     required this.role,
     required this.techStacks,
