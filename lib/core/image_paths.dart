@@ -58,16 +58,32 @@ class ImagesPath {
     'assets/images/ps3.jpg',
     'assets/images/ps4.jpg',
   ];
-  static final List<String> djScreens = [
-    'assets/images/dj1.png',
-    'assets/images/dj2.png',
-    'assets/images/dj3.png',
-    'assets/images/dj4.png',
-    'assets/images/dj5.png',
-    'assets/images/dj6.png',
-    'assets/images/dj7.png',
-    'assets/images/dj8.png',
-    'assets/images/dj9.png',
-    'assets/images/dj10.png',
+  static final List<String> tuneHubScreens = [
+    'assets/images/tune_hub/th1.jpg',
+    'assets/images/tune_hub/th2.jpg',
+    'assets/images/tune_hub/th3.jpg',
+    'assets/images/tune_hub/th4.jpg',
+    'assets/images/tune_hub/th5.jpg',
+  ];
+
+  //Game Disegn Screens ------------------------------------------------------------------------------
+  static final List<String> doubleJumpScreens = [
+    'assets/images/double_jump/dj1.png',
+    'assets/images/double_jump/dj2.png',
+    'assets/images/double_jump/dj3.png',
+    'assets/images/double_jump/dj4.png',
+    'assets/images/double_jump/dj5.png',
+    'assets/images/double_jump/dj6.png',
+    'assets/images/double_jump/dj7.png',
+    'assets/images/double_jump/dj8.png',
+    'assets/images/double_jump/dj9.png',
+    'assets/images/double_jump/dj10.png',
+  ];
+  static final List<String> blasterPranksScreens = [
+    'assets/images/blaster_pranks/bp1.png',
+    'assets/images/blaster_pranks/bp2.png',
+    'assets/images/blaster_pranks/bp3.png',
+    'assets/images/blaster_pranks/bp4.png',
+    'assets/images/blaster_pranks/bp5.png',
   ];
 }

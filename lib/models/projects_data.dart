@@ -126,21 +126,43 @@ abstract class ProjectData {
     ),
     ProjectModel(
       projectId: '6',
-      projectTitle: "Food App UI",
-      liveUrl: null,
+      projectTitle: "Tune Hub",
+      liveUrl: "https://play.google.com/store/apps/details?id=nz.dev.tunehub",
+      isLive: true,
       projectDescription:
-          "Created a Flutter UI project for a visually appealing food app. Explore my GitHub repository to witness my skills in crafting intuitive and aesthetically pleasing user interfaces.",
+          "Developed Tune Hub, a personalized ringtone app using Flutter for a smooth user experience. Leveraged Supabase for efficient storage management.\n\n\n"
+          "Key Features:\n\n"
+          "   ♦ Effortless exploration of ringtones.\n"
+          "   ♦ Seamless previewing functionality.\n"
+          "   ♦ Easy customization of device sounds.\n",
       techStacks: [
         "Flutter",
+        "Supabase",
       ],
-      role: "Sole developer for UI design and implementation",
-      projectImageModel: foodAppImages,
-      isLive: false,
-      githubUrl: "https://github.com/nizarzitouni/Food-Flutter-App-UI",
-      appScreens: ImagesPath.foodAppScreens,
+      role: "solo developer for UI design and implementation",
+      githubUrl: null,
+      appScreens: ImagesPath.tuneHubScreens,
+      projectImageModel: tuneHubImages,
       carouselFullWidth: false,
       behanceLink: null,
     ),
+    // ProjectModel(
+    //   projectId: '6',
+    //   projectTitle: "Food App UI",
+    //   liveUrl: null,
+    //   projectDescription:
+    //       "Created a Flutter UI project for a visually appealing food app. Explore my GitHub repository to witness my skills in crafting intuitive and aesthetically pleasing user interfaces.",
+    //   techStacks: [
+    //     "Flutter",
+    //   ],
+    //   role: "Sole developer for UI design and implementation",
+    //   projectImageModel: foodAppImages,
+    //   isLive: false,
+    //   githubUrl: "https://github.com/nizarzitouni/Food-Flutter-App-UI",
+    //   appScreens: ImagesPath.foodAppScreens,
+    //   carouselFullWidth: false,
+    //   behanceLink: null,
+    // ),
     ProjectModel(
       projectId: '7',
       projectTitle: "Sneakers Shop",
@@ -230,7 +252,7 @@ abstract class ProjectData {
       projectImageModel: blasterImges,
       isLive: true,
       githubUrl: null,
-      appScreens: appScreensEmpty,
+      appScreens: ImagesPath.blasterPranksScreens,
       carouselFullWidth: false,
       behanceLink: null,
     ),
@@ -254,7 +276,7 @@ abstract class ProjectData {
       projectImageModel: djImges,
       isLive: true,
       githubUrl: null,
-      appScreens: ImagesPath.djScreens,
+      appScreens: ImagesPath.doubleJumpScreens,
       carouselFullWidth: true,
       behanceLink: "https://www.behance.net/gallery/191290675/Double-Jump-Level-Design-Showcase",
     ),
@@ -290,6 +312,10 @@ final ProjectImageModel foodAppImages = ProjectImageModel(
   projectIcon: 'assets/images/foodapp_icon.png',
   projectCover: 'assets/images/foodapp_cover.png',
 );
+final ProjectImageModel tuneHubImages = ProjectImageModel(
+  projectIcon: 'assets/images/tune_hub/th_icon.png',
+  projectCover: 'assets/images/tune_hub/th_cover.png',
+);
 final ProjectImageModel psImages = ProjectImageModel(
   projectIcon: 'assets/images/ps_icon.png',
   projectCover: 'assets/images/ps_cover.png',
@@ -298,7 +324,7 @@ final ProjectImageModel psImages = ProjectImageModel(
 //threeDProjectList
 final ProjectImageModel oneImges = ProjectImageModel(
   projectIcon: 'assets/images/dj_icon.png',
-  projectCover: 'assets/images/dj_cover.png',
+  projectCover: 'assets/images/dj_icon.png',
 );
 
 //gameDesignProjectList

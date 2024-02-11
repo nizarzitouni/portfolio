@@ -4,7 +4,7 @@ description: "A new Flutter project."
 publish_to: 'none' 
 
 
-version: 1.0.0+1
+version: 1.6.0+6
 
 environment:
   sdk: '>=3.2.2 <4.0.0'
@@ -31,8 +31,6 @@ dev_dependencies:
 
   flutter_lints: ^2.0.0
 
-# For information on the generic Dart part of this file, see the
-# following page: https://dart.dev/tools/pub/pubspec
 
 # The following section is specific to Flutter packages.
 flutter:
@@ -40,6 +38,9 @@ flutter:
 
   assets:
     - assets/images/
+    - assets/images/blaster_pranks/
+    - assets/images/double_jump/
+    - assets/images/tune_hub/
     - assets/icons/
     - assets/fonts/
     - assets/svgs/
