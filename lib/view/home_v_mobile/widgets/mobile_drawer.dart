@@ -52,7 +52,7 @@ class MobileDrawer extends StatelessWidget {
                     borderRadius: BorderRadius.circular(5.0),
                     //side: BorderSide(color: AppTheme.c!.primary!),
                   ),
-                  onPressed: () => launchWithUri(url: RESUMEURL),
+                  onPressed: () => launchWithUri(url: LD_RESUMEURL),
                   child: const ListTile(
                     leading: Icon(
                       Icons.control_camera_outlined,

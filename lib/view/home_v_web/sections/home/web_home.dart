@@ -61,7 +61,7 @@ class WebHome extends StatelessWidget {
                                 assetImagePath: AssetsConstants.playstoreSvg,
                               ),
                               WebActionModel(
-                                webUrl: RESUMEURL,
+                                webUrl: LD_RESUMEURL,
                                 assetImagePath: AssetsConstants.downloadSvg,
                                 text: "Resume",
                               ),
