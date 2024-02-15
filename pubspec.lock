@@ -122,7 +122,7 @@ packages:
     source: hosted
     version: "3.9.5"
   firebase_analytics_web:
-    dependency: transitive
+    dependency: "direct main"
     description:
       name: firebase_analytics_web
       sha256: "77e4c02ffd0204ccc7856221193265c807b7e056fa62855f973a7f77435b5d41"

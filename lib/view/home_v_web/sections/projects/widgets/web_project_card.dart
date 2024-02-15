@@ -3,6 +3,7 @@ import 'package:responsive_grid_list/responsive_grid_list.dart';
 
 import '../../../../../core/pallete.dart';
 import '../../../../../core/routes/app_router.dart';
+import '../../../../../core/singlton_init.dart';
 import '../../../../../models/project_model.dart';
 import '../../../widgets/live_or_github_widget.dart';
 
@@ -28,7 +29,14 @@ class _WebProjectCardState extends State<WebProjectCard> {
         hoverColor: Colors.transparent,
         splashColor: Colors.transparent,
         highlightColor: Colors.transparent,
-        onTap: () {
+        onTap: () async {
+          await analytics.logEvent(
+            name: "project_clicks_tracked",
+            parameters: {
+              "project_name": widget.projectModel.projectTitle,
+            },
+          );
+          debugPrint('---------------------- ----------------------');
           AppRouter.router.go('/projects/${widget.projectModel.projectId}');
         },
         onHover: (isHovering) {
