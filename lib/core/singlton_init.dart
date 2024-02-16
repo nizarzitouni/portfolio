@@ -5,6 +5,7 @@
 // final HomeController homeController = HomeController.instance;
 // final BookmarkController bookmarkController = BookmarkController.instance;
 // final AudioController audioCtr = AudioController.instance;
-import 'package:firebase_analytics/firebase_analytics.dart';
 
-FirebaseAnalytics analytics = FirebaseAnalytics.instance;
+import 'package:firebase_analytics_web/firebase_analytics_web.dart';
+
+FirebaseAnalyticsWeb analytics = FirebaseAnalyticsWeb();

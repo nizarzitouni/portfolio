@@ -36,7 +36,7 @@ class _WebProjectCardState extends State<WebProjectCard> {
               "project_name": widget.projectModel.projectTitle,
             },
           );
-          debugPrint('---------------------- ----------------------');
+          // debugPrint('---------------------- ----------------------');
           AppRouter.router.go('/projects/${widget.projectModel.projectId}');
         },
         onHover: (isHovering) {
