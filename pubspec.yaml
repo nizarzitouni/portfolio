@@ -19,6 +19,7 @@ dependencies:
   url_launcher: ^6.2.4
   firebase_core: ^2.25.4
   firebase_analytics_web: ^0.5.5+17
+  firebase_analytics: ^10.8.5
 
 
   google_fonts: ^6.1.0
@@ -27,7 +28,7 @@ dependencies:
   flutter_svg: ^2.0.9
   responsive_grid_list: ^1.4.0
   universal_html: ^2.2.4
-  firebase_analytics: ^10.8.5
+  typeset: ^2.1.1
 
 
 dev_dependencies:
@@ -37,20 +38,28 @@ dev_dependencies:
   flutter_lints: ^2.0.0
 
 
-# The following section is specific to Flutter packages.
 flutter:
   uses-material-design: true
 
   assets:
     - assets/images/
-    - assets/images/tune_hub/
-    - assets/images/poly_town/
-    - assets/images/blaster_pranks/
-    - assets/images/medieval_pack/
-    - assets/images/double_jump/
+    - assets/images/mob/food_app/
+    - assets/images/mob/ig/
+    - assets/images/mob/jdm/
+    - assets/images/mob/nx_shop/
+    - assets/images/mob/peak_store/
+    - assets/images/mob/quick_qr_pro/
+    - assets/images/mob/sa3arli/
+    - assets/images/mob/tiktok/
+    - assets/images/mob/tune_hub/
+    # - assets/images//
     - assets/icons/
     - assets/fonts/
     - assets/svgs/
+    - assets/images/game_design/poly_town/
+    - assets/images/game_design/blaster_pranks/
+    - assets/images/game_design/medieval_pack/
+    - assets/images/game_design/double_jump/
 
   fonts:
     - family: Agustina

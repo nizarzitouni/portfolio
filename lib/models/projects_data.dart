@@ -39,7 +39,7 @@ abstract class ProjectData {
       projectImageModel: qqpImges,
       isLive: true,
       githubUrl: null,
-      appScreens: ImagesPath.qqpImgListScreens,
+      appScreens: ImagesPath.quickQRProImagesListScreens,
       carouselFullWidth: false,
       behanceLink: null,
     ),
@@ -56,10 +56,10 @@ abstract class ProjectData {
         "Storage",
       ],
       role: "Sole creator of the entire app",
-      projectImageModel: igImges,
+      projectImageModel: invoiceGeneratorImages,
       isLive: true,
       githubUrl: null,
-      appScreens: ImagesPath.qqpImgListScreens,
+      appScreens: ImagesPath.invoiceGeneratorImagesListScreens,
       carouselFullWidth: false,
       behanceLink: null,
     ),
@@ -74,7 +74,7 @@ abstract class ProjectData {
         "Bloc",
       ],
       role: "Sole creator of the entire app",
-      projectImageModel: saImges,
+      projectImageModel: sa3arliImges,
       isLive: true,
       githubUrl: null,
       appScreens: ImagesPath.saImgListScreens,
@@ -101,29 +101,29 @@ abstract class ProjectData {
       carouselFullWidth: false,
       behanceLink: null,
     ),
-    ProjectModel(
-      projectId: '5',
-      projectTitle: "NX Shop",
-      liveUrl: null,
-      projectDescription:
-          "Developed a revolutionary E-commerce app with a dedicated admin companion. The client app ensures a seamless shopping experience, while the admin app empowers administrators with essential CRUD functionalities for efficient product management. Tech stack includes Flutter, Dio, GetX, SQLite, Shared Preferences, Firebase, and Firestore for dynamic data storage. As the sole creator, I led the development of both client and admin apps.",
-      techStacks: [
-        "Flutter",
-        "GetX",
-        "GetStorage",
-        "SqlLite",
-        "Shared Preferences",
-        "Firebase",
-        "Firestore",
-      ],
-      role: "Sole creator of both client and admin apps",
-      projectImageModel: nxShopImges,
-      isLive: false,
-      githubUrl: "https://github.com/nizarzitouni/NX-Shop",
-      appScreens: ImagesPath.nxShopistScreens,
-      carouselFullWidth: false,
-      behanceLink: null,
-    ),
+    // ProjectModel(
+    //   projectId: '5',
+    //   projectTitle: "NX Shop",
+    //   liveUrl: null,
+    //   projectDescription:
+    //       "Developed a revolutionary E-commerce app with a dedicated admin companion. The client app ensures a seamless shopping experience, while the admin app empowers administrators with essential CRUD functionalities for efficient product management. Tech stack includes Flutter, Dio, GetX, SQLite, Shared Preferences, Firebase, and Firestore for dynamic data storage. As the sole creator, I led the development of both client and admin apps.",
+    //   techStacks: [
+    //     "Flutter",
+    //     "GetX",
+    //     "GetStorage",
+    //     "SqlLite",
+    //     "Shared Preferences",
+    //     "Firebase",
+    //     "Firestore",
+    //   ],
+    //   role: "Sole creator of both client and admin apps",
+    //   projectImageModel: nxShopImges,
+    //   isLive: false,
+    //   githubUrl: "https://github.com/nizarzitouni/NX-Shop",
+    //   appScreens: ImagesPath.nxShopistScreens,
+    //   carouselFullWidth: false,
+    //   behanceLink: null,
+    // ),
     ProjectModel(
       projectId: '6',
       projectTitle: "Tune Hub",
@@ -173,10 +173,10 @@ abstract class ProjectData {
         "Flutter",
       ],
       role: "Sole developer for UI design and implementation",
-      projectImageModel: psImages,
+      projectImageModel: peakStoreImages,
       isLive: false,
       githubUrl: "https://github.com/nizarzitouni/sneakerzi",
-      appScreens: ImagesPath.psScreens,
+      appScreens: ImagesPath.peakStoreScreens,
       carouselFullWidth: false,
       behanceLink: null,
     ),
@@ -287,62 +287,62 @@ abstract class ProjectData {
 
 //MobileDevProjectList
 final ProjectImageModel jdmImges = ProjectImageModel(
-  projectIcon: 'assets/images/jdm_icon.png',
-  projectCover: 'assets/images/jdm_cover.jpg',
+  projectIcon: 'assets/images/mob/jdm/jdm_icon.png',
+  projectCover: 'assets/images/mob/jdm/jdm_cover.jpg',
 );
 final ProjectImageModel qqpImges = ProjectImageModel(
-  projectIcon: 'assets/images/qqp_icon.png',
-  projectCover: 'assets/images/qqp_cover.png',
+  projectIcon: 'assets/images/mob/quick_qr_pro/qqp_icon.png',
+  projectCover: 'assets/images/mob/quick_qr_pro/qqp_cover.png',
 );
-final ProjectImageModel igImges = ProjectImageModel(
-  projectIcon: 'assets/images/ig_icon.png',
-  projectCover: 'assets/images/ig_cover.png',
+final ProjectImageModel invoiceGeneratorImages = ProjectImageModel(
+  projectIcon: 'assets/images/mob/ig/ig_icon.png',
+  projectCover: 'assets/images/mob/ig/ig_cover.png',
 );
-final ProjectImageModel saImges = ProjectImageModel(
-  projectIcon: 'assets/images/sa_icon.png',
-  projectCover: 'assets/images/sa_cover.png',
+final ProjectImageModel sa3arliImges = ProjectImageModel(
+  projectIcon: 'assets/images/mob/sa3arli/sa_icon.png',
+  projectCover: 'assets/images/mob/sa3arli/sa_cover.png',
 );
 final ProjectImageModel tiktokCloneImges = ProjectImageModel(
-  projectIcon: 'assets/images/tiktok_icon.png',
-  projectCover: 'assets/images/tiktok_clone_cover.jpeg',
+  projectIcon: 'assets/images/mob/tiktok/tiktok_icon.png',
+  projectCover: 'assets/images/mob/tiktok/tiktok_clone_cover.jpeg',
 );
 final ProjectImageModel nxShopImges = ProjectImageModel(
-  projectIcon: 'assets/images/nx_icon.png',
-  projectCover: 'assets/images/nx_cover.png',
+  projectIcon: 'assets/images/mob/nx_shop/nx_icon.png',
+  projectCover: 'assets/images/mob/nx_shop/nx_cover.png',
 );
 final ProjectImageModel foodAppImages = ProjectImageModel(
-  projectIcon: 'assets/images/foodapp_icon.png',
-  projectCover: 'assets/images/foodapp_cover.png',
+  projectIcon: 'assets/images/mob/food_app/foodapp_icon.png',
+  projectCover: 'assets/images/mob/food_app/foodapp_cover.png',
 );
 final ProjectImageModel tuneHubImages = ProjectImageModel(
-  projectIcon: 'assets/images/tune_hub/th_icon.png',
-  projectCover: 'assets/images/tune_hub/th_icon.png',
+  projectIcon: 'assets/images/mob/tune_hub/th_icon.png',
+  projectCover: 'assets/images/mob/tune_hub/th_icon.png',
 );
-final ProjectImageModel psImages = ProjectImageModel(
-  projectIcon: 'assets/images/ps_icon.png',
-  projectCover: 'assets/images/ps_cover.png',
+final ProjectImageModel peakStoreImages = ProjectImageModel(
+  projectIcon: 'assets/images/mob/peak_store/ps_icon.png',
+  projectCover: 'assets/images/mob/peak_store/ps_cover.png',
 );
 
 //threeDProjectList
-final ProjectImageModel oneImges = ProjectImageModel(
-  projectIcon: 'assets/images/dj_icon.png',
-  projectCover: 'assets/images/dj_cover.png',
-);
+// final ProjectImageModel oneImges = ProjectImageModel(
+//   projectIcon: 'assets/images/game_design/double_jump/dj_icon.png',
+//   projectCover: 'assets/images/game_design/double_jump/dj_cover.png',
+// );
 
 //gameDesignProjectList
 final ProjectImageModel polyTownImges = ProjectImageModel(
-  projectIcon: 'assets/images/polyTown_icon.png',
-  projectCover: 'assets/images/polyTown_cover.png',
+  projectIcon: 'assets/images/game_design/poly_town/polyTown_icon.png',
+  projectCover: 'assets/images/game_design/poly_town/polyTown_cover.png',
 );
 final ProjectImageModel medievalImges = ProjectImageModel(
-  projectIcon: 'assets/images/med_icon.png',
-  projectCover: 'assets/images/med_cover.png',
+  projectIcon: 'assets/images/game_design/medieval_pack/med_icon.png',
+  projectCover: 'assets/images/game_design/medieval_pack/med_cover.png',
 );
 final ProjectImageModel blasterImges = ProjectImageModel(
-  projectIcon: 'assets/images/blaster_icon.png',
-  projectCover: 'assets/images/blaster_cover.png',
+  projectIcon: 'assets/images/game_design/blaster_pranks/blaster_icon.png',
+  projectCover: 'assets/images/game_design/blaster_pranks/blaster_cover.png',
 );
 final ProjectImageModel djImges = ProjectImageModel(
-  projectIcon: 'assets/images/dj_icon.png',
-  projectCover: 'assets/images/dj_cover.png',
+  projectIcon: 'assets/images/game_design/double_jump/dj_icon.png',
+  projectCover: 'assets/images/game_design/double_jump/dj_cover.png',
 );
