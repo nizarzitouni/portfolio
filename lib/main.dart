@@ -11,3 +11,12 @@ void main() async {
   );
   runApp(const PortfolioApp());
 }
+
+
+
+/**
+ * for resizing images https://imageresizer.com/
+ * change the version in pubspec 
+ * run  flutter clean; flutter build web;
+ * go to build/web/index.html and change 	<base href="/"> to 	<base href="./">
+ */
