@@ -53,18 +53,29 @@ class ImagesPath {
     'assets/images/mob/food_app/foodapp2.jpg',
   ];
   static final List<String> peakStoreScreens = [
-    'assets/images/mob/peak_store/ps.jpg',
-    'assets/images/mob/peak_store/ps2.jpg',
-    'assets/images/mob/peak_store/ps3.jpg',
-    'assets/images/mob/peak_store/ps4.jpg',
+    'assets/images/mob/peak_store/ps_1.png',
+    'assets/images/mob/peak_store/ps_2.png',
+    'assets/images/mob/peak_store/ps_3.png',
+    'assets/images/mob/peak_store/ps_4.png',
   ];
   static final List<String> tuneHubScreens = [
-    'assets/images/mob/tune_hub/th1.jpg',
-    'assets/images/mob/tune_hub/th2.jpg',
-    'assets/images/mob/tune_hub/th3.jpg',
-    'assets/images/mob/tune_hub/th4.jpg',
-    'assets/images/mob/tune_hub/th5.jpg',
+    'assets/images/mob/tune_hub/th1.png',
+    'assets/images/mob/tune_hub/th2.png',
+    'assets/images/mob/tune_hub/th3.png',
+    'assets/images/mob/tune_hub/th4.png',
+    'assets/images/mob/tune_hub/th5.png',
   ];
+  static final List<String> audioLibroScreens = [
+    'assets/images/mob/audio_libro/audio_libro_1.png',
+    'assets/images/mob/audio_libro/audio_libro_2.png',
+    'assets/images/mob/audio_libro/audio_libro_3.png',
+    'assets/images/mob/audio_libro/audio_libro_4.png',
+    'assets/images/mob/audio_libro/audio_libro_5.png',
+  ];
+
+  //TODO: use https://imageresizer.com/ for resize
+  //add audio libro app with screens
+  //add livestream simulator
 
   //Game Disegn Screens ------------------------------------------------------------------------------
 

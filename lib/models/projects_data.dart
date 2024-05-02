@@ -28,7 +28,11 @@ abstract class ProjectData {
       projectTitle: "Quick QR Pro",
       liveUrl: "https://play.google.com/store/apps/details?id=com.nizarztn.quickqrpro",
       projectDescription:
-          "Quick QR Pro: The ultimate QR code app with easy scanning and custom code creation. Featuring logo integration, this app offers personalized and branded code experiences for various needs.",
+          "Quick QR Pro: The ultimate QR code app with easy scanning and custom code creation. Featuring logo integration, this app offers personalized and branded code experiences for various needs.\n\n\n"
+          "Key Features:\n\n"
+          "   ♦ Easy Scanning: Quickly scan QR codes to access information.\n"
+          "   ♦ Custom Code Creation: Generate your own QR codes with the option to add your logo.\n"
+          "   ♦ Brand Integration: Perfect for businesses aiming to promote their brand or individuals wanting a personal touch.\n",
       techStacks: [
         "Flutter",
         "GetX",
@@ -43,12 +47,17 @@ abstract class ProjectData {
       carouselFullWidth: false,
       behanceLink: null,
     ),
+
     ProjectModel(
       projectId: '2',
       projectTitle: "Speedy Invoice",
       liveUrl: "https://play.google.com/store/apps/details?id=com.nizarztn.speedyInvoice",
       projectDescription:
-          "Speedy Invoice: A streamlined mobile tool for swift bill and estimate creation. Ideal for small businesses and freelancers, offering efficient on-the-go billing management.",
+          "Speedy Invoice: A streamlined mobile tool for swift bill and estimate creation. Ideal for small businesses and freelancers, offering efficient on-the-go billing management.\n\n\n"
+          "Key Features:\n\n"
+          "   ♦ Mobile Invoice Creation: Easily generate and send invoices from your phone.\n"
+          "   ♦ Estimate Management: Provide estimates before billing, streamlining the payment process.\n"
+          "   ♦ Efficient Billing Management: Manage all billing aspects on the go, ensuring timely payments.\n",
       techStacks: [
         "Flutter",
         "GetX",
@@ -65,10 +74,39 @@ abstract class ProjectData {
     ),
     ProjectModel(
       projectId: '3',
+      projectTitle: "Audio Libro",
+      liveUrl: "https://play.google.com/store/apps/details?id=nz.dev.audiolibro.client&hl=en&gl=US",
+      projectDescription:
+          "Developed Audio Libro, a personalized audiobook platform using Flutter for an immersive listening experience. Leveraged Firebase for efficient data management and user authentication.\n\n\n"
+          "Key Features:\n\n"
+          "   ♦ Seamless Background Playback: Enjoy uninterrupted listening across your day.\n"
+          "   ♦ Convenient Bookmarking: Save your spot and return to your favorite stories anytime.\n"
+          "   ♦ User-Friendly Interface: Navigate through a vast library of audiobooks effortlessly.\n",
+      techStacks: [
+        "Flutter",
+        "Firebase",
+        "GetX",
+        "Rive Animations",
+        "Firebase Analyitics",
+      ],
+      role: "Sole developer for UI design and implementation",
+      projectImageModel: audioLibroImages,
+      isLive: true,
+      githubUrl: null,
+      appScreens: ImagesPath.audioLibroScreens,
+      carouselFullWidth: false,
+      behanceLink: null,
+    ),
+    ProjectModel(
+      projectId: '4',
       projectTitle: "Sa3arli",
       liveUrl: "https://play.google.com/store/apps/details?id=nx.nizarztn.carimp",
       projectDescription:
-          "Facilitating car imports to Algeria! Our Flutter app provides quick and accurate cost estimates, incorporating customs tariffs. Download now for confidence in your import decisions.",
+          "Facilitating car imports to Algeria Our Flutter app provides quick and accurate cost estimates, incorporating customs tariffs. Download now for confidence in your import decisions.\n\n\n"
+          "Key Features:\n\n"
+          "   ♦ Cost Estimation: Get a quick and accurate estimate of importation costs.\n"
+          "   ♦ Customs Tariffs: Incorporates the latest customs tariffs applied by Algerian customs.\n"
+          "   ♦ Regular Updates: Stay informed with the latest information about tariffs.\n",
       techStacks: [
         "Flutter",
         "Bloc",
@@ -82,11 +120,54 @@ abstract class ProjectData {
       behanceLink: null,
     ),
     ProjectModel(
-      projectId: '4',
+      projectId: '5',
+      projectTitle: "Tune Hub",
+      liveUrl: "https://play.google.com/store/apps/details?id=nz.dev.tunehub",
+      isLive: true,
+      projectDescription:
+          "Developed Tune Hub, a personalized ringtone app using Flutter for a smooth user experience. Leveraged Supabase for efficient storage management.\n\n\n"
+          "Key Features:\n\n"
+          "   ♦ Effortless exploration of ringtones.\n"
+          "   ♦ Seamless previewing functionality.\n"
+          "   ♦ Easy customization of device sounds.\n",
+      techStacks: [
+        "Flutter",
+        "Supabase",
+      ],
+      role: "solo developer for UI design and implementation",
+      githubUrl: null,
+      appScreens: ImagesPath.tuneHubScreens,
+      projectImageModel: tuneHubImages,
+      carouselFullWidth: false,
+      behanceLink: null,
+    ),
+    ProjectModel(
+      projectId: '9',
+      projectTitle: "Sneakers Shop",
+      liveUrl: null,
+      projectDescription:
+          "Prototype app for a local peak sneakers store. Check out the code on GitHub for a glimpse into the development process.",
+      techStacks: [
+        "Flutter",
+      ],
+      role: "Sole developer for UI design and implementation",
+      projectImageModel: peakStoreImages,
+      isLive: false,
+      githubUrl: "https://github.com/nizarzitouni/sneakerzi",
+      appScreens: ImagesPath.peakStoreScreens,
+      carouselFullWidth: false,
+      behanceLink: null,
+    ),
+    ProjectModel(
+      projectId: '10',
       projectTitle: "Tiktok Clone",
       liveUrl: null,
       projectDescription:
-          "Developed a TikTok Clone using Flutter, GetX, Firebase, and Firestore DB. This app replicates the key functionalities of TikTok, allowing users to create, upload, and interact with short videos. As the sole creator, I implemented features such as video playback, user interactions, and seamless video uploads. Explore the source code on GitHub to understand the inner workings of this Flutter project.",
+          "Developed a TikTok Clone using Flutter, GetX, Firebase, and Firestore DB. This app replicates the key functionalities of TikTok, allowing users to create, upload, and interact with short videos. As the sole creator, I implemented features such as video playback, user interactions, and seamless video uploads. Explore the source code on GitHub to understand the inner workings of this Flutter project.\n\n\n"
+          "Key Features:\n\n"
+          "   ♦ Video Playback: Experience TikTok's video content in a mobile-friendly format.\n"
+          "   ♦ User Interactions: Engage with the community through likes, comments, and shares.\n"
+          "   ♦ Seamless Video Uploads: Easily share your moments with the world.\n",
       techStacks: [
         "Flutter",
         "GetX",
@@ -124,28 +205,7 @@ abstract class ProjectData {
     //   carouselFullWidth: false,
     //   behanceLink: null,
     // ),
-    ProjectModel(
-      projectId: '6',
-      projectTitle: "Tune Hub",
-      liveUrl: "https://play.google.com/store/apps/details?id=nz.dev.tunehub",
-      isLive: true,
-      projectDescription:
-          "Developed Tune Hub, a personalized ringtone app using Flutter for a smooth user experience. Leveraged Supabase for efficient storage management.\n\n\n"
-          "Key Features:\n\n"
-          "   ♦ Effortless exploration of ringtones.\n"
-          "   ♦ Seamless previewing functionality.\n"
-          "   ♦ Easy customization of device sounds.\n",
-      techStacks: [
-        "Flutter",
-        "Supabase",
-      ],
-      role: "solo developer for UI design and implementation",
-      githubUrl: null,
-      appScreens: ImagesPath.tuneHubScreens,
-      projectImageModel: tuneHubImages,
-      carouselFullWidth: false,
-      behanceLink: null,
-    ),
+
     // ProjectModel(
     //   projectId: '6',
     //   projectTitle: "Food App UI",
@@ -163,23 +223,6 @@ abstract class ProjectData {
     //   carouselFullWidth: false,
     //   behanceLink: null,
     // ),
-    ProjectModel(
-      projectId: '7',
-      projectTitle: "Sneakers Shop",
-      liveUrl: null,
-      projectDescription:
-          "Prototype app for a local peak sneakers store. Check out the code on GitHub for a glimpse into the development process.",
-      techStacks: [
-        "Flutter",
-      ],
-      role: "Sole developer for UI design and implementation",
-      projectImageModel: peakStoreImages,
-      isLive: false,
-      githubUrl: "https://github.com/nizarzitouni/sneakerzi",
-      appScreens: ImagesPath.peakStoreScreens,
-      carouselFullWidth: false,
-      behanceLink: null,
-    ),
   ];
 
   // static List<ProjectModel> threeDProjectList = [
@@ -316,11 +359,15 @@ final ProjectImageModel foodAppImages = ProjectImageModel(
 );
 final ProjectImageModel tuneHubImages = ProjectImageModel(
   projectIcon: 'assets/images/mob/tune_hub/th_icon.png',
-  projectCover: 'assets/images/mob/tune_hub/th_icon.png',
+  projectCover: 'assets/images/mob/tune_hub/th_cover.png',
 );
 final ProjectImageModel peakStoreImages = ProjectImageModel(
   projectIcon: 'assets/images/mob/peak_store/ps_icon.png',
   projectCover: 'assets/images/mob/peak_store/ps_cover.png',
+);
+final ProjectImageModel audioLibroImages = ProjectImageModel(
+  projectIcon: 'assets/images/mob/audio_libro/audio_libro_icon.png',
+  projectCover: 'assets/images/mob/audio_libro/audio_libro_cover.png',
 );
 
 //threeDProjectList
