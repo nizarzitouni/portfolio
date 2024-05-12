@@ -4,7 +4,7 @@ description: "A new Flutter project."
 publish_to: 'none' 
 
 
-version: 1.11.0+11
+version: 1.12.0+12
 
 environment:
   sdk: '>=3.2.2 <4.0.0'
@@ -45,6 +45,7 @@ flutter:
     - assets/images/
     - assets/images/mob/food_app/
     - assets/images/mob/ig/
+    - assets/images/mob/live_stream_simulator/
     - assets/images/mob/jdm/
     - assets/images/mob/nx_shop/
     - assets/images/mob/peak_store/

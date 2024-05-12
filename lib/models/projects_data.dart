@@ -11,7 +11,6 @@ abstract class ProjectData {
       projectDescription:
           "\"JUST DELETE ME\" is a directory simplifying the account deletion process by countering dark pattern techniques used by companies. With over 10k downloads on the store, this Flutter app has successfully provided users with a straightforward solution for managing their online presence.",
       techStacks: [
-        "Flutter",
         "GetX",
         "Shared Preferences",
       ],
@@ -25,6 +24,32 @@ abstract class ProjectData {
     ),
     ProjectModel(
       projectId: '1',
+      projectTitle: "Live Stream Simulator",
+      liveUrl: "https://play.google.com/store/apps/details?id=nz.dev.slivestreamsimulator&hl=en-US&ah=qzuvZyaqNyuP7NKnhpWYTymLzeI",
+      projectDescription:
+          "Live Stream Simulator is a feature-rich application designed to simulate live streaming experiences. With its powerful capabilities, users can:\n\n"
+          "• Create virtual live streams with customizable settings\n"
+          "• Manage simulated viewers and their interactions\n"
+          "• Explore various monetization strategies, including virtual donations and subscriptions\n"
+          "• Analyze stream analytics and viewer engagement metrics\n\n"
+          "This app serves as an invaluable tool for content creators, streamers, and businesses looking to experiment with live streaming without the need for expensive equipment or setups.",
+      techStacks: [
+        "Cubit",
+        "Firebase",
+        "Amplitude SDK",
+        "RevenueCat SDK",
+      ],
+      role: "Sole creator of the entire app",
+      projectImageModel: lssImges,
+      isLive: true,
+      githubUrl: null,
+      appScreens: ImagesPath.livstreamSimulatorListScreens,
+      carouselFullWidth: false,
+      behanceLink: null,
+    ),
+
+    ProjectModel(
+      projectId: '2',
       projectTitle: "Quick QR Pro",
       liveUrl: "https://play.google.com/store/apps/details?id=com.nizarztn.quickqrpro",
       projectDescription:
@@ -34,7 +59,6 @@ abstract class ProjectData {
           "   ♦ Custom Code Creation: Generate your own QR codes with the option to add your logo.\n"
           "   ♦ Brand Integration: Perfect for businesses aiming to promote their brand or individuals wanting a personal touch.\n",
       techStacks: [
-        "Flutter",
         "GetX",
         "SqLite",
         "Storage",
@@ -49,7 +73,7 @@ abstract class ProjectData {
     ),
 
     ProjectModel(
-      projectId: '2',
+      projectId: '3',
       projectTitle: "Speedy Invoice",
       liveUrl: "https://play.google.com/store/apps/details?id=com.nizarztn.speedyInvoice",
       projectDescription:
@@ -59,7 +83,6 @@ abstract class ProjectData {
           "   ♦ Estimate Management: Provide estimates before billing, streamlining the payment process.\n"
           "   ♦ Efficient Billing Management: Manage all billing aspects on the go, ensuring timely payments.\n",
       techStacks: [
-        "Flutter",
         "GetX",
         "SqLite",
         "Storage",
@@ -73,7 +96,7 @@ abstract class ProjectData {
       behanceLink: null,
     ),
     ProjectModel(
-      projectId: '3',
+      projectId: '4',
       projectTitle: "Audio Libro",
       liveUrl: "https://play.google.com/store/apps/details?id=nz.dev.audiolibro.client&hl=en&gl=US",
       projectDescription:
@@ -83,7 +106,6 @@ abstract class ProjectData {
           "   ♦ Convenient Bookmarking: Save your spot and return to your favorite stories anytime.\n"
           "   ♦ User-Friendly Interface: Navigate through a vast library of audiobooks effortlessly.\n",
       techStacks: [
-        "Flutter",
         "Firebase",
         "GetX",
         "Rive Animations",
@@ -98,7 +120,7 @@ abstract class ProjectData {
       behanceLink: null,
     ),
     ProjectModel(
-      projectId: '4',
+      projectId: '5',
       projectTitle: "Sa3arli",
       liveUrl: "https://play.google.com/store/apps/details?id=nx.nizarztn.carimp",
       projectDescription:
@@ -120,7 +142,7 @@ abstract class ProjectData {
       behanceLink: null,
     ),
     ProjectModel(
-      projectId: '5',
+      projectId: '6',
       projectTitle: "Tune Hub",
       liveUrl: "https://play.google.com/store/apps/details?id=nz.dev.tunehub",
       isLive: true,
@@ -158,30 +180,30 @@ abstract class ProjectData {
       carouselFullWidth: false,
       behanceLink: null,
     ),
-    ProjectModel(
-      projectId: '10',
-      projectTitle: "Tiktok Clone",
-      liveUrl: null,
-      projectDescription:
-          "Developed a TikTok Clone using Flutter, GetX, Firebase, and Firestore DB. This app replicates the key functionalities of TikTok, allowing users to create, upload, and interact with short videos. As the sole creator, I implemented features such as video playback, user interactions, and seamless video uploads. Explore the source code on GitHub to understand the inner workings of this Flutter project.\n\n\n"
-          "Key Features:\n\n"
-          "   ♦ Video Playback: Experience TikTok's video content in a mobile-friendly format.\n"
-          "   ♦ User Interactions: Engage with the community through likes, comments, and shares.\n"
-          "   ♦ Seamless Video Uploads: Easily share your moments with the world.\n",
-      techStacks: [
-        "Flutter",
-        "GetX",
-        "Firebase",
-        "Firestore DB",
-      ],
-      role: "Sole creator of the entire app",
-      projectImageModel: tiktokCloneImges,
-      isLive: false,
-      githubUrl: "https://github.com/nizarzitouni/Tiktok-flutter-clone",
-      appScreens: appScreensEmpty,
-      carouselFullWidth: false,
-      behanceLink: null,
-    ),
+    // ProjectModel(
+    //   projectId: '10',
+    //   projectTitle: "Tiktok Clone",
+    //   liveUrl: null,
+    //   projectDescription:
+    //       "Developed a TikTok Clone using Flutter, GetX, Firebase, and Firestore DB. This app replicates the key functionalities of TikTok, allowing users to create, upload, and interact with short videos. As the sole creator, I implemented features such as video playback, user interactions, and seamless video uploads. Explore the source code on GitHub to understand the inner workings of this Flutter project.\n\n\n"
+    //       "Key Features:\n\n"
+    //       "   ♦ Video Playback: Experience TikTok's video content in a mobile-friendly format.\n"
+    //       "   ♦ User Interactions: Engage with the community through likes, comments, and shares.\n"
+    //       "   ♦ Seamless Video Uploads: Easily share your moments with the world.\n",
+    //   techStacks: [
+    //     "Flutter",
+    //     "GetX",
+    //     "Firebase",
+    //     "Firestore DB",
+    //   ],
+    //   role: "Sole creator of the entire app",
+    //   projectImageModel: tiktokCloneImges,
+    //   isLive: false,
+    //   githubUrl: "https://github.com/nizarzitouni/Tiktok-flutter-clone",
+    //   appScreens: appScreensEmpty,
+    //   carouselFullWidth: false,
+    //   behanceLink: null,
+    // ),
     // ProjectModel(
     //   projectId: '5',
     //   projectTitle: "NX Shop",
@@ -224,21 +246,6 @@ abstract class ProjectData {
     //   behanceLink: null,
     // ),
   ];
-
-  // static List<ProjectModel> threeDProjectList = [
-  //   ProjectModel(
-  //     projectTitle: "PolyTown",
-  //     projectUrl: "https://sketchfab.com/3d-models/polytown-low-poly-city-pack-699546b57f3e4b38986061e995ac20ad",
-  //     projectDescription:
-  //         "An Epic Low Poly asset pack of Buildings, Characters, Props, Viehcules and Environment assets to create a low poly themed polygonal style game",
-  //     techStacks: [
-  //       "Blender",
-  //     ],
-  //     role: "I was the creator of the whole app",
-  //     projectImageModel: polyTownImges,      behanceLink:null,
-
-  //   ),
-  // ];
 
   static List<ProjectModel> threeDProjectList = [
     ProjectModel(
@@ -302,29 +309,29 @@ abstract class ProjectData {
       carouselFullWidth: true,
       behanceLink: "https://www.behance.net/gallery/190658551/Level-Desing-Medieval-Indoor-Kit-3D",
     ),
-    ProjectModel(
-      projectId: '53',
-      projectTitle: "Blaster Pranks - Epic Toys",
-      liveUrl: "https://apkcombo.com/blaster-pranks-epic-toys/com.blaster.prank.epic.toys.blast/",
-      projectDescription:
-          "As the Game Level Designer at Blaster Pranks - Epic Toys in 2018, I spearheaded the entire level design process, showcasing my proficiency in greyboxing, asset creation, and character design. My commitment to crafting engaging gaming experiences resulted in the successful creation and implementation of over 90 unique game levels.\n\n"
-          "Key Achievements:\n\n"
-          "♦ End-to-End Design Responsibility: Held complete responsibility for the level design process, from conceptualization through greyboxing to the final touches of asset creation and character design.\n"
-          "♦ Quantifiable Impact: Contributed to the success of the project by creating and implementing a substantial number of 90+ game levels, each designed to captivate and challenge players.\n"
-          "♦ Quantifiable Impact: Contributed to the success of the project by creating and implementing a substantial number of 90+ game levels, each designed to captivate and challenge players.\n\n"
-          "My tenure at Blaster Pranks - Epic Toys was characterized by a commitment to delivering exceptional gaming content and a passion for pushing creative boundaries within the field of game design.\n",
-      techStacks: [
-        "Unity",
-        "Blender",
-      ],
-      role: "I was the creator of the whole app",
-      projectImageModel: blasterImges,
-      isLive: true,
-      githubUrl: null,
-      appScreens: ImagesPath.blasterPranksScreens,
-      carouselFullWidth: false,
-      behanceLink: null,
-    ),
+    // ProjectModel(
+    //   projectId: '53',
+    //   projectTitle: "Blaster Pranks - Epic Toys",
+    //   liveUrl: "https://apkcombo.com/blaster-pranks-epic-toys/com.blaster.prank.epic.toys.blast/",
+    //   projectDescription:
+    //       "As the Game Level Designer at Blaster Pranks - Epic Toys in 2018, I spearheaded the entire level design process, showcasing my proficiency in greyboxing, asset creation, and character design. My commitment to crafting engaging gaming experiences resulted in the successful creation and implementation of over 90 unique game levels.\n\n"
+    //       "Key Achievements:\n\n"
+    //       "♦ End-to-End Design Responsibility: Held complete responsibility for the level design process, from conceptualization through greyboxing to the final touches of asset creation and character design.\n"
+    //       "♦ Quantifiable Impact: Contributed to the success of the project by creating and implementing a substantial number of 90+ game levels, each designed to captivate and challenge players.\n"
+    //       "♦ Quantifiable Impact: Contributed to the success of the project by creating and implementing a substantial number of 90+ game levels, each designed to captivate and challenge players.\n\n"
+    //       "My tenure at Blaster Pranks - Epic Toys was characterized by a commitment to delivering exceptional gaming content and a passion for pushing creative boundaries within the field of game design.\n",
+    //   techStacks: [
+    //     "Unity",
+    //     "Blender",
+    //   ],
+    //   role: "I was the creator of the whole app",
+    //   projectImageModel: blasterImges,
+    //   isLive: true,
+    //   githubUrl: null,
+    //   appScreens: ImagesPath.blasterPranksScreens,
+    //   carouselFullWidth: false,
+    //   behanceLink: null,
+    // ),
   ];
 }
 
@@ -332,6 +339,10 @@ abstract class ProjectData {
 final ProjectImageModel jdmImges = ProjectImageModel(
   projectIcon: 'assets/images/mob/jdm/jdm_icon.png',
   projectCover: 'assets/images/mob/jdm/jdm_cover.jpg',
+);
+final ProjectImageModel lssImges = ProjectImageModel(
+  projectIcon: 'assets/images/mob/live_stream_simulator/lss_icon.png',
+  projectCover: 'assets/images/mob/live_stream_simulator/lss_cover.png',
 );
 final ProjectImageModel qqpImges = ProjectImageModel(
   projectIcon: 'assets/images/mob/quick_qr_pro/qqp_icon.png',

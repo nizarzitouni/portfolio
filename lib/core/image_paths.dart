@@ -24,6 +24,13 @@ class ImagesPath {
     'assets/images/mob/quick_qr_pro/qqp3.png',
     'assets/images/mob/quick_qr_pro/qqp4.png',
   ];
+  static final List<String> livstreamSimulatorListScreens = [
+    'assets/images/mob/live_stream_simulator/lss1.png',
+    'assets/images/mob/live_stream_simulator/lss2.png',
+    'assets/images/mob/live_stream_simulator/lss3.png',
+    'assets/images/mob/live_stream_simulator/lss4.png',
+    'assets/images/mob/live_stream_simulator/lss5.png',
+  ];
   static final List<String> invoiceGeneratorImagesListScreens = [
     'assets/images/mob/ig/ig1.png',
     'assets/images/mob/ig/ig2.png',

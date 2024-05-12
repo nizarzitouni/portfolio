@@ -51,7 +51,7 @@ const String BASEDIN = "Constantine, Algeria";
 const String POS = "Software Engineer | Flutter Developer | 3D Artist";
 const String ABOUTPROFILE = '''Crafting software solutions, developing Flutter apps, and creating captivating 3D art.''';
 const String LONGABOUT =
-    'Experienced Software Engineer and Flutter Developer with a Master\'s degree in Software Engineering. Specializing in Flutter, I excel in rapid prototyping, full-stack development, and IT management. Passionate about crafting innovative and seamless mobile experiences, with an additional flair for 3D art. Committed to staying ahead in technology and delivering user-centric solutions.';
+    'Experienced Software Engineer and Flutter Developer with a Master\'s degree in Software Engineering. Specializing in Flutter, I excel in rapid prototyping, and IT management. Passionate about crafting innovative and seamless mobile experiences, with an additional flair for 3D art. Committed to staying ahead in technology and delivering user-centric solutions.';
 
 //
 const double barsHight = 50;

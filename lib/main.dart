@@ -6,9 +6,7 @@ import 'app/portfolio_app.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp(
-    options: DefaultFirebaseOptions.currentPlatform,
-  );
+  await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
   runApp(const PortfolioApp());
 }
 
@@ -19,4 +17,8 @@ void main() async {
  * change the version in pubspec 
  * run  flutter clean; flutter build web;
  * go to build/web/index.html and change 	<base href="/"> to 	<base href="./">
+ * 
+ * 
+ * https://www.quiet.fun/jobs/seniordevflutter/
+ * https://www.phind.com/search?cache=pqrrwr2jlf735hxr4jh3xi3e&source=sidebar
  */
