@@ -22,3 +22,7 @@ void main() async {
  * https://www.quiet.fun/jobs/seniordevflutter/
  * https://www.phind.com/search?cache=pqrrwr2jlf735hxr4jh3xi3e&source=sidebar
  */
+
+//after updating to flutter 3.22
+//follow this https://docs.flutter.dev/platform-integration/web/bootstrapping
+//and this https://gist.github.com/bizz84/08e6608cf7289a77c335e70122308857

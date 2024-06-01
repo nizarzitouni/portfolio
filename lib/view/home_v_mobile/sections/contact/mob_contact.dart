@@ -23,7 +23,7 @@ class MobContact extends StatelessWidget {
             children: [
               Center(
                 child: Text(
-                  'I’m interested in remote jobs or freelance opportunities. However, if you have other request or question, don’t hesitate to contact me vai email.',
+                  'I’m interested in remote jobs or freelance opportunities. However, if you have other request or question, don’t hesitate to contact me via email.',
                   style: TextStyle(
                     color: Colors.white.withOpacity(.8),
                     fontSize: 16,

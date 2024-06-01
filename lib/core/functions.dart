@@ -37,7 +37,7 @@ String? encodeQueryParameters(Map<String, String> params) {
 void sendEmail() {
   final Uri emailLaunchUri = Uri(
       scheme: 'mailto',
-      path: 'edirinmuogho@gmail.com',
+      path: 'ztn.nizar@gmail.com',
       query: encodeQueryParameters(<String, String>{
         'subject': '',
       }));
