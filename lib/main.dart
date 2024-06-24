@@ -19,8 +19,8 @@ void main() async {
  * go to build/web/index.html and change 	<base href="/"> to 	<base href="./">
  * 
  * 
- * https://www.quiet.fun/jobs/seniordevflutter/
- * https://www.phind.com/search?cache=pqrrwr2jlf735hxr4jh3xi3e&source=sidebar
+ *
+ * 
  */
 
 //after updating to flutter 3.22

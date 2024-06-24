@@ -1,26 +1,22 @@
 name: nizar_ztn_portfolio
 description: "A new Flutter project."
 
-publish_to: 'none' 
+publish_to: "none"
 
-
-version: 1.13.0+13
+version: 1.14.0+14
 
 environment:
-  sdk: '>=3.2.2 <4.0.0'
-
+  sdk: ">=3.2.2 <4.0.0"
 
 dependencies:
   flutter:
     sdk: flutter
-
 
   go_router: ^13.0.1
   url_launcher: ^6.2.4
   firebase_core: ^2.25.4
   firebase_analytics_web: ^0.5.5+17
   firebase_analytics: ^10.8.5
-
 
   google_fonts: ^6.1.0
   gap: ^3.0.1
@@ -30,13 +26,11 @@ dependencies:
   universal_html: ^2.2.4
   typeset: ^2.1.1
 
-
 dev_dependencies:
   flutter_test:
     sdk: flutter
 
   flutter_lints: ^2.0.0
-
 
 flutter:
   uses-material-design: true
@@ -67,11 +61,11 @@ flutter:
     - family: Agustina
       fonts:
         - asset: assets/fonts/agustina/agustina.otf
-    
+
     - family: Montserrat
       fonts:
         - asset: assets/fonts/montserrat/montserrat.ttf
-    
+
     - family: Poppins
       fonts:
         - asset: assets/fonts/poppins/Poppins-Regular.ttf

@@ -5,7 +5,7 @@ import 'package:flutter_svg/svg.dart';
 import 'package:gap/gap.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:nizar_ztn_portfolio/core/pallete.dart';
-import 'package:universal_html/html.dart' as html;
+// import 'package:universal_html/html.dart' as html;
 
 import '../../../../../core/functions.dart';
 import '../../../../../models/web_action_model.dart';
@@ -73,7 +73,7 @@ class ProfileInfo extends StatelessWidget {
                         fillColor: Pallete.whiteColor.withOpacity(.1),
                         onPressed: () {
                           launchWithUri(url: wActions.webUrl);
-                          html.window.open(wActions.webUrl, "pdf");
+                          // html.window.open(wActions.webUrl, "pdf");
                         },
                         child: Row(
                           mainAxisSize: MainAxisSize.min,
