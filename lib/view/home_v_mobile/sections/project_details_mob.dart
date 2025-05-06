@@ -11,11 +11,11 @@ import '../../home_v_web/widgets/live_or_github_widget.dart';
 
 class ProjectDetailsMob extends StatelessWidget {
   const ProjectDetailsMob({Key? key, required this.projectId}) : super(key: key);
-  final String projectId;
+  final int projectId;
   @override
   Widget build(BuildContext context) {
     ProjectModel projectModel;
-    if (int.parse(projectId) < 50) {
+    if (projectId < 50) {
       projectModel = ProjectData.mobileDevProjectList.firstWhere((project) => project.projectId == projectId);
     } else {
       projectModel = ProjectData.threeDProjectList.firstWhere((project) => project.projectId == projectId);

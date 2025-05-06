@@ -48,6 +48,9 @@ flutter:
     - assets/images/mob/tiktok/
     - assets/images/mob/tune_hub/
     - assets/images/mob/audio_libro/
+    - assets/images/mob/stretchyv1/
+    - assets/images/mob/stretchyv2/
+    - assets/images/mob/dupli/
     # - assets/images//
     - assets/icons/
     - assets/fonts/

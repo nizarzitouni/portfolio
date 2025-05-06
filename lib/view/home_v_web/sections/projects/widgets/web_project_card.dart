@@ -9,10 +9,7 @@ import '../../../widgets/live_or_github_widget.dart';
 
 class WebProjectCard extends StatefulWidget {
   final ProjectModel projectModel;
-  const WebProjectCard({
-    Key? key,
-    required this.projectModel,
-  }) : super(key: key);
+  const WebProjectCard({Key? key, required this.projectModel}) : super(key: key);
 
   @override
   State<WebProjectCard> createState() => _WebProjectCardState();
@@ -36,7 +33,6 @@ class _WebProjectCardState extends State<WebProjectCard> {
               "project_name": widget.projectModel.projectTitle,
             },
           );
-          // debugPrint('---------------------- ----------------------');
           AppRouter.router.go('/projects/${widget.projectModel.projectId}');
         },
         onHover: (isHovering) {

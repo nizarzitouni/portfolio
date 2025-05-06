@@ -12,6 +12,33 @@ class ImagesPath {
   static const String iconStackOverflow = "assets/icons/icon_stack_overflow.png";
   static const String iconflutter = "assets/icons/flutter_logo.png";
 
+  static final List<String> dupliImgListScreens = [
+    'assets/images/mob/dupli/dupli1.png',
+    'assets/images/mob/dupli/dupli2.png',
+    'assets/images/mob/dupli/dupli3.png',
+    'assets/images/mob/dupli/dupli4.png',
+    'assets/images/mob/dupli/dupli5.png',
+  ];
+  static final List<String> stretchyV1ImgListScreens = [
+    'assets/images/mob/stretchyv1/st1.png',
+    'assets/images/mob/stretchyv1/st2.png',
+    'assets/images/mob/stretchyv1/st3.png',
+    'assets/images/mob/stretchyv1/st4.png',
+    'assets/images/mob/stretchyv1/st5.png',
+    'assets/images/mob/stretchyv1/st6.png',
+    'assets/images/mob/stretchyv1/st7.png',
+    'assets/images/mob/stretchyv1/st8.png',
+    'assets/images/mob/stretchyv1/st9.png',
+  ];
+  static final List<String> stretchyV2ImgListScreens = [
+    'assets/images/mob/stretchyv2/stv2_1.png',
+    'assets/images/mob/stretchyv2/stv2_2.png',
+    'assets/images/mob/stretchyv2/stv2_3.png',
+    'assets/images/mob/stretchyv2/stv2_4.png',
+    'assets/images/mob/stretchyv2/stv2_5.png',
+    'assets/images/mob/stretchyv2/stv2_6.png',
+    'assets/images/mob/stretchyv2/stv2_7.png',
+  ];
   static final List<String> jdmImgListScreens = [
     'assets/images/mob/jdm/jdm1.png',
     'assets/images/mob/jdm/jdm2.png',

@@ -2,7 +2,7 @@ import '../core/constants.dart';
 import 'project_image_model.dart';
 
 class ProjectModel {
-  final String projectId;
+  final int projectId;
   final String projectTitle;
   final bool isLive;
   String? liveUrl;

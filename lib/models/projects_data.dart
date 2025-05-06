@@ -4,8 +4,77 @@ import 'project_model.dart';
 
 abstract class ProjectData {
   static List<ProjectModel> mobileDevProjectList = [
+    // First version of Stretchy (inspired by Bend)
     ProjectModel(
-      projectId: '0',
+      projectId: 2,
+      projectTitle: "DUPLI - Your AI Clone",
+      liveUrl: "https://play.google.com/store/apps/details?id=com.techconsolidated.avatarcloneyourself",
+      projectDescription:
+          "DUPLI is an innovative AI avatar cloning application that allows users to create digital versions of themselves. Built while working for a tech company, this app enables users to train AI with their unique information to replicate their communication style, voice, and personality. Features include text chat with avatars, voice call functionality, access to user-created clones, and personalized AI assistance. The app implements advanced machine learning models with a clean, intuitive interface designed for seamless user experience.",
+      techStacks: [
+        "Flutter",
+        "BLoC Pattern",
+        "Firebase",
+        "speech_to_text ",
+        "RESTful APIs",
+        "RESTful APIs",
+        "Cloud Functions",
+        "Local Authentication",
+      ],
+      role:
+          "Lead Flutter Developer responsible for app architecture, implementing real-time communication features, integrating AI models, and optimizing performance for resource-intensive operations",
+      projectImageModel: dupliImages, // Define this variable for screenshots
+      isLive: true,
+      githubUrl: null, // Likely private repository
+      appScreens: ImagesPath.dupliImgListScreens, // Define this path for app screens
+      carouselFullWidth: false,
+      behanceLink: null,
+    ),
+    ProjectModel(
+      projectId: 3,
+      projectTitle: "Stretchy: Daily Stretches (v1)",
+      liveUrl: "https://www.appbrain.com/app/stretchy:-daily-stretches/nz.dev.stretchy",
+      projectDescription:
+          "The first version of Stretchy was inspired by the popular app 'Bend', created as a learning project to understand app development principles. This version offered daily stretching routines with timer-guided exercises designed for all experience levels. Featuring animated demonstrations and progress tracking, this initial release helped users improve mobility and flexibility through structured routines.",
+      techStacks: [
+        "Flutter",
+        "BLoC/Cubit",
+        "Firebase Remote Config",
+        "Shared Preferences",
+      ],
+      role: "Sole creator of the entire app",
+      projectImageModel: stretchyV1Images,
+      isLive: true,
+      githubUrl: null,
+      appScreens: ImagesPath.stretchyV1ImgListScreens,
+      carouselFullWidth: false,
+      behanceLink: null,
+    ),
+
+    ProjectModel(
+      projectId: 4,
+      projectTitle: "Stretchy: Daily Stretches (v2)",
+      liveUrl: "https://play.google.com/store/apps/details?id=com.nzdev.stretchyapp",
+      projectDescription:
+          "The completely redesigned version of Stretchy features an original UI/UX with enhanced functionality. This version offers 10+ specialized routines including morning stretches, desk breaks, posture correction, and targeted body workouts. With animated demonstrations, timer-guided sessions, and improved progress tracking, Stretchy v2 provides a comprehensive stretching experience for users of all fitness levels.",
+      techStacks: [
+        "Flutter",
+        "BLoC/Cubit",
+        "Firebase Remote Config",
+        "Firebase Analytics",
+        "Repository Pattern",
+        "Shared Preferences",
+      ],
+      role: "Sole creator of the entire app",
+      projectImageModel: stretchyV2Images,
+      isLive: true,
+      githubUrl: null,
+      appScreens: ImagesPath.stretchyV2ImgListScreens,
+      carouselFullWidth: false,
+      behanceLink: null,
+    ),
+    ProjectModel(
+      projectId: 13,
       projectTitle: "Just Delete Me",
       liveUrl: "https://play.google.com/store/apps/details?id=com.nizarztn.justdeleteme",
       projectDescription:
@@ -23,7 +92,7 @@ abstract class ProjectData {
       behanceLink: null,
     ),
     ProjectModel(
-      projectId: '1',
+      projectId: 14,
       projectTitle: "Live Stream Simulator",
       liveUrl: "https://play.google.com/store/apps/details?id=nz.dev.slivestreamsimulator&hl=en-US&ah=qzuvZyaqNyuP7NKnhpWYTymLzeI",
       projectDescription:
@@ -49,7 +118,7 @@ abstract class ProjectData {
     ),
 
     ProjectModel(
-      projectId: '2',
+      projectId: 15,
       projectTitle: "Quick QR Pro",
       liveUrl: "https://play.google.com/store/apps/details?id=com.nizarztn.quickqrpro",
       projectDescription:
@@ -73,7 +142,7 @@ abstract class ProjectData {
     ),
 
     ProjectModel(
-      projectId: '3',
+      projectId: 16,
       projectTitle: "Speedy Invoice",
       liveUrl: "https://play.google.com/store/apps/details?id=com.nizarztn.speedyInvoice",
       projectDescription:
@@ -96,7 +165,7 @@ abstract class ProjectData {
       behanceLink: null,
     ),
     ProjectModel(
-      projectId: '4',
+      projectId: 17,
       projectTitle: "Audio Libro",
       liveUrl: "https://play.google.com/store/apps/details?id=nz.dev.audiolibro.client&hl=en&gl=US",
       projectDescription:
@@ -120,7 +189,7 @@ abstract class ProjectData {
       behanceLink: null,
     ),
     ProjectModel(
-      projectId: '5',
+      projectId: 18,
       projectTitle: "Sa3arli",
       liveUrl: "https://play.google.com/store/apps/details?id=nx.nizarztn.carimp",
       projectDescription:
@@ -142,7 +211,7 @@ abstract class ProjectData {
       behanceLink: null,
     ),
     ProjectModel(
-      projectId: '6',
+      projectId: 19,
       projectTitle: "Tune Hub",
       liveUrl: "https://play.google.com/store/apps/details?id=nz.dev.tunehub",
       isLive: true,
@@ -164,7 +233,7 @@ abstract class ProjectData {
       behanceLink: null,
     ),
     ProjectModel(
-      projectId: '9',
+      projectId: 20,
       projectTitle: "Sneakers Shop",
       liveUrl: null,
       projectDescription:
@@ -249,7 +318,7 @@ abstract class ProjectData {
 
   static List<ProjectModel> threeDProjectList = [
     ProjectModel(
-      projectId: '50',
+      projectId: 50,
       projectTitle: "Double Jump",
       liveUrl: "https://www.doublejump.wtf/",
       projectDescription:
@@ -273,7 +342,7 @@ abstract class ProjectData {
       behanceLink: "https://www.behance.net/gallery/191290675/Double-Jump-Level-Design-Showcase",
     ),
     ProjectModel(
-      projectId: '51',
+      projectId: 51,
       projectTitle: "PolyTown",
       isLive: true,
       liveUrl: "https://sketchfab.com/3d-models/polytown-low-poly-city-pack-699546b57f3e4b38986061e995ac20ad",
@@ -291,7 +360,7 @@ abstract class ProjectData {
       behanceLink: null,
     ),
     ProjectModel(
-      projectId: '52',
+      projectId: 52,
       projectTitle: "Medieval Pack",
       isLive: true,
       liveUrl: "https://assetstore.unity.com/packages/3d/environments/historic/medieval-indoor-kit-3d-224308",
@@ -336,6 +405,18 @@ abstract class ProjectData {
 }
 
 //MobileDevProjectList
+final ProjectImageModel dupliImages = ProjectImageModel(
+  projectIcon: 'assets/images/mob/dupli/dupli_icon.png',
+  projectCover: 'assets/images/mob/dupli/dupli_cover.png',
+);
+final ProjectImageModel stretchyV1Images = ProjectImageModel(
+  projectIcon: 'assets/images/mob/stretchyv1/stv1_icon.png',
+  projectCover: 'assets/images/mob/stretchyv1/stv1_cover.png',
+);
+final ProjectImageModel stretchyV2Images = ProjectImageModel(
+  projectIcon: 'assets/images/mob/stretchyv2/stv2_icon.png',
+  projectCover: 'assets/images/mob/stretchyv2/stv2_cover.png',
+);
 final ProjectImageModel jdmImges = ProjectImageModel(
   projectIcon: 'assets/images/mob/jdm/jdm_icon.png',
   projectCover: 'assets/images/mob/jdm/jdm_cover.jpg',

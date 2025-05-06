@@ -2,22 +2,22 @@ import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import 'package:nizar_ztn_portfolio/view/home_v_web/sections/project_details/widgets/back_header_bar.dart';
 
-import '../../../models/project_model.dart';
-import '../widgets/live_or_github_widget.dart';
 import '../../../core/size_config.dart';
+import '../../../models/project_model.dart';
 import '../../../models/projects_data.dart';
 import '../widgets/center_top_widget.dart';
 import '../widgets/crousal_indicator.dart';
+import '../widgets/live_or_github_widget.dart';
 
 class ProjectDeatailsWeb extends StatelessWidget {
   const ProjectDeatailsWeb({Key? key, required this.projectId}) : super(key: key);
-  final String projectId;
+  final int projectId;
 
   @override
   Widget build(BuildContext context) {
     ProjectModel projectModel;
 
-    if (int.parse(projectId) < 50) {
+    if (projectId < 50) {
       projectModel = ProjectData.mobileDevProjectList.firstWhere((project) => project.projectId == projectId);
     } else {
       projectModel = ProjectData.threeDProjectList.firstWhere((project) => project.projectId == projectId);
