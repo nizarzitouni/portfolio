@@ -64,6 +64,6 @@ const double barsHight = 50;
 
 const String HOME_HEADER = "Home";
 const String ABOUT_HEADER = "About";
-const String MOBILEPROJECTS_HEADER = "Android Projects";
+const String MOBILEPROJECTS_HEADER = "Mobile Apps";
 const String THREED_HEADER = "3D Projects";
 const String CONTACT_HEADER = "Contact";

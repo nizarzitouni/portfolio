@@ -40,11 +40,11 @@ class HomeScreenWebBody extends StatelessWidget {
                     key: GlobalKeys.KEY_WEB_MOBILEPORTFOLIO,
                     projectModelsList: ProjectData.mobileDevProjectList,
                   ),
-                  const SmallBarTitle(text: THREED_HEADER),
-                  WebFlutterProjects(
-                    key: GlobalKeys.KEY_WEB_3DPORTFOLIO,
-                    projectModelsList: ProjectData.threeDProjectList,
-                  ),
+                  // const SmallBarTitle(text: THREED_HEADER),
+                  // WebFlutterProjects(
+                  //   key: GlobalKeys.KEY_WEB_3DPORTFOLIO,
+                  //   projectModelsList: ProjectData.threeDProjectList,
+                  // ),
                   const SmallBarTitle(text: CONTACT_HEADER),
                   ContactWeb(key: GlobalKeys.KEY_WEB_CONTACTME),
                   const Gap(40),
