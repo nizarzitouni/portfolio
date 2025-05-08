@@ -7,7 +7,7 @@ import '../../../models/project_model.dart';
 import '../../../models/projects_data.dart';
 import '../../home_v_web/widgets/crousal_indicator.dart';
 import '../../home_v_web/widgets/hover_underline.dart';
-import '../../home_v_web/widgets/live_or_github_widget.dart';
+import '../../home_v_web/widgets/project_links_widget.dart';
 
 class ProjectDetailsMob extends StatelessWidget {
   const ProjectDetailsMob({Key? key, required this.projectId}) : super(key: key);
@@ -97,7 +97,7 @@ class ProjectDetailsMob extends StatelessWidget {
                       // LiveOrGithubWidget(projectModel: projectModel),
                       Container(
                         alignment: Alignment.bottomRight,
-                        child: LiveOrGithubWidget(projectModel: projectModel),
+                        child: ProjectLinksWidget(projectModel: projectModel),
                       ),
                     ],
                   ),

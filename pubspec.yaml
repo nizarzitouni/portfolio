@@ -30,6 +30,7 @@ dependencies:
   webview_flutter_web:
   webview_flutter:
   flutter_html:
+  font_awesome_flutter: ^10.8.0
 
 dev_dependencies:
   flutter_test:

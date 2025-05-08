@@ -50,10 +50,16 @@ const String NAME = "Nizar Zitouni";
 const String BASEDIN = "Constantine, Algeria";
 const String POS = "Software Engineer | Flutter Developer | 3D Artist";
 const String ABOUTPROFILE = '''Crafting software solutions, developing Flutter apps, and creating captivating 3D art.''';
-const String LONGABOUT =
-    'Experienced Software Engineer and Flutter Developer with a Master\'s degree in Software Engineering. Specializing in Flutter, I excel in rapid prototyping, and IT management. Passionate about crafting innovative and seamless mobile experiences, with an additional flair for 3D art. Committed to staying ahead in technology and delivering user-centric solutions.';
+// const String LONGABOUT =
+//     'Experienced Software Engineer and Flutter Developer with a Master\'s degree in Software Engineering. Specializing in Flutter, I excel in rapid prototyping, and IT management. Passionate about crafting innovative and seamless mobile experiences, with an additional flair for 3D art. Committed to staying ahead in technology and delivering user-centric solutions.';
 
-//
+const String LONGABOUT =
+    '''I'm a Flutter developer with a Master's in Software Engineering. I build mobile apps for both Android and iOS under my brand nz-dev.
+
+I focus on creating apps that look good and work well. My projects range from AI tools to fitness apps, all built with Flutter. I like to keep my code clean and organized, making it easier to update and maintain over time.
+
+Beyond coding, I enjoy working on 3D art and design. This creative side helps me approach app development from a different angle, adding a unique touch to my work.''';
+
 const double barsHight = 50;
 
 const String HOME_HEADER = "Home";

@@ -6,28 +6,32 @@ class ProjectModel {
   final String projectTitle;
   final bool isLive;
   String? liveUrl;
+  String? playStoreUrl;
+  String? appStoreUrl;
+  String? githubUrl;
+  String? behanceLink;
   final String projectDescription;
   final String role;
   final List<String> techStacks;
   final ProjectImageModel projectImageModel;
   final List<String>? appScreens;
   final bool carouselFullWidth;
-  String? githubUrl;
-  String? behanceLink;
 
   ProjectModel({
     required this.projectId,
     required this.projectTitle,
     required this.isLive,
-    required this.liveUrl,
+    this.liveUrl,
+    this.playStoreUrl,
+    this.appStoreUrl,
+    this.githubUrl,
+    this.behanceLink,
     required this.projectDescription,
     required this.role,
     required this.techStacks,
     required this.projectImageModel,
-    required this.carouselFullWidth,
-    required this.githubUrl,
     required this.appScreens,
-    required this.behanceLink,
+    required this.carouselFullWidth,
   });
 }
 

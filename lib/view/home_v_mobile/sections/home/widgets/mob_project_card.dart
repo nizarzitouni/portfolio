@@ -5,7 +5,7 @@ import '../../../../../core/pallete.dart';
 import '../../../../../core/routes/app_router.dart';
 import '../../../../../core/singlton_init.dart';
 import '../../../../../models/project_model.dart';
-import '../../../../home_v_web/widgets/live_or_github_widget.dart';
+import '../../../../home_v_web/widgets/project_links_widget.dart';
 
 class MobProjectCard extends StatefulWidget {
   const MobProjectCard({Key? key, required this.projectModel}) : super(key: key);
@@ -125,7 +125,7 @@ class _MobProjectCardState extends State<MobProjectCard> {
                     ),
                     const SizedBox(height: 16),
                     //
-                    LiveOrGithubWidget(projectModel: widget.projectModel),
+                    ProjectLinksWidget(projectModel: widget.projectModel),
                   ],
                 ),
               ),

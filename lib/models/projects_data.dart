@@ -8,14 +8,15 @@ abstract class ProjectData {
     ProjectModel(
       projectId: 2,
       projectTitle: "DUPLI - Your AI Clone",
-      liveUrl: "https://play.google.com/store/apps/details?id=com.techconsolidated.avatarcloneyourself",
+      playStoreUrl: "https://play.google.com/store/apps/details?id=com.techconsolidated.avatarcloneyourself",
+      appStoreUrl: "https://apps.apple.com/cm/app/dupli-your-ai-clone/id6740580236",
       projectDescription:
           "DUPLI is an innovative AI avatar cloning application that allows users to create digital versions of themselves. Built while working for a tech company, this app enables users to train AI with their unique information to replicate their communication style, voice, and personality. Features include text chat with avatars, voice call functionality, access to user-created clones, and personalized AI assistance. The app implements advanced machine learning models with a clean, intuitive interface designed for seamless user experience.",
       techStacks: [
         "Flutter",
         "BLoC Pattern",
         "Firebase",
-        "speech_to_text ",
+        "Speech To Text ",
         "RESTful APIs",
         "RESTful APIs",
         "Cloud Functions",
@@ -54,7 +55,7 @@ abstract class ProjectData {
     ProjectModel(
       projectId: 4,
       projectTitle: "Stretchy: Daily Stretches (v2)",
-      liveUrl: "https://play.google.com/store/apps/details?id=com.nzdev.stretchyapp",
+      playStoreUrl: "https://play.google.com/store/apps/details?id=com.nzdev.stretchyapp",
       projectDescription:
           "The completely redesigned version of Stretchy features an original UI/UX with enhanced functionality. This version offers 10+ specialized routines including morning stretches, desk breaks, posture correction, and targeted body workouts. With animated demonstrations, timer-guided sessions, and improved progress tracking, Stretchy v2 provides a comprehensive stretching experience for users of all fitness levels.",
       techStacks: [
@@ -76,7 +77,7 @@ abstract class ProjectData {
     ProjectModel(
       projectId: 13,
       projectTitle: "Just Delete Me",
-      liveUrl: "https://play.google.com/store/apps/details?id=com.nizarztn.justdeleteme",
+      playStoreUrl: "https://play.google.com/store/apps/details?id=com.nizarztn.justdeleteme",
       projectDescription:
           "\"JUST DELETE ME\" is a directory simplifying the account deletion process by countering dark pattern techniques used by companies. With over 10k downloads on the store, this Flutter app has successfully provided users with a straightforward solution for managing their online presence.",
       techStacks: [
@@ -94,7 +95,7 @@ abstract class ProjectData {
     ProjectModel(
       projectId: 14,
       projectTitle: "Live Stream Simulator",
-      liveUrl: "https://play.google.com/store/apps/details?id=nz.dev.slivestreamsimulator&hl=en-US&ah=qzuvZyaqNyuP7NKnhpWYTymLzeI",
+      playStoreUrl: "https://play.google.com/store/apps/details?id=nz.dev.slivestreamsimulator",
       projectDescription:
           "Live Stream Simulator is a feature-rich application designed to simulate live streaming experiences. With its powerful capabilities, users can:\n\n"
           "• Create virtual live streams with customizable settings\n"
@@ -120,7 +121,7 @@ abstract class ProjectData {
     ProjectModel(
       projectId: 15,
       projectTitle: "Quick QR Pro",
-      liveUrl: "https://play.google.com/store/apps/details?id=com.nizarztn.quickqrpro",
+      playStoreUrl: "https://play.google.com/store/apps/details?id=com.nizarztn.quickqrpro",
       projectDescription:
           "Quick QR Pro: The ultimate QR code app with easy scanning and custom code creation. Featuring logo integration, this app offers personalized and branded code experiences for various needs.\n\n\n"
           "Key Features:\n\n"
@@ -144,7 +145,7 @@ abstract class ProjectData {
     ProjectModel(
       projectId: 16,
       projectTitle: "Speedy Invoice",
-      liveUrl: "https://play.google.com/store/apps/details?id=com.nizarztn.speedyInvoice",
+      playStoreUrl: "https://play.google.com/store/apps/details?id=com.nizarztn.speedyInvoice",
       projectDescription:
           "Speedy Invoice: A streamlined mobile tool for swift bill and estimate creation. Ideal for small businesses and freelancers, offering efficient on-the-go billing management.\n\n\n"
           "Key Features:\n\n"
@@ -167,7 +168,7 @@ abstract class ProjectData {
     ProjectModel(
       projectId: 17,
       projectTitle: "Audio Libro",
-      liveUrl: "https://play.google.com/store/apps/details?id=nz.dev.audiolibro.client&hl=en&gl=US",
+      playStoreUrl: "https://play.google.com/store/apps/details?id=nz.dev.audiolibro.client",
       projectDescription:
           "Developed Audio Libro, a personalized audiobook platform using Flutter for an immersive listening experience. Leveraged Firebase for efficient data management and user authentication.\n\n\n"
           "Key Features:\n\n"
@@ -191,7 +192,7 @@ abstract class ProjectData {
     ProjectModel(
       projectId: 18,
       projectTitle: "Sa3arli",
-      liveUrl: "https://play.google.com/store/apps/details?id=nx.nizarztn.carimp",
+      playStoreUrl: "https://play.google.com/store/apps/details?id=nx.nizarztn.carimp",
       projectDescription:
           "Facilitating car imports to Algeria Our Flutter app provides quick and accurate cost estimates, incorporating customs tariffs. Download now for confidence in your import decisions.\n\n\n"
           "Key Features:\n\n"
@@ -213,7 +214,7 @@ abstract class ProjectData {
     ProjectModel(
       projectId: 19,
       projectTitle: "Tune Hub",
-      liveUrl: "https://play.google.com/store/apps/details?id=nz.dev.tunehub",
+      playStoreUrl: "https://play.google.com/store/apps/details?id=nz.dev.tunehub",
       isLive: true,
       projectDescription:
           "Developed Tune Hub, a personalized ringtone app using Flutter for a smooth user experience. Leveraged Supabase for efficient storage management.\n\n\n"

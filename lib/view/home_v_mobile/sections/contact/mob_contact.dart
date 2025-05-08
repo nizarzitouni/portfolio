@@ -5,6 +5,7 @@ import 'package:gap/gap.dart';
 import '../../../../core/constants.dart';
 import '../../../../core/functions.dart';
 import '../../../../core/pallete.dart';
+import '../../../home_v_web/widgets/web_footer.dart';
 
 class MobContact extends StatelessWidget {
   const MobContact({Key? key}) : super(key: key);
@@ -66,6 +67,8 @@ class MobContact extends StatelessWidget {
             ],
           ),
           const Gap(30),
+          const WebFooter(),
+          const Gap(10),
         ],
       ),
     );

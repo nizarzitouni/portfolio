@@ -5,7 +5,7 @@ import '../../../../../core/pallete.dart';
 import '../../../../../core/routes/app_router.dart';
 import '../../../../../core/singlton_init.dart';
 import '../../../../../models/project_model.dart';
-import '../../../widgets/live_or_github_widget.dart';
+import '../../../widgets/project_links_widget.dart';
 
 class WebProjectCard extends StatefulWidget {
   final ProjectModel projectModel;
@@ -155,7 +155,7 @@ class _WebProjectCardState extends State<WebProjectCard> {
                     ),
                     const SizedBox(height: 16),
                     //
-                    LiveOrGithubWidget(projectModel: widget.projectModel),
+                    ProjectLinksWidget(projectModel: widget.projectModel),
                   ],
                 ),
               ),

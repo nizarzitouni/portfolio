@@ -7,7 +7,7 @@ import '../../../models/project_model.dart';
 import '../../../models/projects_data.dart';
 import '../widgets/center_top_widget.dart';
 import '../widgets/crousal_indicator.dart';
-import '../widgets/live_or_github_widget.dart';
+import '../widgets/project_links_widget.dart';
 
 class ProjectDeatailsWeb extends StatelessWidget {
   const ProjectDeatailsWeb({Key? key, required this.projectId}) : super(key: key);
@@ -117,7 +117,7 @@ class ProjectCaroselWidth extends StatelessWidget {
                     // LiveOrGithubWidget(projectModel: projectModel),
                     Container(
                       alignment: Alignment.bottomRight,
-                      child: LiveOrGithubWidget(projectModel: projectModel),
+                      child: ProjectLinksWidget(projectModel: projectModel),
                     ),
                   ],
                 ),
@@ -172,7 +172,7 @@ class ProjectCaroselWidth extends StatelessWidget {
                   // LiveOrGithubWidget(projectModel: projectModel),
                   Container(
                     alignment: Alignment.bottomRight,
-                    child: LiveOrGithubWidget(projectModel: projectModel),
+                    child: ProjectLinksWidget(projectModel: projectModel),
                   ),
                 ],
               ),
