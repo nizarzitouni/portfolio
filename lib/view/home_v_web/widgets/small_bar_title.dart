@@ -23,7 +23,6 @@ class SmallBarTitle extends StatelessWidget {
             color: Pallete.blackColor,
             height: 60,
             width: 280,
-            //margin: EdgeInsets.only(left: SizeConfig.screenWidth * 0.1),
             child: Center(
               child: Text(
                 text,

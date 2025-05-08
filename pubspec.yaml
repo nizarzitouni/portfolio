@@ -25,6 +25,11 @@ dependencies:
   responsive_grid_list: ^1.4.0
   universal_html: ^2.2.4
   typeset: ^2.1.1
+  flutter_markdown: ^0.7.4+3
+  intl: any
+  webview_flutter_web:
+  webview_flutter:
+  flutter_html:
 
 dev_dependencies:
   flutter_test:
@@ -59,6 +64,8 @@ flutter:
     - assets/images/game_design/blaster_pranks/
     - assets/images/game_design/medieval_pack/
     - assets/images/game_design/double_jump/
+
+    - assets/mark_down/
 
   fonts:
     - family: Agustina
