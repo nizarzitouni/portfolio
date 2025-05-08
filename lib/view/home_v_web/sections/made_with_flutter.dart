@@ -16,7 +16,7 @@ class MadeWithFlutterButton extends StatelessWidget {
           width: containerWidth,
           child: Column(
             children: [
-              const Text("Copyright © Nizar Zitouni. 2024.", style: TextStyle(fontSize: 16)),
+              const Text("Copyright © Nizar Zitouni. 2025.", style: TextStyle(fontSize: 16)),
               const SizedBox(height: 12.0),
               Row(
                 mainAxisSize: MainAxisSize.min,
