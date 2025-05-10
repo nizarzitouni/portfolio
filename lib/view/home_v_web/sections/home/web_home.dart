@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import 'package:gap/gap.dart';
 
 import '../../../../core/constants.dart';
@@ -61,7 +60,7 @@ class WebHome extends StatelessWidget {
                                 assetImagePath: AssetsConstants.playstoreSvg,
                               ),
                               WebActionModel(
-                                webUrl: LD_RESUMEURL,
+                                webUrl: SE_RESUMEURL,
                                 assetImagePath: AssetsConstants.downloadSvg,
                                 text: "Resume",
                               ),

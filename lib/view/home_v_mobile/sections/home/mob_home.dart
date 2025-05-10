@@ -45,7 +45,7 @@ class MobHome extends StatelessWidget {
                   assetImagePath: AssetsConstants.playstoreSvg,
                 ),
                 WebActionModel(
-                  webUrl: LD_RESUMEURL,
+                  webUrl: SE_RESUMEURL,
                   assetImagePath: AssetsConstants.downloadSvg,
                   text: "Resume",
                 ),
