@@ -3,7 +3,7 @@ import 'package:flutter/widgets.dart';
 import '../../../../core/constants.dart';
 
 class MobAbout extends StatelessWidget {
-  const MobAbout({Key? key}) : super(key: key);
+  const MobAbout({super.key});
 
   @override
   Widget build(BuildContext context) {

@@ -10,7 +10,7 @@ import '../widgets/crousal_indicator.dart';
 import '../widgets/project_links_widget.dart';
 
 class ProjectDeatailsWeb extends StatelessWidget {
-  const ProjectDeatailsWeb({Key? key, required this.projectId}) : super(key: key);
+  const ProjectDeatailsWeb({super.key, required this.projectId});
   final int projectId;
 
   @override
@@ -26,7 +26,7 @@ class ProjectDeatailsWeb extends StatelessWidget {
     return Scaffold(
       body: LayoutBuilder(
         builder: (context, constraints) {
-          double containerWidth = constraints.maxWidth * 0.7;
+          final double containerWidth = constraints.maxWidth * 0.7;
 
           return CenterTopWidget(
             myWidget: SizedBox(
@@ -34,7 +34,6 @@ class ProjectDeatailsWeb extends StatelessWidget {
               width: containerWidth,
               child: SingleChildScrollView(
                 child: Column(
-                  mainAxisAlignment: MainAxisAlignment.start,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   mainAxisSize: MainAxisSize.min,
                   children: [
@@ -68,26 +67,23 @@ class ProjectCaroselWidth extends StatelessWidget {
   Widget build(BuildContext context) {
     return !projectModel.carouselFullWidth
         ? Row(
-            mainAxisAlignment: MainAxisAlignment.start,
-            crossAxisAlignment: CrossAxisAlignment.center,
-            mainAxisSize: MainAxisSize.max,
             children: [
               DecoratedBox(
-                  decoration: BoxDecoration(color: Colors.black12, borderRadius: BorderRadius.circular(20)),
-                  child: Padding(
-                    padding: const EdgeInsets.all(10.0),
-                    child: SizedBox(
-                      height: SizeConfig.screenWidth * 0.35,
-                      width: SizeConfig.screenWidth * 0.20,
-                      child: CarouselWithIndicator(imgList: projectModel.appScreens!),
-                    ),
-                  )),
+                decoration: BoxDecoration(color: Colors.black12, borderRadius: BorderRadius.circular(20)),
+                child: Padding(
+                  padding: const EdgeInsets.all(10.0),
+                  child: SizedBox(
+                    height: SizeConfig.screenWidth * 0.35,
+                    width: SizeConfig.screenWidth * 0.20,
+                    child: CarouselWithIndicator(imgList: projectModel.appScreens!),
+                  ),
+                ),
+              ),
               const Gap(30),
               Expanded(
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
                   crossAxisAlignment: CrossAxisAlignment.start,
-                  mainAxisAlignment: MainAxisAlignment.start,
                   children: [
                     const Gap(8),
                     Text(
@@ -96,20 +92,18 @@ class ProjectCaroselWidth extends StatelessWidget {
                     ),
                     const Gap(24),
                     const Text(
-                      "Techstack:",
+                      'Techstack:',
                       style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
                     ),
                     const Gap(8),
                     Wrap(
-                      direction: Axis.horizontal,
                       spacing: 10,
-                      alignment: WrapAlignment.start,
                       children: [
                         for (final tech in projectModel.techStacks)
                           Text(
-                            "● $tech",
+                            '● $tech',
                             style: const TextStyle(fontWeight: FontWeight.w500, fontSize: 16),
-                          )
+                          ),
                       ],
                     ),
                     const Gap(24),
@@ -125,24 +119,21 @@ class ProjectCaroselWidth extends StatelessWidget {
             ],
           )
         : Column(
-            mainAxisAlignment: MainAxisAlignment.start,
-            crossAxisAlignment: CrossAxisAlignment.center,
-            mainAxisSize: MainAxisSize.max,
             children: [
               DecoratedBox(
-                  decoration: BoxDecoration(color: Colors.black12, borderRadius: BorderRadius.circular(20)),
-                  child: Padding(
-                    padding: const EdgeInsets.all(10.0),
-                    child: SizedBox(
-                      height: 500,
-                      child: CarouselWithIndicator(imgList: projectModel.appScreens!),
-                    ),
-                  )),
+                decoration: BoxDecoration(color: Colors.black12, borderRadius: BorderRadius.circular(20)),
+                child: Padding(
+                  padding: const EdgeInsets.all(10.0),
+                  child: SizedBox(
+                    height: 500,
+                    child: CarouselWithIndicator(imgList: projectModel.appScreens!),
+                  ),
+                ),
+              ),
               const Gap(30),
               Column(
                 mainAxisSize: MainAxisSize.min,
                 crossAxisAlignment: CrossAxisAlignment.start,
-                mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                   const Gap(8),
                   Text(
@@ -151,20 +142,18 @@ class ProjectCaroselWidth extends StatelessWidget {
                   ),
                   const Gap(24),
                   const Text(
-                    "Techstack:",
+                    'Techstack:',
                     style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
                   ),
                   const Gap(8),
                   Wrap(
-                    direction: Axis.horizontal,
                     spacing: 10,
-                    alignment: WrapAlignment.start,
                     children: [
                       for (final tech in projectModel.techStacks)
                         Text(
-                          "● $tech",
+                          '● $tech',
                           style: const TextStyle(fontWeight: FontWeight.w500, fontSize: 16),
-                        )
+                        ),
                     ],
                   ),
                   const Gap(24),

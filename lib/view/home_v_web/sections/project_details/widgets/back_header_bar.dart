@@ -7,7 +7,7 @@ import '../../../../../core/routes/app_router.dart';
 import '../../../widgets/hover_underline.dart';
 
 class BackHeaderBar extends StatelessWidget {
-  const BackHeaderBar({Key? key, required this.projectModel}) : super(key: key);
+  const BackHeaderBar({super.key, required this.projectModel});
 
   final ProjectModel projectModel;
 
@@ -16,7 +16,6 @@ class BackHeaderBar extends StatelessWidget {
     return Column(
       children: [
         Row(
-          mainAxisAlignment: MainAxisAlignment.start,
           children: [
             Padding(
               padding: const EdgeInsets.only(right: 15),

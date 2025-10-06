@@ -46,9 +46,9 @@ abstract class AssetsConstants {
 //__________________________________________________________________________________________________
 
 //Profile Data
-const String NAME = "Nizar Zitouni";
-const String BASEDIN = "Constantine, Algeria";
-const String POS = "Software Engineer | Flutter Developer | 3D Artist";
+const String NAME = 'Nizar Zitouni';
+const String BASEDIN = 'Constantine, Algeria';
+const String POS = 'Software Engineer | Flutter Developer | 3D Artist';
 const String ABOUTPROFILE = '''Crafting software solutions, developing Flutter apps, and creating captivating 3D art.''';
 // const String LONGABOUT =
 //     'Experienced Software Engineer and Flutter Developer with a Master\'s degree in Software Engineering. Specializing in Flutter, I excel in rapid prototyping, and IT management. Passionate about crafting innovative and seamless mobile experiences, with an additional flair for 3D art. Committed to staying ahead in technology and delivering user-centric solutions.';
@@ -62,8 +62,8 @@ Beyond coding, I enjoy working on 3D art and design. This creative side helps me
 
 const double barsHight = 50;
 
-const String HOME_HEADER = "Home";
-const String ABOUT_HEADER = "About";
-const String MOBILEPROJECTS_HEADER = "Mobile Apps";
-const String THREED_HEADER = "3D Projects";
-const String CONTACT_HEADER = "Contact";
+const String HOME_HEADER = 'Home';
+const String ABOUT_HEADER = 'About';
+const String MOBILEPROJECTS_HEADER = 'Mobile Apps';
+const String THREED_HEADER = '3D Projects';
+const String CONTACT_HEADER = 'Contact';

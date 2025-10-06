@@ -6,7 +6,7 @@ import '../../../models/web_action_model.dart';
 import '../../home_v_web/widgets/navbar_logo.dart';
 
 class MobileDrawer extends StatelessWidget {
-  const MobileDrawer({Key? key}) : super(key: key);
+  const MobileDrawer({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -26,7 +26,7 @@ class MobileDrawer extends StatelessWidget {
                     (e) => Padding(
                       padding: const EdgeInsets.all(8.0),
                       child: MaterialButton(
-                        hoverColor: Pallete.whiteColor.withOpacity(.4),
+                        hoverColor: Pallete.whiteColor.withValues(alpha: .4),
                         onPressed: () {
                           // scrollProvider.scrollMobile(e.key);
                           // Navigator.pop(context);
@@ -47,7 +47,7 @@ class MobileDrawer extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: MaterialButton(
-                  hoverColor: Pallete.whiteColor.withOpacity(.2),
+                  hoverColor: Pallete.whiteColor.withValues(alpha: .2),
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(5.0),
                     //side: BorderSide(color: AppTheme.c!.primary!),

@@ -11,9 +11,9 @@ class LegalDocumentPage extends StatefulWidget {
   final LegalDocument document;
 
   const LegalDocumentPage({
-    Key? key,
+    super.key,
     required this.document,
-  }) : super(key: key);
+  });
 
   @override
   State<LegalDocumentPage> createState() => _LegalDocumentPageState();

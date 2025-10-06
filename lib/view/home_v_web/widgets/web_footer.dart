@@ -5,7 +5,7 @@ import 'package:go_router/go_router.dart';
 import '../../../core/pallete.dart';
 
 class WebFooter extends StatelessWidget {
-  const WebFooter({Key? key}) : super(key: key);
+  const WebFooter({super.key});
 
   @override
   Widget build(BuildContext context) {

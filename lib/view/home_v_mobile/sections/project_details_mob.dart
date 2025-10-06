@@ -10,7 +10,7 @@ import '../../home_v_web/widgets/hover_underline.dart';
 import '../../home_v_web/widgets/project_links_widget.dart';
 
 class ProjectDetailsMob extends StatelessWidget {
-  const ProjectDetailsMob({Key? key, required this.projectId}) : super(key: key);
+  const ProjectDetailsMob({super.key, required this.projectId});
   final int projectId;
   @override
   Widget build(BuildContext context) {
@@ -29,7 +29,6 @@ class ProjectDetailsMob extends StatelessWidget {
             children: [
               //Back button container
               Row(
-                mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                   Padding(
                     padding: const EdgeInsets.only(right: 15),
@@ -49,25 +48,22 @@ class ProjectDetailsMob extends StatelessWidget {
               const Gap(30),
               //Crousel
               Column(
-                mainAxisAlignment: MainAxisAlignment.start,
-                crossAxisAlignment: CrossAxisAlignment.center,
-                mainAxisSize: MainAxisSize.max,
                 children: [
                   DecoratedBox(
-                      decoration: BoxDecoration(color: Colors.black12, borderRadius: BorderRadius.circular(20)),
-                      child: Padding(
-                        padding: const EdgeInsets.all(10.0),
-                        child: SizedBox(
-                          height: 500,
-                          // width: SizeConfig.screenWidth * 0.20,
-                          child: CarouselWithIndicator(imgList: projectModel.appScreens!),
-                        ),
-                      )),
+                    decoration: BoxDecoration(color: Colors.black12, borderRadius: BorderRadius.circular(20)),
+                    child: Padding(
+                      padding: const EdgeInsets.all(10.0),
+                      child: SizedBox(
+                        height: 500,
+                        // width: SizeConfig.screenWidth * 0.20,
+                        child: CarouselWithIndicator(imgList: projectModel.appScreens!),
+                      ),
+                    ),
+                  ),
                   const Gap(30),
                   Column(
                     mainAxisSize: MainAxisSize.min,
                     crossAxisAlignment: CrossAxisAlignment.start,
-                    mainAxisAlignment: MainAxisAlignment.start,
                     children: [
                       const Gap(8),
                       Text(
@@ -76,20 +72,18 @@ class ProjectDetailsMob extends StatelessWidget {
                       ),
                       const Gap(24),
                       const Text(
-                        "Techstack:",
+                        'Techstack:',
                         style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
                       ),
                       const Gap(8),
                       Wrap(
-                        direction: Axis.horizontal,
                         spacing: 10,
-                        alignment: WrapAlignment.start,
                         children: [
                           for (final tech in projectModel.techStacks)
                             Text(
-                              "● $tech",
+                              '● $tech',
                               style: const TextStyle(fontWeight: FontWeight.w500, fontSize: 16),
-                            )
+                            ),
                         ],
                       ),
                       const Gap(24),

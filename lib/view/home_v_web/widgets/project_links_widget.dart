@@ -5,7 +5,7 @@ import '../../../core/functions.dart';
 import '../../../models/project_model.dart';
 
 class ProjectLinksWidget extends StatelessWidget {
-  const ProjectLinksWidget({Key? key, required this.projectModel}) : super(key: key);
+  const ProjectLinksWidget({super.key, required this.projectModel});
   final ProjectModel projectModel;
 
   @override
@@ -13,8 +13,6 @@ class ProjectLinksWidget extends StatelessWidget {
     return Wrap(
       spacing: 16, // gap between buttons
       runSpacing: 16, // gap between rows
-      alignment: WrapAlignment.start,
-      crossAxisAlignment: WrapCrossAlignment.start,
       children: [
         // Live button (for websites)
         if (projectModel.liveUrl != null)
@@ -97,7 +95,6 @@ class ProjectLinksWidget extends StatelessWidget {
         child: Row(
           mainAxisSize: MainAxisSize.min,
           mainAxisAlignment: MainAxisAlignment.center,
-          crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             if (icon != null) ...[
               Icon(

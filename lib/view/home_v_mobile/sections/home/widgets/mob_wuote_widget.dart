@@ -1,14 +1,13 @@
 import 'package:flutter/material.dart';
 
 class MobWuoteWidget extends StatelessWidget {
-  const MobWuoteWidget({Key? key}) : super(key: key);
+  const MobWuoteWidget({super.key});
 
   @override
   Widget build(BuildContext context) {
     return SizedBox(
       height: 148,
       child: Column(
-        mainAxisAlignment: MainAxisAlignment.start,
         crossAxisAlignment: CrossAxisAlignment.end,
         children: [
           Row(
@@ -19,7 +18,7 @@ class MobWuoteWidget extends StatelessWidget {
                   child: const Padding(
                     padding: EdgeInsets.all(12.0),
                     child: Text(
-                      "Overthinking is the enemy of execution.",
+                      'Overthinking is the enemy of execution.',
                       style: TextStyle(fontWeight: FontWeight.w500, fontSize: 18),
                     ),
                   ),
@@ -32,7 +31,7 @@ class MobWuoteWidget extends StatelessWidget {
             child: const Padding(
               padding: EdgeInsets.all(11.0),
               child: Text(
-                "- Tony Robbins",
+                '- Tony Robbins',
                 style: TextStyle(fontWeight: FontWeight.w500, fontSize: 18),
               ),
             ),

@@ -6,7 +6,7 @@ import '../../../core/size_config.dart';
 import '../../../core/utils/app_text_styles.dart';
 
 class SmallBarTitle extends StatelessWidget {
-  const SmallBarTitle({Key? key, required this.text}) : super(key: key);
+  const SmallBarTitle({super.key, required this.text});
   final String text;
 
   @override
@@ -30,7 +30,7 @@ class SmallBarTitle extends StatelessWidget {
                 style: AppTextStyles.smallBarsTitle600style24firaCode,
               ),
             ),
-          )
+          ),
         ],
       ),
     );

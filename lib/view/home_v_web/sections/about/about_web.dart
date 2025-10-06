@@ -11,13 +11,12 @@ class AboutWeb extends StatelessWidget {
     return Center(
       child: LayoutBuilder(
         builder: (context, constraints) {
-          double containerWidth = constraints.maxWidth * 0.7;
+          final double containerWidth = constraints.maxWidth * 0.7;
 
           return SizedBox(
             width: containerWidth,
             child: const Column(
               mainAxisSize: MainAxisSize.min,
-              mainAxisAlignment: MainAxisAlignment.start,
               children: [
                 Gap(40),
                 Wrap(

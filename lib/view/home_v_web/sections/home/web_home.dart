@@ -17,7 +17,7 @@ class WebHome extends StatelessWidget {
     return Center(
       child: LayoutBuilder(
         builder: (context, constraints) {
-          double containerWidth = constraints.maxWidth * 0.7;
+          final double containerWidth = constraints.maxWidth * 0.7;
           return SizedBox(
             width: containerWidth,
             child: Column(
@@ -29,7 +29,6 @@ class WebHome extends StatelessWidget {
                     Expanded(
                       flex: 2, // Adjust the flex values based on your desired proportions
                       child: Column(
-                        mainAxisAlignment: MainAxisAlignment.start,
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Gap(SizeConfig.screenWidth * 0.08),
@@ -62,7 +61,7 @@ class WebHome extends StatelessWidget {
                               WebActionModel(
                                 webUrl: SE_RESUMEURL,
                                 assetImagePath: AssetsConstants.downloadSvg,
-                                text: "Resume",
+                                text: 'Resume',
                               ),
                             ],
                           ),
@@ -71,7 +70,6 @@ class WebHome extends StatelessWidget {
                       ),
                     ),
                     Expanded(
-                      flex: 1,
                       child: CircularDashedBorder(
                         imagePath: ImagesPath.profileAvatar,
                         dashColor: Theme.of(context).buttonTheme.colorScheme!.primary,

@@ -5,7 +5,7 @@ import '../../../../models/project_model.dart';
 import '../home/widgets/mob_project_card.dart';
 
 class MobFlutterProjects extends StatelessWidget {
-  const MobFlutterProjects({Key? key, required this.projectModelsList}) : super(key: key);
+  const MobFlutterProjects({super.key, required this.projectModelsList});
   final List<ProjectModel> projectModelsList;
 
   @override
@@ -19,7 +19,6 @@ class MobFlutterProjects extends StatelessWidget {
           horizontalGridMargin: 0, // Horizontal space around the grid
           verticalGridMargin: 0, // Vertical space around the grid
           minItemWidth: 300, // The minimum item width (can be smaller, if the layout constraints are smaller)
-          minItemsPerRow: 1, // The minimum items to show in a single row. Takes precedence over minItemWidth
           maxItemsPerRow: 2, // The maximum items to show in a single row. Can be useful on large screens
           listViewBuilderOptions: ListViewBuilderOptions(
             shrinkWrap: true,
@@ -28,7 +27,7 @@ class MobFlutterProjects extends StatelessWidget {
           children: List.generate(
             projectModelsList.length,
             (index) {
-              ProjectModel project = projectModelsList[index];
+              final ProjectModel project = projectModelsList[index];
               return MobProjectCard(
                 projectModel: project,
               );

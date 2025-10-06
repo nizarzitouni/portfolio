@@ -9,7 +9,7 @@ import '../../../widgets/project_links_widget.dart';
 
 class WebProjectCard extends StatefulWidget {
   final ProjectModel projectModel;
-  const WebProjectCard({Key? key, required this.projectModel}) : super(key: key);
+  const WebProjectCard({super.key, required this.projectModel});
 
   @override
   State<WebProjectCard> createState() => _WebProjectCardState();
@@ -28,9 +28,9 @@ class _WebProjectCardState extends State<WebProjectCard> {
         highlightColor: Colors.transparent,
         onTap: () async {
           await analytics.logEvent(
-            name: "project_clicks_tracked",
+            name: 'project_clicks_tracked',
             parameters: {
-              "project_name": widget.projectModel.projectTitle,
+              'project_name': widget.projectModel.projectTitle,
             },
           );
           AppRouter.router.go('/projects/${widget.projectModel.projectId}');
@@ -49,7 +49,6 @@ class _WebProjectCardState extends State<WebProjectCard> {
         child: Container(
           decoration: BoxDecoration(
             color: Pallete.blackColor,
-            shape: BoxShape.rectangle,
             border: Border.all(
               width: 0.50,
               color: const Color(0xFFABB2BF),
@@ -57,22 +56,19 @@ class _WebProjectCardState extends State<WebProjectCard> {
             boxShadow: isHover
                 ? [
                     BoxShadow(
-                      color: Pallete.whiteColor.withOpacity(.5),
+                      color: Pallete.whiteColor.withValues(alpha: .5),
                       blurRadius: 12.0,
-                      offset: const Offset(0.0, 0.0),
-                    )
+                    ),
                   ]
                 : [
                     const BoxShadow(
                       color: Pallete.blackColor,
                       blurRadius: 12.0,
-                      offset: Offset(0.0, 0.0),
-                    )
+                    ),
                   ],
           ),
           child: Column(
             mainAxisSize: MainAxisSize.min,
-            mainAxisAlignment: MainAxisAlignment.start,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Container(
@@ -91,12 +87,11 @@ class _WebProjectCardState extends State<WebProjectCard> {
                   child: ResponsiveGridList(
                     // Vertical space around the grid
                     minItemWidth: 60, // The minimum item width (can be smaller, if the layout constraints are smaller)
-                    minItemsPerRow: 1, // The minimum items to show in a single row. Takes precedence over minItemWidth
                     maxItemsPerRow: 2, // The maximum items to show in a single row. Can be useful on large screens
                     listViewBuilderOptions: ListViewBuilderOptions(
-                        shrinkWrap: true,
-                        physics:
-                            const NeverScrollableScrollPhysics()), // Options that are getting passed to the ListView.builder() function
+                      shrinkWrap: true,
+                      physics: const NeverScrollableScrollPhysics(),
+                    ), // Options that are getting passed to the ListView.builder() function
                     children: List.generate(
                       widget.projectModel.techStacks.length,
                       (index) => Center(
@@ -125,7 +120,6 @@ class _WebProjectCardState extends State<WebProjectCard> {
                 decoration: const BoxDecoration(),
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
-                  mainAxisAlignment: MainAxisAlignment.start,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     SizedBox(

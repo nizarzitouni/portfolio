@@ -13,7 +13,7 @@ class ContactWeb extends StatelessWidget {
   Widget build(BuildContext context) {
     return Center(
       child: LayoutBuilder(builder: (context, constraints) {
-        double containerWidth = constraints.maxWidth * 0.7;
+        final double containerWidth = constraints.maxWidth * 0.7;
         return SizedBox(
           // color: Colors.amber,
           width: containerWidth,
@@ -29,7 +29,7 @@ class ContactWeb extends StatelessWidget {
                     child: Text(
                       'I’m interested in remote jobs or freelance opportunities. However, if you have other request or question, don’t hesitate to contact me via email.',
                       style: TextStyle(
-                        color: Colors.white.withOpacity(.8),
+                        color: Colors.white.withValues(alpha: .8),
                         fontSize: 16,
                         fontWeight: FontWeight.w500,
                       ),
@@ -38,7 +38,7 @@ class ContactWeb extends StatelessWidget {
                   ),
                   Center(
                     child: RawMaterialButton(
-                      hoverColor: Pallete.whiteColor.withOpacity(.4), // Set the hover color
+                      hoverColor: Pallete.whiteColor.withValues(alpha: .4), // Set the hover color
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(8.0),
                       ),
@@ -49,8 +49,6 @@ class ContactWeb extends StatelessWidget {
                       },
                       child: Row(
                         mainAxisSize: MainAxisSize.min,
-                        mainAxisAlignment: MainAxisAlignment.start,
-                        crossAxisAlignment: CrossAxisAlignment.center,
                         children: [
                           SvgPicture.asset(
                             AssetsConstants.emailSvg,

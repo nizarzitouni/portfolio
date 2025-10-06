@@ -45,7 +45,7 @@ class CircularDashedBorderState extends State<CircularDashedBorder> with SingleT
     return AnimatedBuilder(
       animation: _controller,
       builder: (context, child) {
-        double angle = _controller.value * 2.0 * pi;
+        final double angle = _controller.value * 2.0 * pi;
 
         return SizedBox(
           width: widget.imageSize + widget.imagePadding,

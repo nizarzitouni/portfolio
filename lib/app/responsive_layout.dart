@@ -21,16 +21,18 @@ class _ResponsiveLayoutState extends State<ResponsiveLayout> {
 
   @override
   Widget build(BuildContext context) {
-    return LayoutBuilder(builder: (context, constraints) {
-      if (constraints.maxWidth > 900) {
-        SizeConfig().init(context);
-        return widget.screenWeb;
-        // return const HomeScreenWeb();
-      } else {
-        SizeConfig().init(context);
-        return widget.screenMobile;
-        // return const HomeScreenMob();
-      }
-    });
+    return LayoutBuilder(
+      builder: (context, constraints) {
+        if (constraints.maxWidth > 900) {
+          SizeConfig().init(context);
+          return widget.screenWeb;
+          // return const HomeScreenWeb();
+        } else {
+          SizeConfig().init(context);
+          return widget.screenMobile;
+          // return const HomeScreenMob();
+        }
+      },
+    );
   }
 }

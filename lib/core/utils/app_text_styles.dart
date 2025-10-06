@@ -8,7 +8,7 @@ abstract class AppTextStyles {
     fontSize: 18,
     fontWeight: FontWeight.w500,
     color: Pallete.blackColor,
-    fontFamily: "Poppins",
+    fontFamily: 'Poppins',
   );
   static TextStyle appbarTitile700style25 = const TextStyle(
     fontSize: 25.0,
