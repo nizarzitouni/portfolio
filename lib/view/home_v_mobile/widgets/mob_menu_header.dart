@@ -12,9 +12,16 @@ class MobMenuHeader extends StatelessWidget {
       color: Pallete.blackGreyColor,
       height: 60,
       padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
-      child: const Row(
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          NavBarLogo(),
+          const NavBarLogo(),
+          IconButton(
+            icon: const Icon(Icons.menu, color: Colors.white),
+            onPressed: () {
+              Scaffold.of(context).openEndDrawer();
+            },
+          ),
         ],
       ),
     );
