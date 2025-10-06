@@ -9,17 +9,21 @@ class SectionHeader extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: [
-        Text(title,
-            style: const TextStyle(
-              fontWeight: FontWeight.bold,
-              fontSize: 40,
-            )),
-        Text(".",
-            style: TextStyle(
-              fontWeight: FontWeight.bold,
-              color: Theme.of(context).buttonTheme.colorScheme!.primary,
-              fontSize: 40,
-            ))
+        Text(
+          title,
+          style: const TextStyle(
+            fontWeight: FontWeight.bold,
+            fontSize: 40,
+          ),
+        ),
+        Text(
+          '.',
+          style: TextStyle(
+            fontWeight: FontWeight.bold,
+            color: Theme.of(context).buttonTheme.colorScheme!.primary,
+            fontSize: 40,
+          ),
+        ),
       ],
     );
   }

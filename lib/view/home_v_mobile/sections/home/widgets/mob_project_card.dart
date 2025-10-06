@@ -8,7 +8,7 @@ import '../../../../../models/project_model.dart';
 import '../../../../home_v_web/widgets/project_links_widget.dart';
 
 class MobProjectCard extends StatefulWidget {
-  const MobProjectCard({Key? key, required this.projectModel}) : super(key: key);
+  const MobProjectCard({super.key, required this.projectModel});
   final ProjectModel projectModel;
 
   @override
@@ -26,9 +26,9 @@ class _MobProjectCardState extends State<MobProjectCard> {
         highlightColor: Colors.transparent,
         onTap: () async {
           await analytics.logEvent(
-            name: "project_clicks_tracked",
+            name: 'project_clicks_tracked',
             parameters: {
-              "project_name": widget.projectModel.projectTitle,
+              'project_name': widget.projectModel.projectTitle,
             },
           );
           AppRouter.router.go('/projects/${widget.projectModel.projectId}');
@@ -36,7 +36,6 @@ class _MobProjectCardState extends State<MobProjectCard> {
         child: Container(
           decoration: BoxDecoration(
             color: Pallete.blackColor,
-            shape: BoxShape.rectangle,
             border: Border.all(
               width: 0.50,
               color: const Color(0xFFABB2BF),
@@ -44,7 +43,6 @@ class _MobProjectCardState extends State<MobProjectCard> {
           ),
           child: Column(
             mainAxisSize: MainAxisSize.min,
-            mainAxisAlignment: MainAxisAlignment.start,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Container(
@@ -63,7 +61,6 @@ class _MobProjectCardState extends State<MobProjectCard> {
                   child: ResponsiveGridList(
                     // Vertical space around the grid
                     minItemWidth: 60, // The minimum item width (can be smaller, if the layout constraints are smaller)
-                    minItemsPerRow: 1, // The minimum items to show in a single row. Takes precedence over minItemWidth
                     maxItemsPerRow: 2, // The maximum items to show in a single row. Can be useful on large screens
                     listViewBuilderOptions: ListViewBuilderOptions(
                       shrinkWrap: true,
@@ -97,7 +94,6 @@ class _MobProjectCardState extends State<MobProjectCard> {
                 decoration: const BoxDecoration(),
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
-                  mainAxisAlignment: MainAxisAlignment.start,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     SizedBox(

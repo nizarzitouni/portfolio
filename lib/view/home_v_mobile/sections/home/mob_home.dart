@@ -9,7 +9,7 @@ import '../../../home_v_web/sections/home/widgets/profile_info.dart';
 import 'widgets/mob_wuote_widget.dart';
 
 class MobHome extends StatelessWidget {
-  const MobHome({Key? key}) : super(key: key);
+  const MobHome({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -47,7 +47,7 @@ class MobHome extends StatelessWidget {
                 WebActionModel(
                   webUrl: SE_RESUMEURL,
                   assetImagePath: AssetsConstants.downloadSvg,
-                  text: "Resume",
+                  text: 'Resume',
                 ),
               ],
             ),

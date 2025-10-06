@@ -4,10 +4,10 @@ import 'package:typeset/typeset.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 enum CustomUrl {
-  discord(""),
-  terms(""),
-  privacy(""),
-  feedback("");
+  discord(''),
+  terms(''),
+  privacy(''),
+  feedback('');
 
   final String url;
   final bool internal;
@@ -22,10 +22,10 @@ enum CustomUrl {
 }
 
 final inTaypes = TypeSet(
-  "By singing in you agree to our \n§Terms|${CustomUrl.terms}§"
-  " and §Privacy Policy|${CustomUrl.privacy}§",
+  'By singing in you agree to our \n§Terms|${CustomUrl.terms}§'
+  ' and §Privacy Policy|${CustomUrl.privacy}§',
 );
 
-fn() {
+void fn() {
   CustomUrl.discord.launch();
 }

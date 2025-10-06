@@ -30,11 +30,12 @@ class HoverUnderlineTextState extends State<HoverUnderlineText> {
       child: Stack(
         children: [
           GestureDetector(
-              onTap: widget.onClick,
-              child: Text(
-                widget.text,
-                style: widget.textStyle,
-              )),
+            onTap: widget.onClick,
+            child: Text(
+              widget.text,
+              style: widget.textStyle,
+            ),
+          ),
           AnimatedPositioned(
             duration: const Duration(milliseconds: 200),
             curve: Curves.easeOut,

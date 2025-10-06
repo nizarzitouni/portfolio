@@ -5,7 +5,7 @@ import '../../../../models/project_model.dart';
 import 'widgets/web_project_card.dart';
 
 class WebFlutterProjects extends StatelessWidget {
-  const WebFlutterProjects({Key? key, required this.projectModelsList}) : super(key: key);
+  const WebFlutterProjects({super.key, required this.projectModelsList});
   final List<ProjectModel> projectModelsList;
 
   @override
@@ -13,7 +13,7 @@ class WebFlutterProjects extends StatelessWidget {
     return Center(
       child: LayoutBuilder(
         builder: (context, constraints) {
-          double containerWidth = constraints.maxWidth * 0.7;
+          final double containerWidth = constraints.maxWidth * 0.7;
 
           return Container(
             padding: const EdgeInsets.symmetric(vertical: 80),
@@ -24,7 +24,6 @@ class WebFlutterProjects extends StatelessWidget {
               horizontalGridMargin: 0, // Horizontal space around the grid
               verticalGridMargin: 0, // Vertical space around the grid
               minItemWidth: 300, // The minimum item width (can be smaller, if the layout constraints are smaller)
-              minItemsPerRow: 1, // The minimum items to show in a single row. Takes precedence over minItemWidth
               maxItemsPerRow: 5, // The maximum items to show in a single row. Can be useful on large screens
               listViewBuilderOptions: ListViewBuilderOptions(
                 shrinkWrap: true,
@@ -33,7 +32,7 @@ class WebFlutterProjects extends StatelessWidget {
               children: List.generate(
                 projectModelsList.length,
                 (index) {
-                  ProjectModel project = projectModelsList[index];
+                  final ProjectModel project = projectModelsList[index];
                   return WebProjectCard(
                     projectModel: project,
                   );

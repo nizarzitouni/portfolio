@@ -1,16 +1,16 @@
 class ImagesPath {
-  static const String wavingHand = "assets/images/waving_hand.gif";
+  static const String wavingHand = 'assets/images/waving_hand.gif';
   //pfp
-  static const String profileAvatar = "assets/images/nizar_avatar.jpg";
+  static const String profileAvatar = 'assets/images/nizar_avatar.png';
 
   //socials icons
-  static const String iconLinkedin = "assets/icons/icon_linkedin.png";
-  static const String iconGithub = "assets/icons/icon_github.png";
-  static const String iconGitlab = "assets/icons/icon_gitlab.png";
-  static const String iconSketchfab = "assets/icons/icon_sketchfab.png";
-  static const String iconPlaystore = "assets/icons/icon_playstore.png";
-  static const String iconStackOverflow = "assets/icons/icon_stack_overflow.png";
-  static const String iconflutter = "assets/icons/flutter_logo.png";
+  static const String iconLinkedin = 'assets/icons/icon_linkedin.png';
+  static const String iconGithub = 'assets/icons/icon_github.png';
+  static const String iconGitlab = 'assets/icons/icon_gitlab.png';
+  static const String iconSketchfab = 'assets/icons/icon_sketchfab.png';
+  static const String iconPlaystore = 'assets/icons/icon_playstore.png';
+  static const String iconStackOverflow = 'assets/icons/icon_stack_overflow.png';
+  static const String iconflutter = 'assets/icons/flutter_logo.png';
 
   static final List<String> dupliImgListScreens = [
     'assets/images/mob/dupli/dupli1.png',
@@ -56,7 +56,6 @@ class ImagesPath {
     'assets/images/mob/live_stream_simulator/lss2.png',
     'assets/images/mob/live_stream_simulator/lss3.png',
     'assets/images/mob/live_stream_simulator/lss4.png',
-    'assets/images/mob/live_stream_simulator/lss5.png',
   ];
   static final List<String> invoiceGeneratorImagesListScreens = [
     'assets/images/mob/ig/ig1.png',
@@ -105,6 +104,12 @@ class ImagesPath {
     'assets/images/mob/audio_libro/audio_libro_3.png',
     'assets/images/mob/audio_libro/audio_libro_4.png',
     'assets/images/mob/audio_libro/audio_libro_5.png',
+  ];
+  static final List<String> socialProfilePrankScreens = [
+    'assets/images/mob/social_profile_prank/spp1.png',
+    'assets/images/mob/social_profile_prank/spp2.png',
+    'assets/images/mob/social_profile_prank/spp3.png',
+    'assets/images/mob/social_profile_prank/spp4.png',
   ];
 
   //TODO: use https://imageresizer.com/ for resize

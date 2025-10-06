@@ -1,12 +1,31 @@
 import 'package:flutter/material.dart';
 
 import '../../../core/functions.dart';
+import '../../../core/global_keys.dart';
 import '../../../core/pallete.dart';
 import '../../../models/web_action_model.dart';
 import '../../home_v_web/widgets/navbar_logo.dart';
 
 class MobileDrawer extends StatelessWidget {
-  const MobileDrawer({Key? key}) : super(key: key);
+  const MobileDrawer({super.key});
+
+  void _scrollToSection(BuildContext context, int index) {
+    final keys = [
+      GlobalKeys.KEY_MOB_HOME,
+      GlobalKeys.KEY_MOB_ABOUTME,
+      GlobalKeys.KEY_MOB_MOBILEPORTFOLIO,
+      GlobalKeys.KEY_MOB_CONTACTME,
+    ];
+
+    if (index < keys.length && keys[index].currentContext != null) {
+      Scrollable.ensureVisible(
+        keys[index].currentContext!,
+        duration: const Duration(milliseconds: 1000),
+        curve: Curves.easeOut,
+      );
+      Navigator.pop(context);
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -26,11 +45,8 @@ class MobileDrawer extends StatelessWidget {
                     (e) => Padding(
                       padding: const EdgeInsets.all(8.0),
                       child: MaterialButton(
-                        hoverColor: Pallete.whiteColor.withOpacity(.4),
-                        onPressed: () {
-                          // scrollProvider.scrollMobile(e.key);
-                          // Navigator.pop(context);
-                        },
+                        hoverColor: Pallete.whiteColor.withValues(alpha: .4),
+                        onPressed: () => _scrollToSection(context, e.key),
                         child: ListTile(
                           leading: Icon(
                             NavBarUtils.icons[e.key],
@@ -47,7 +63,7 @@ class MobileDrawer extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: MaterialButton(
-                  hoverColor: Pallete.whiteColor.withOpacity(.2),
+                  hoverColor: Pallete.whiteColor.withValues(alpha: .2),
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(5.0),
                     //side: BorderSide(color: AppTheme.c!.primary!),
@@ -76,17 +92,14 @@ class NavBarUtils {
   static const List<String> names = [
     'Home',
     'About',
-    'Mobile Projects',
-    '3D Projects',
-    'CONTACT',
+    'Projects',
+    'Contact',
   ];
 
   static const List<IconData> icons = [
     Icons.home,
     Icons.person,
     Icons.work,
-    Icons.build,
-    Icons.settings,
     Icons.contact_page,
   ];
 }

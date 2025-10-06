@@ -36,14 +36,12 @@ class ProfileInfo extends StatelessWidget {
           position,
           style: TextStyle(fontSize: 34, fontWeight: FontWeight.w500, fontFamily: GoogleFonts.teko().fontFamily, color: Pallete.whiteColor),
         ),
-        Text("Based in $basedIn", style: const TextStyle(fontSize: 18)),
+        Text('Based in $basedIn', style: const TextStyle(fontSize: 18)),
         const Gap(10),
         Text(about, style: const TextStyle(fontSize: 18)),
         if (webActions != null) const Gap(20),
         if (webActions != null)
           Wrap(
-            direction: Axis.horizontal,
-            spacing: 0,
             children: [
               for (final wActions in webActions!)
                 wActions.text == null
@@ -77,8 +75,6 @@ class ProfileInfo extends StatelessWidget {
                         },
                         child: Row(
                           mainAxisSize: MainAxisSize.min,
-                          mainAxisAlignment: MainAxisAlignment.start,
-                          crossAxisAlignment: CrossAxisAlignment.center,
                           children: [
                             SvgPicture.asset(
                               wActions.assetImagePath,

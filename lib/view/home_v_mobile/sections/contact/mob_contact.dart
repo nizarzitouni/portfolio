@@ -8,7 +8,7 @@ import '../../../../core/pallete.dart';
 import '../../../home_v_web/widgets/web_footer.dart';
 
 class MobContact extends StatelessWidget {
-  const MobContact({Key? key}) : super(key: key);
+  const MobContact({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -26,7 +26,7 @@ class MobContact extends StatelessWidget {
                 child: Text(
                   'I’m interested in remote jobs or freelance opportunities. However, if you have other request or question, don’t hesitate to contact me via email.',
                   style: TextStyle(
-                    color: Colors.white.withOpacity(.8),
+                    color: Colors.white.withValues(alpha: .8),
                     fontSize: 16,
                     fontWeight: FontWeight.w500,
                   ),
@@ -36,7 +36,7 @@ class MobContact extends StatelessWidget {
               const Gap(30),
               Center(
                 child: RawMaterialButton(
-                  hoverColor: Pallete.whiteColor.withOpacity(.4), // Set the hover color
+                  hoverColor: Pallete.whiteColor.withValues(alpha: .4), // Set the hover color
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(8.0),
                   ),
@@ -47,8 +47,6 @@ class MobContact extends StatelessWidget {
                   },
                   child: Row(
                     mainAxisSize: MainAxisSize.min,
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
                       SvgPicture.asset(
                         AssetsConstants.emailSvg,
