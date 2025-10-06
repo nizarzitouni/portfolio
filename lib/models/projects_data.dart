@@ -4,7 +4,32 @@ import 'project_model.dart';
 
 abstract class ProjectData {
   static List<ProjectModel> mobileDevProjectList = [
-    // First version of Stretchy (inspired by Bend)
+    ProjectModel(
+      projectId: 1,
+      projectTitle: 'Social Profile Prank',
+      playStoreUrl: 'https://play.google.com/store/apps/details?id=nz.dev.social_profile_prank.social_profile_prank',
+      projectDescription:
+          'Social Profile Prank is a Flutter app that generates realistic fake social media profiles for harmless pranking purposes. Create convincing Instagram, TikTok, Twitter/X, and YouTube profiles with customizable followers, posts, and profile details. The app features a freemium model with premium subscriptions, rewarded video ads for temporary feature unlocks, and high-quality screenshot export functionality. Built with Clean Architecture and BLoC pattern for robust state management.',
+      techStacks: [
+        'Flutter',
+        'BLoC/Cubit',
+        'Freezed',
+        'Go Router',
+        'RevenueCat (IAP)',
+        'Google Mobile Ads',
+        'Firebase Analytics',
+        'Firebase Crashlytics',
+        'Microsoft Clarity',
+        'Image Picker/Cropper',
+        'Screenshot',
+        'Get It (DI)',
+      ],
+      role: 'Sole creator of the entire app - architecture, UI/UX design, monetization implementation, and deployment',
+      projectImageModel: socialProfilePrankImages,
+      isLive: true,
+      appScreens: ImagesPath.socialProfilePrankScreens,
+      carouselFullWidth: false,
+    ),
     ProjectModel(
       projectId: 2,
       projectTitle: 'DUPLI - Your AI Clone',
@@ -435,6 +460,10 @@ final ProjectImageModel peakStoreImages = ProjectImageModel(
 final ProjectImageModel audioLibroImages = ProjectImageModel(
   projectIcon: 'assets/images/mob/audio_libro/audio_libro_icon.png',
   projectCover: 'assets/images/mob/audio_libro/audio_libro_cover.png',
+);
+final ProjectImageModel socialProfilePrankImages = ProjectImageModel(
+  projectIcon: 'assets/images/mob/social_profile_prank/sp_icon.png',
+  projectCover: 'assets/images/mob/social_profile_prank/spp_cover.png',
 );
 
 //threeDProjectList

@@ -56,7 +56,6 @@ class ImagesPath {
     'assets/images/mob/live_stream_simulator/lss2.png',
     'assets/images/mob/live_stream_simulator/lss3.png',
     'assets/images/mob/live_stream_simulator/lss4.png',
-    'assets/images/mob/live_stream_simulator/lss5.png',
   ];
   static final List<String> invoiceGeneratorImagesListScreens = [
     'assets/images/mob/ig/ig1.png',
@@ -105,6 +104,12 @@ class ImagesPath {
     'assets/images/mob/audio_libro/audio_libro_3.png',
     'assets/images/mob/audio_libro/audio_libro_4.png',
     'assets/images/mob/audio_libro/audio_libro_5.png',
+  ];
+  static final List<String> socialProfilePrankScreens = [
+    'assets/images/mob/social_profile_prank/spp1.png',
+    'assets/images/mob/social_profile_prank/spp2.png',
+    'assets/images/mob/social_profile_prank/spp3.png',
+    'assets/images/mob/social_profile_prank/spp4.png',
   ];
 
   //TODO: use https://imageresizer.com/ for resize
