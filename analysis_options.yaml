@@ -20,6 +20,13 @@ analyzer:
 
 linter:
   rules:
+    # Disable unrecognized rules from newer Dart versions
+    invalid_runtime_check_with_js_interop_types: ignore
+    unnecessary_library_name: ignore
+    unnecessary_underscores: ignore
+    strict_top_level_inference: ignore
+    unintended_html_in_doc_comment: ignore
+
     # Performance & Memory
     prefer_const_constructors: true
     prefer_const_constructors_in_immutables: true

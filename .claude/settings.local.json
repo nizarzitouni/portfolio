@@ -3,7 +3,8 @@
     "allow": [
       "Bash(flutter:*)",
       "Bash(dart fix:*)",
-      "Bash(findstr:*)"
+      "Bash(findstr:*)",
+      "Bash(dart analyze:*)"
     ],
     "deny": [],
     "ask": []
