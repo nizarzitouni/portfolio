@@ -36,10 +36,11 @@ String? encodeQueryParameters(Map<String, String> params) {
 
 void sendEmail() {
   final Uri emailLaunchUri = Uri(
-      scheme: 'mailto',
-      path: 'ztn.nizar@gmail.com',
-      query: encodeQueryParameters(<String, String>{
-        'subject': '',
-      }));
+    scheme: 'mailto',
+    path: 'ztn.nizar@gmail.com',
+    query: encodeQueryParameters(<String, String>{
+      'subject': '',
+    }),
+  );
   launchUrl(emailLaunchUri);
 }

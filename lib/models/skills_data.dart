@@ -13,5 +13,5 @@ final List<String> skills = [
   'Payment SDKs like RazorPay, JusPay and more',
   'Flutter',
   'State Management with Bloc',
-  'Flutter Isolates and compute'
+  'Flutter Isolates and compute',
 ];

@@ -1,7 +1,7 @@
 class ImagesPath {
   static const String wavingHand = 'assets/images/waving_hand.gif';
   //pfp
-  static const String profileAvatar = 'assets/images/nizar_avatar.jpg';
+  static const String profileAvatar = 'assets/images/nizar_avatar.png';
 
   //socials icons
   static const String iconLinkedin = 'assets/icons/icon_linkedin.png';
