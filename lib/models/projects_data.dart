@@ -60,12 +60,7 @@ abstract class ProjectData {
       liveUrl: 'https://www.appbrain.com/app/stretchy:-daily-stretches/nz.dev.stretchy',
       projectDescription:
           "The first version of Stretchy was inspired by the popular app 'Bend', created as a learning project to understand app development principles. This version offered daily stretching routines with timer-guided exercises designed for all experience levels. Featuring animated demonstrations and progress tracking, this initial release helped users improve mobility and flexibility through structured routines.",
-      techStacks: [
-        'Flutter',
-        'BLoC/Cubit',
-        'Firebase Remote Config',
-        'Shared Preferences',
-      ],
+      techStacks: ['Flutter', 'BLoC/Cubit', 'Firebase Remote Config', 'Shared Preferences'],
       role: 'Sole creator of the entire app',
       projectImageModel: stretchyV1Images,
       isLive: true,
@@ -76,17 +71,10 @@ abstract class ProjectData {
     ProjectModel(
       projectId: 4,
       projectTitle: 'Stretchy: Daily Stretches (v2)',
-      playStoreUrl: 'https://play.google.com/store/apps/details?id=com.nzdev.stretchyapp',
+      playStoreUrl: 'https://play.google.com/store/apps/details?id=nz.dev.stretchyapp',
       projectDescription:
           'The completely redesigned version of Stretchy features an original UI/UX with enhanced functionality. This version offers 10+ specialized routines including morning stretches, desk breaks, posture correction, and targeted body workouts. With animated demonstrations, timer-guided sessions, and improved progress tracking, Stretchy v2 provides a comprehensive stretching experience for users of all fitness levels.',
-      techStacks: [
-        'Flutter',
-        'BLoC/Cubit',
-        'Firebase Remote Config',
-        'Firebase Analytics',
-        'Repository Pattern',
-        'Shared Preferences',
-      ],
+      techStacks: ['Flutter', 'BLoC/Cubit', 'Firebase Remote Config', 'Firebase Analytics', 'Repository Pattern', 'Shared Preferences'],
       role: 'Sole creator of the entire app',
       projectImageModel: stretchyV2Images,
       isLive: true,
@@ -99,10 +87,7 @@ abstract class ProjectData {
       playStoreUrl: 'https://play.google.com/store/apps/details?id=com.nizarztn.justdeleteme',
       projectDescription:
           '"JUST DELETE ME" is a directory simplifying the account deletion process by countering dark pattern techniques used by companies. With over 10k downloads on the store, this Flutter app has successfully provided users with a straightforward solution for managing their online presence.',
-      techStacks: [
-        'GetX',
-        'Shared Preferences',
-      ],
+      techStacks: ['GetX', 'Shared Preferences'],
       role: 'Sole creator of the entire app',
       projectImageModel: jdmImges,
       isLive: true,
@@ -120,12 +105,7 @@ abstract class ProjectData {
           '• Explore various monetization strategies, including virtual donations and subscriptions\n'
           '• Analyze stream analytics and viewer engagement metrics\n\n'
           'This app serves as an invaluable tool for content creators, streamers, and businesses looking to experiment with live streaming without the need for expensive equipment or setups.',
-      techStacks: [
-        'Cubit',
-        'Firebase',
-        'Amplitude SDK',
-        'RevenueCat SDK',
-      ],
+      techStacks: ['Cubit', 'Firebase', 'Amplitude SDK', 'RevenueCat SDK'],
       role: 'Sole creator of the entire app',
       projectImageModel: lssImges,
       isLive: true,
@@ -143,11 +123,7 @@ abstract class ProjectData {
           '   ♦ Easy Scanning: Quickly scan QR codes to access information.\n'
           '   ♦ Custom Code Creation: Generate your own QR codes with the option to add your logo.\n'
           '   ♦ Brand Integration: Perfect for businesses aiming to promote their brand or individuals wanting a personal touch.\n',
-      techStacks: [
-        'GetX',
-        'SqLite',
-        'Storage',
-      ],
+      techStacks: ['GetX', 'SqLite', 'Storage'],
       role: 'Sole creator of the entire app',
       projectImageModel: qqpImges,
       isLive: true,
@@ -165,11 +141,7 @@ abstract class ProjectData {
           '   ♦ Mobile Invoice Creation: Easily generate and send invoices from your phone.\n'
           '   ♦ Estimate Management: Provide estimates before billing, streamlining the payment process.\n'
           '   ♦ Efficient Billing Management: Manage all billing aspects on the go, ensuring timely payments.\n',
-      techStacks: [
-        'GetX',
-        'SqLite',
-        'Storage',
-      ],
+      techStacks: ['GetX', 'SqLite', 'Storage'],
       role: 'Sole creator of the entire app',
       projectImageModel: invoiceGeneratorImages,
       isLive: true,
@@ -186,12 +158,7 @@ abstract class ProjectData {
           '   ♦ Seamless Background Playback: Enjoy uninterrupted listening across your day.\n'
           '   ♦ Convenient Bookmarking: Save your spot and return to your favorite stories anytime.\n'
           '   ♦ User-Friendly Interface: Navigate through a vast library of audiobooks effortlessly.\n',
-      techStacks: [
-        'Firebase',
-        'GetX',
-        'Rive Animations',
-        'Firebase Analyitics',
-      ],
+      techStacks: ['Firebase', 'GetX', 'Rive Animations', 'Firebase Analyitics'],
       role: 'Sole developer for UI design and implementation',
       projectImageModel: audioLibroImages,
       isLive: true,
@@ -208,10 +175,7 @@ abstract class ProjectData {
           '   ♦ Cost Estimation: Get a quick and accurate estimate of importation costs.\n'
           '   ♦ Customs Tariffs: Incorporates the latest customs tariffs applied by Algerian customs.\n'
           '   ♦ Regular Updates: Stay informed with the latest information about tariffs.\n',
-      techStacks: [
-        'Flutter',
-        'Bloc',
-      ],
+      techStacks: ['Flutter', 'Bloc'],
       role: 'Sole creator of the entire app',
       projectImageModel: sa3arliImges,
       isLive: true,
@@ -229,10 +193,7 @@ abstract class ProjectData {
           '   ♦ Effortless exploration of ringtones.\n'
           '   ♦ Seamless previewing functionality.\n'
           '   ♦ Easy customization of device sounds.\n',
-      techStacks: [
-        'Flutter',
-        'Supabase',
-      ],
+      techStacks: ['Flutter', 'Supabase'],
       role: 'solo developer for UI design and implementation',
       appScreens: ImagesPath.tuneHubScreens,
       projectImageModel: tuneHubImages,
@@ -243,9 +204,7 @@ abstract class ProjectData {
       projectTitle: 'Sneakers Shop',
       projectDescription:
           'Prototype app for a local peak sneakers store. Check out the code on GitHub for a glimpse into the development process.',
-      techStacks: [
-        'Flutter',
-      ],
+      techStacks: ['Flutter'],
       role: 'Sole developer for UI design and implementation',
       projectImageModel: peakStoreImages,
       isLive: false,
@@ -333,10 +292,7 @@ abstract class ProjectData {
           '♦ Project Management: Utilized Jira within an Agile framework for streamlined collaboration and organized project management. This involved tasks such as receiving final art from 3D artists and personally implementing it into the game scenes.\n'
           '♦ Visual Integration: Ensured a visually appealing and seamless integration of final art received from 3D artists into the game scenes, contributing to the overall aesthetic quality of the gaming experience.\n\n'
           'My journey at Blank Labs has been marked by a commitment to excellence, creativity, and effective teamwork. I take pride in contributing to the development of captivating games that engage and entertain users.\n',
-      techStacks: [
-        'Unity',
-        'Blender 3D',
-      ],
+      techStacks: ['Unity', 'Blender 3D'],
       role: 'Level Designer in a team of 20',
       projectImageModel: djImges,
       isLive: true,
@@ -351,10 +307,7 @@ abstract class ProjectData {
       liveUrl: 'https://sketchfab.com/3d-models/polytown-low-poly-city-pack-699546b57f3e4b38986061e995ac20ad',
       projectDescription:
           'An Epic Low Poly asset pack of Buildings, Characters, Props, Viehcules and Environment assets to create a low poly themed polygonal style game',
-      techStacks: [
-        'Unity',
-        'Blender',
-      ],
+      techStacks: ['Unity', 'Blender'],
       role: 'I was the creator of the whole app',
       projectImageModel: polyTownImges,
       appScreens: ImagesPath.polyTownScreens,
@@ -367,11 +320,7 @@ abstract class ProjectData {
       liveUrl: 'https://assetstore.unity.com/packages/3d/environments/historic/medieval-indoor-kit-3d-224308',
       projectDescription:
           'Introducing my latest creation: a comprehensive asset pack tailored for game developers seeking to infuse their projects with the allure of medieval interiors. With over 100 meticulously crafted assets including modular walls, floors, and props, this pack offers boundless opportunities for creating immersive game environments.\n',
-      techStacks: [
-        'Unity',
-        'Blender',
-        'Gimp',
-      ],
+      techStacks: ['Unity', 'Blender', 'Gimp'],
       role: 'I was the creator of the whole app',
       projectImageModel: medievalImges,
       appScreens: ImagesPath.medievalPackScreens,
