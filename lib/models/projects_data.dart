@@ -380,8 +380,8 @@ final ProjectImageModel stretchyV2Images = ProjectImageModel(
   projectCover: 'assets/images/mob/stretchyv2/stv2_cover.png',
 );
 final ProjectImageModel workoutFinderImages = ProjectImageModel(
-  projectIcon: 'assets/images/mob/workoutFinder/wf_icon.png',
-  projectCover: 'assets/images/mob/workoutFinder/wf_cover.png',
+  projectIcon: 'assets/images/mob/workout_finder/wf_icon.png',
+  projectCover: 'assets/images/mob/workout_finder/wf_cover.png',
 );
 final ProjectImageModel jdmImges = ProjectImageModel(
   projectIcon: 'assets/images/mob/jdm/jdm_icon.png',
