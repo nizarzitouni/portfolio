@@ -55,7 +55,7 @@ abstract class ProjectData {
       carouselFullWidth: false,
     ),
     ProjectModel(
-      projectId: 3,
+      projectId: 5,
       projectTitle: 'Stretchy: Daily Stretches (v1)',
       liveUrl: 'https://www.appbrain.com/app/stretchy:-daily-stretches/nz.dev.stretchy',
       projectDescription:
@@ -72,6 +72,7 @@ abstract class ProjectData {
       projectId: 4,
       projectTitle: 'Stretchy: Daily Stretches (v2)',
       playStoreUrl: 'https://play.google.com/store/apps/details?id=nz.dev.stretchyapp',
+      appStoreUrl: 'https://apps.apple.com/us/app/stretchy-posture-exercises/id6757081350',
       projectDescription:
           'The completely redesigned version of Stretchy features an original UI/UX with enhanced functionality. This version offers 10+ specialized routines including morning stretches, desk breaks, posture correction, and targeted body workouts. With animated demonstrations, timer-guided sessions, and improved progress tracking, Stretchy v2 provides a comprehensive stretching experience for users of all fitness levels.',
       techStacks: ['Flutter', 'BLoC/Cubit', 'Firebase Remote Config', 'Firebase Analytics', 'Repository Pattern', 'Shared Preferences'],
@@ -82,11 +83,24 @@ abstract class ProjectData {
       carouselFullWidth: false,
     ),
     ProjectModel(
+      projectId: 3,
+      projectTitle: 'Workout Finder',
+      playStoreUrl: 'https://play.google.com/store/apps/details?id=nz.dev.workoutfinder',
+      projectDescription:
+          'Find exercises by body part with this visual body map trainer. Featuring 999+ exercises with guides, animated demonstrations, and step-by-step instructions. Build custom routines, track your workouts with a body heatmap, and analyze your training patterns. Perfect for both beginners and experienced lifters.',
+      techStacks: ['Flutter', 'BLoC/Cubit', 'Firebase Remote Config', 'Firebase Analytics', 'Clean Architecture'],
+      role: 'Sole creator of the entire app',
+      projectImageModel: workoutFinderImages,
+      isLive: true,
+      appScreens: ImagesPath.workoutFinderImgListScreens,
+      carouselFullWidth: false,
+    ),
+    ProjectModel(
       projectId: 13,
       projectTitle: 'Just Delete Me',
       playStoreUrl: 'https://play.google.com/store/apps/details?id=com.nizarztn.justdeleteme',
       projectDescription:
-          '"JUST DELETE ME" is a directory simplifying the account deletion process by countering dark pattern techniques used by companies. With over 10k downloads on the store, this Flutter app has successfully provided users with a straightforward solution for managing their online presence.',
+          '"JUST DELETE ME" is a directory simplifying the account deletion process by countering dark pattern techniques used by companies. With over 50k downloads on the store, this Flutter app has successfully provided users with a straightforward solution for managing their online presence.',
       techStacks: ['GetX', 'Shared Preferences'],
       role: 'Sole creator of the entire app',
       projectImageModel: jdmImges,
@@ -202,8 +216,7 @@ abstract class ProjectData {
     ProjectModel(
       projectId: 20,
       projectTitle: 'Sneakers Shop',
-      projectDescription:
-          'Prototype app for a local peak sneakers store. Check out the code on GitHub for a glimpse into the development process.',
+      projectDescription: 'Prototype app for a local peak sneakers store. Check out the code on GitHub for a glimpse into the development process.',
       techStacks: ['Flutter'],
       role: 'Sole developer for UI design and implementation',
       projectImageModel: peakStoreImages,
@@ -365,6 +378,10 @@ final ProjectImageModel stretchyV1Images = ProjectImageModel(
 final ProjectImageModel stretchyV2Images = ProjectImageModel(
   projectIcon: 'assets/images/mob/stretchyv2/stv2_icon.png',
   projectCover: 'assets/images/mob/stretchyv2/stv2_cover.png',
+);
+final ProjectImageModel workoutFinderImages = ProjectImageModel(
+  projectIcon: 'assets/images/mob/workoutFinder/wf_icon.png',
+  projectCover: 'assets/images/mob/workoutFinder/wf_cover.png',
 );
 final ProjectImageModel jdmImges = ProjectImageModel(
   projectIcon: 'assets/images/mob/jdm/jdm_icon.png',

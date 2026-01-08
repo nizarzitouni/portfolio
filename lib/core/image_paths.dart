@@ -39,6 +39,18 @@ class ImagesPath {
     'assets/images/mob/stretchyv2/stv2_6.png',
     'assets/images/mob/stretchyv2/stv2_7.png',
   ];
+  static final List<String> workoutFinderImgListScreens = [
+    'assets/images/mob/workout_finder/1.png',
+    'assets/images/mob/workout_finder/2.png',
+    'assets/images/mob/workout_finder/3.png',
+    'assets/images/mob/workout_finder/4.png',
+    'assets/images/mob/workout_finder/5.png',
+    'assets/images/mob/workout_finder/6.png',
+    'assets/images/mob/workout_finder/7.png',
+    'assets/images/mob/workout_finder/8.png',
+    'assets/images/mob/workout_finder/9.png',
+    'assets/images/mob/workout_finder/10.png',
+  ];
   static final List<String> jdmImgListScreens = [
     'assets/images/mob/jdm/jdm1.png',
     'assets/images/mob/jdm/jdm2.png',
@@ -81,10 +93,7 @@ class ImagesPath {
     'assets/images/mob/nx_shop/nx5.png',
     'assets/images/mob/nx_shop/nx6.png',
   ];
-  static final List<String> foodAppScreens = [
-    'assets/images/mob/food_app/foodapp1.jpg',
-    'assets/images/mob/food_app/foodapp2.jpg',
-  ];
+  static final List<String> foodAppScreens = ['assets/images/mob/food_app/foodapp1.jpg', 'assets/images/mob/food_app/foodapp2.jpg'];
   static final List<String> peakStoreScreens = [
     'assets/images/mob/peak_store/ps_1.png',
     'assets/images/mob/peak_store/ps_2.png',
@@ -118,10 +127,7 @@ class ImagesPath {
 
   //Game Disegn Screens ------------------------------------------------------------------------------
 
-  static final List<String> polyTownScreens = [
-    'assets/images/game_design/poly_town/pt1.png',
-    'assets/images/game_design/poly_town/pt2.png',
-  ];
+  static final List<String> polyTownScreens = ['assets/images/game_design/poly_town/pt1.png', 'assets/images/game_design/poly_town/pt2.png'];
   static final List<String> doubleJumpScreens = [
     'assets/images/game_design/double_jump/dj1.png',
     'assets/images/game_design/double_jump/dj2.png',
