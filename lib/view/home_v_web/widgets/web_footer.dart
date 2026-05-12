@@ -36,7 +36,7 @@ class WebFooter extends StatelessWidget {
           ),
           const Gap(10),
           const Text(
-            '© 2025 Your Company Name. All rights reserved.',
+            '© 2026 Zitouni Nizar. All rights reserved.',
             style: TextStyle(color: Colors.white54, fontSize: 12),
           ),
         ],

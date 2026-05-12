@@ -96,6 +96,73 @@ abstract class ProjectData {
       carouselFullWidth: false,
     ),
     ProjectModel(
+      projectId: 21,
+      projectTitle: 'Wardrobe Snap',
+      playStoreUrl: 'https://play.google.com/store/apps/details?id=nz.dev.wardrobesnap',
+      projectDescription:
+          'Wardrobe Snap is a Flutter app for building and organizing a digital closet. Snap photos of your clothes, sort them into categories, and keep an inventory of everything you own. Mix and match items to plan outfits, save your favorite looks, and decide what to wear without digging through your wardrobe. Built with Clean Architecture and the BLoC/Cubit pattern, with a freemium model powered by in-app purchases and rewarded ads.',
+      techStacks: [
+        'Flutter',
+        'BLoC/Cubit',
+        'Freezed',
+        'Go Router',
+        'RevenueCat (IAP)',
+        'Google Mobile Ads',
+        'Firebase Analytics',
+        'Get It (DI)',
+      ],
+      role: 'Sole creator of the entire app - architecture, UI/UX design, monetization, and deployment',
+      projectImageModel: wardrobeSnapImages,
+      isLive: true,
+      appScreens: ImagesPath.wardrobeSnapImgListScreens,
+      carouselFullWidth: false,
+    ),
+    ProjectModel(
+      projectId: 22,
+      projectTitle: 'GiggleClip',
+      playStoreUrl: 'https://play.google.com/store/apps/details?id=nz.dev.fliktag',
+      projectDescription:
+          'GiggleClip is a Flutter GIF maker that turns videos and photos into shareable GIFs. Trim clips, set speed and frame rate, add captions and stickers, then export and share anywhere. Built with Clean Architecture and the BLoC/Cubit pattern, with a freemium model powered by in-app purchases and rewarded ads.',
+      techStacks: [
+        'Flutter',
+        'BLoC/Cubit',
+        'Freezed',
+        'Go Router',
+        'RevenueCat (IAP)',
+        'Google Mobile Ads',
+        'Firebase Analytics',
+        'Get It (DI)',
+      ],
+      role: 'Sole creator of the entire app - architecture, UI/UX design, monetization, and deployment',
+      projectImageModel: giggleClipImages,
+      isLive: true,
+      appScreens: ImagesPath.giggleClipImgListScreens,
+      carouselFullWidth: false,
+    ),
+    ProjectModel(
+      projectId: 23,
+      projectTitle: 'Quran Reels Maker',
+      playStoreUrl: 'https://play.google.com/store/apps/details?id=nz.dev.quranreels',
+      appStoreUrl: 'https://apps.apple.com/us/app/quran-reels-maker/id6760150215',
+      projectDescription:
+          'Quran Reels Maker is a Flutter app for creating short vertical videos with Quran verses. Pick a surah and ayah range, choose a reciter, set a background video, and overlay the Arabic text and translation, then export a ready-to-share reel for social media. Built with Clean Architecture and the BLoC/Cubit pattern, with a freemium model powered by in-app purchases and rewarded ads.',
+      techStacks: [
+        'Flutter',
+        'BLoC/Cubit',
+        'Freezed',
+        'Go Router',
+        'RevenueCat (IAP)',
+        'Google Mobile Ads',
+        'Firebase Analytics',
+        'Get It (DI)',
+      ],
+      role: 'Sole creator of the entire app - architecture, UI/UX design, monetization, and deployment',
+      projectImageModel: quranReelsImages,
+      isLive: true,
+      appScreens: ImagesPath.quranReelsImgListScreens,
+      carouselFullWidth: false,
+    ),
+    ProjectModel(
       projectId: 13,
       projectTitle: 'Just Delete Me',
       playStoreUrl: 'https://play.google.com/store/apps/details?id=com.nizarztn.justdeleteme',
@@ -382,6 +449,18 @@ final ProjectImageModel stretchyV2Images = ProjectImageModel(
 final ProjectImageModel workoutFinderImages = ProjectImageModel(
   projectIcon: 'assets/images/mob/workout_finder/wf_icon.png',
   projectCover: 'assets/images/mob/workout_finder/wf_cover.png',
+);
+final ProjectImageModel wardrobeSnapImages = ProjectImageModel(
+  projectIcon: 'assets/images/mob/wardrobe_snap/ws_icon.png',
+  projectCover: 'assets/images/mob/wardrobe_snap/ws_cover.png',
+);
+final ProjectImageModel giggleClipImages = ProjectImageModel(
+  projectIcon: 'assets/images/mob/giggle_clip/gc_icon.png',
+  projectCover: 'assets/images/mob/giggle_clip/gc_cover.png',
+);
+final ProjectImageModel quranReelsImages = ProjectImageModel(
+  projectIcon: 'assets/images/mob/quran_reels/qr_icon.png',
+  projectCover: 'assets/images/mob/quran_reels/qr_cover.png',
 );
 final ProjectImageModel jdmImges = ProjectImageModel(
   projectIcon: 'assets/images/mob/jdm/jdm_icon.png',

@@ -22,7 +22,7 @@ class ProjectLinksWidget extends StatelessWidget {
             url: projectModel.liveUrl!,
             color: const Color(0xFFC778DD),
             textColor: Colors.white,
-            icon: Icons.language,
+            icon: FontAwesomeIcons.globe,
           ),
 
         // Play Store button
@@ -78,7 +78,7 @@ class ProjectLinksWidget extends StatelessWidget {
     required String url,
     required Color color,
     required Color textColor,
-    IconData? icon,
+    FaIconData? icon,
   }) {
     return RawMaterialButton(
       onPressed: () {
@@ -97,7 +97,7 @@ class ProjectLinksWidget extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             if (icon != null) ...[
-              Icon(
+              FaIcon(
                 icon,
                 size: 16,
                 color: textColor,

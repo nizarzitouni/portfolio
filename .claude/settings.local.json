@@ -4,7 +4,8 @@
       "Bash(flutter:*)",
       "Bash(dart fix:*)",
       "Bash(findstr:*)",
-      "Bash(dart analyze:*)"
+      "Bash(dart analyze:*)",
+      "WebFetch(domain:play.google.com)"
     ],
     "deny": [],
     "ask": []

@@ -9,7 +9,8 @@ class ImagesPath {
   static const String iconGitlab = 'assets/icons/icon_gitlab.png';
   static const String iconSketchfab = 'assets/icons/icon_sketchfab.png';
   static const String iconPlaystore = 'assets/icons/icon_playstore.png';
-  static const String iconStackOverflow = 'assets/icons/icon_stack_overflow.png';
+  static const String iconStackOverflow =
+      'assets/icons/icon_stack_overflow.png';
   static const String iconflutter = 'assets/icons/flutter_logo.png';
 
   static final List<String> dupliImgListScreens = [
@@ -50,6 +51,26 @@ class ImagesPath {
     'assets/images/mob/workout_finder/8.png',
     'assets/images/mob/workout_finder/9.png',
     'assets/images/mob/workout_finder/10.png',
+  ];
+  static final List<String> wardrobeSnapImgListScreens = [
+    'assets/images/mob/wardrobe_snap/ws1.png',
+    'assets/images/mob/wardrobe_snap/ws2.png',
+    'assets/images/mob/wardrobe_snap/ws3.png',
+    'assets/images/mob/wardrobe_snap/ws4.png',
+  ];
+  static final List<String> giggleClipImgListScreens = [
+    'assets/images/mob/giggle_clip/gc1.png',
+    'assets/images/mob/giggle_clip/gc2.png',
+    'assets/images/mob/giggle_clip/gc3.png',
+    'assets/images/mob/giggle_clip/gc4.png',
+    'assets/images/mob/giggle_clip/gc5.png',
+    'assets/images/mob/giggle_clip/gc6.png',
+  ];
+  static final List<String> quranReelsImgListScreens = [
+    'assets/images/mob/quran_reels/qr1.png',
+    'assets/images/mob/quran_reels/qr2.png',
+    'assets/images/mob/quran_reels/qr3.png',
+    'assets/images/mob/quran_reels/qr4.png',
   ];
   static final List<String> jdmImgListScreens = [
     'assets/images/mob/jdm/jdm1.png',
@@ -93,7 +114,10 @@ class ImagesPath {
     'assets/images/mob/nx_shop/nx5.png',
     'assets/images/mob/nx_shop/nx6.png',
   ];
-  static final List<String> foodAppScreens = ['assets/images/mob/food_app/foodapp1.jpg', 'assets/images/mob/food_app/foodapp2.jpg'];
+  static final List<String> foodAppScreens = [
+    'assets/images/mob/food_app/foodapp1.jpg',
+    'assets/images/mob/food_app/foodapp2.jpg',
+  ];
   static final List<String> peakStoreScreens = [
     'assets/images/mob/peak_store/ps_1.png',
     'assets/images/mob/peak_store/ps_2.png',
@@ -121,13 +145,12 @@ class ImagesPath {
     'assets/images/mob/social_profile_prank/spp4.png',
   ];
 
-  //TODO: use https://imageresizer.com/ for resize
-  //add audio libro app with screens
-  //add livestream simulator
-
   //Game Disegn Screens ------------------------------------------------------------------------------
 
-  static final List<String> polyTownScreens = ['assets/images/game_design/poly_town/pt1.png', 'assets/images/game_design/poly_town/pt2.png'];
+  static final List<String> polyTownScreens = [
+    'assets/images/game_design/poly_town/pt1.png',
+    'assets/images/game_design/poly_town/pt2.png',
+  ];
   static final List<String> doubleJumpScreens = [
     'assets/images/game_design/double_jump/dj1.png',
     'assets/images/game_design/double_jump/dj2.png',

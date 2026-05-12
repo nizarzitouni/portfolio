@@ -116,7 +116,7 @@ If you have questions about this Privacy Policy or our privacy practices, please
 
 **Email**: nzdev25@gmail.com
 
-*Effective Date: 2025-05-08*
+_Effective Date: 2026-01-01_
 
 ---
 

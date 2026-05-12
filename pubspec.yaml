@@ -59,6 +59,9 @@ flutter:
     - assets/images/mob/dupli/
     - assets/images/mob/social_profile_prank/
     - assets/images/mob/workout_finder/
+    - assets/images/mob/wardrobe_snap/
+    - assets/images/mob/giggle_clip/
+    - assets/images/mob/quran_reels/
     # - assets/images//
     - assets/icons/
     - assets/fonts/
