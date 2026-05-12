@@ -17,11 +17,14 @@ class WebQuoteWidget extends StatelessWidget {
             right: 0,
             top: 40,
             child: Container(
-              decoration: BoxDecoration(border: Border.all(color: Colors.white)),
+              decoration: BoxDecoration(
+                border: Border.all(color: Colors.white),
+              ),
               child: const Padding(
                 padding: EdgeInsets.all(12.0),
                 child: Text(
-                  'Overthinking is the enemy of execution.',
+                  // 'Overthinking is the enemy of execution.',
+                  'What i cannot create i do not understand',
                   style: TextStyle(fontWeight: FontWeight.w500, fontSize: 20),
                 ),
               ),
@@ -31,11 +34,14 @@ class WebQuoteWidget extends StatelessWidget {
             right: 0,
             bottom: 0,
             child: Container(
-              decoration: BoxDecoration(border: Border.all(color: Colors.white)),
+              decoration: BoxDecoration(
+                border: Border.all(color: Colors.white),
+              ),
               child: const Padding(
                 padding: EdgeInsets.all(11.0),
                 child: Text(
-                  '- Tony Robbins',
+                  // '- Tony Robbins',
+                  '- Richard Feynman',
                   style: TextStyle(fontWeight: FontWeight.w500, fontSize: 20),
                 ),
               ),
