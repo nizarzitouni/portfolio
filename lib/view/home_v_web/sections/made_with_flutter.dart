@@ -17,25 +17,31 @@ class MadeWithFlutterButton extends StatelessWidget {
             width: containerWidth,
             child: Column(
               children: [
-                const Text('Copyright © Nizar Zitouni. 2025.', style: TextStyle(fontSize: 16)),
+                const Text(
+                  'Copyright © Nizar Zitouni. 2026.',
+                  style: TextStyle(fontSize: 16),
+                ),
                 const SizedBox(height: 12.0),
                 Row(
                   mainAxisSize: MainAxisSize.min,
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     const Text('Made with ', style: TextStyle(fontSize: 16)),
-                    const Icon(
-                      Icons.favorite,
-                      size: 20,
-                      color: Colors.red,
-                    ),
+                    const Icon(Icons.favorite, size: 20, color: Colors.red),
                     const Text(' in ', style: TextStyle(fontSize: 16)),
-                    SizedBox(width: 20, height: 20, child: Image.asset(AssetsConstants.flutterImage)),
+                    SizedBox(
+                      width: 20,
+                      height: 20,
+                      child: Image.asset(AssetsConstants.flutterImage),
+                    ),
                     GestureDetector(
                       onTap: () {
                         launchWithUri(url: 'https://flutter.dev/');
                       },
-                      child: const HoverUnderlineText(text: 'Flutter', textStyle: TextStyle(fontSize: 16)),
+                      child: const HoverUnderlineText(
+                        text: 'Flutter',
+                        textStyle: TextStyle(fontSize: 16),
+                      ),
                     ),
                   ],
                 ),

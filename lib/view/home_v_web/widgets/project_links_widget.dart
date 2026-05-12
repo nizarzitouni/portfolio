@@ -10,109 +10,66 @@ class ProjectLinksWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Wrap(
-      spacing: 16, // gap between buttons
-      runSpacing: 16, // gap between rows
-      children: [
-        // Live button (for websites)
-        if (projectModel.liveUrl != null)
-          _buildLinkButton(
-            context: context,
-            label: 'Live <~>',
-            url: projectModel.liveUrl!,
-            color: const Color(0xFFC778DD),
-            textColor: Colors.white,
-            icon: FontAwesomeIcons.globe,
-          ),
+    final links = <_LinkChip>[
+      if (projectModel.liveUrl != null)
+        _LinkChip(icon: FontAwesomeIcons.globe, label: 'Live', url: projectModel.liveUrl!),
+      if (projectModel.playStoreUrl != null)
+        _LinkChip(icon: FontAwesomeIcons.googlePlay, label: 'Play Store', url: projectModel.playStoreUrl!),
+      if (projectModel.appStoreUrl != null)
+        _LinkChip(icon: FontAwesomeIcons.appStore, label: 'App Store', url: projectModel.appStoreUrl!),
+      if (projectModel.githubUrl != null)
+        _LinkChip(icon: FontAwesomeIcons.github, label: 'Code', url: projectModel.githubUrl!),
+      if (projectModel.behanceLink != null)
+        _LinkChip(icon: FontAwesomeIcons.behance, label: 'Behance', url: projectModel.behanceLink!),
+    ];
 
-        // Play Store button
-        if (projectModel.playStoreUrl != null)
-          _buildLinkButton(
-            context: context,
-            label: 'Play Store',
-            url: projectModel.playStoreUrl!,
-            color: const Color(0xFF48FF79), // Green color for Play Store
-            textColor: Colors.white,
-            icon: FontAwesomeIcons.googlePlay,
-          ),
-
-        // App Store button
-        if (projectModel.appStoreUrl != null)
-          _buildLinkButton(
-            context: context,
-            label: 'App Store',
-            url: projectModel.appStoreUrl!,
-            color: const Color(0xFF0D96F6), // Blue color for App Store
-            textColor: Colors.white,
-            icon: FontAwesomeIcons.appStore,
-          ),
-
-        // GitHub button
-        if (projectModel.githubUrl != null)
-          _buildLinkButton(
-            context: context,
-            label: 'Github >=',
-            url: projectModel.githubUrl!,
-            color: const Color(0xFFABB2BF),
-            textColor: const Color(0xFFABB2BF),
-            icon: FontAwesomeIcons.github,
-          ),
-
-        // Behance button
-        if (projectModel.behanceLink != null)
-          _buildLinkButton(
-            context: context,
-            label: 'Behance >=',
-            url: projectModel.behanceLink!,
-            color: const Color(0xFFABB2BF),
-            textColor: const Color(0xFFABB2BF),
-            icon: FontAwesomeIcons.behance,
-          ),
-      ],
-    );
+    return Wrap(spacing: 10, runSpacing: 10, children: links);
   }
+}
 
-  Widget _buildLinkButton({
-    required BuildContext context,
-    required String label,
-    required String url,
-    required Color color,
-    required Color textColor,
-    FaIconData? icon,
-  }) {
-    return RawMaterialButton(
-      onPressed: () {
-        launchWithUri(url: url);
-      },
-      hoverColor: Theme.of(context).primaryColor,
-      child: Container(
-        padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-        decoration: ShapeDecoration(
-          shape: RoundedRectangleBorder(
-            side: BorderSide(width: 0.50, color: color),
+class _LinkChip extends StatefulWidget {
+  const _LinkChip({required this.icon, required this.label, required this.url});
+
+  final FaIconData icon;
+  final String label;
+  final String url;
+
+  @override
+  State<_LinkChip> createState() => _LinkChipState();
+}
+
+class _LinkChipState extends State<_LinkChip> {
+  static const Color _grey = Color(0xFFABB2BF);
+  bool _hover = false;
+
+  @override
+  Widget build(BuildContext context) {
+    final fg = _hover ? Colors.white : _grey;
+    return MouseRegion(
+      cursor: SystemMouseCursors.click,
+      onEnter: (_) => setState(() => _hover = true),
+      onExit: (_) => setState(() => _hover = false),
+      child: GestureDetector(
+        onTap: () => launchWithUri(url: widget.url),
+        child: AnimatedContainer(
+          duration: const Duration(milliseconds: 150),
+          padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 7),
+          decoration: BoxDecoration(
+            color: _hover ? Colors.white.withValues(alpha: .06) : Colors.transparent,
+            borderRadius: BorderRadius.circular(6),
+            border: Border.all(width: 0.5, color: _hover ? Colors.white : const Color(0xFF3A3A3A)),
           ),
-        ),
-        child: Row(
-          mainAxisSize: MainAxisSize.min,
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            if (icon != null) ...[
-              FaIcon(
-                icon,
-                size: 16,
-                color: textColor,
-              ),
+          child: Row(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              FaIcon(widget.icon, size: 13, color: fg),
               const SizedBox(width: 8),
-            ],
-            Text(
-              label,
-              style: TextStyle(
-                color: textColor,
-                fontSize: 16,
-                fontWeight: FontWeight.w500,
+              Text(
+                widget.label,
+                style: TextStyle(color: fg, fontSize: 13, fontWeight: FontWeight.w500),
               ),
-            ),
-          ],
+            ],
+          ),
         ),
       ),
     );

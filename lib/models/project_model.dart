@@ -11,6 +11,10 @@ class ProjectModel {
   String? githubUrl;
   String? behanceLink;
   final String projectDescription;
+
+  /// Short one-line summary shown on the project card. Falls back to the first
+  /// sentence of [projectDescription] when null.
+  final String? tagline;
   final String role;
   final List<String> techStacks;
   final ProjectImageModel projectImageModel;
@@ -27,6 +31,7 @@ class ProjectModel {
     this.githubUrl,
     this.behanceLink,
     required this.projectDescription,
+    this.tagline,
     required this.role,
     required this.techStacks,
     required this.projectImageModel,

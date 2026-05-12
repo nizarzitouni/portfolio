@@ -7,7 +7,10 @@ abstract class ProjectData {
     ProjectModel(
       projectId: 1,
       projectTitle: 'Social Profile Prank',
-      playStoreUrl: 'https://play.google.com/store/apps/details?id=nz.dev.social_profile_prank.social_profile_prank',
+      tagline:
+          'Generate realistic fake social media profiles for harmless pranks.',
+      playStoreUrl:
+          'https://play.google.com/store/apps/details?id=nz.dev.social_profile_prank.social_profile_prank',
       projectDescription:
           'Social Profile Prank is a Flutter app that generates realistic fake social media profiles for harmless pranking purposes. Create convincing Instagram, TikTok, Twitter/X, and YouTube profiles with customizable followers, posts, and profile details. The app features a freemium model with premium subscriptions, rewarded video ads for temporary feature unlocks, and high-quality screenshot export functionality. Built with Clean Architecture and BLoC pattern for robust state management.',
       techStacks: [
@@ -24,7 +27,8 @@ abstract class ProjectData {
         'Screenshot',
         'Get It (DI)',
       ],
-      role: 'Sole creator of the entire app - architecture, UI/UX design, monetization implementation, and deployment',
+      role:
+          'Sole creator of the entire app - architecture, UI/UX design, monetization implementation, and deployment',
       projectImageModel: socialProfilePrankImages,
       isLive: true,
       appScreens: ImagesPath.socialProfilePrankScreens,
@@ -33,8 +37,11 @@ abstract class ProjectData {
     ProjectModel(
       projectId: 2,
       projectTitle: 'DUPLI - Your AI Clone',
-      playStoreUrl: 'https://play.google.com/store/apps/details?id=com.techconsolidated.avatarcloneyourself',
-      appStoreUrl: 'https://apps.apple.com/cm/app/dupli-your-ai-clone/id6740580236',
+      tagline: 'Create an AI clone of yourself that chats and talks like you.',
+      playStoreUrl:
+          'https://play.google.com/store/apps/details?id=com.techconsolidated.avatarcloneyourself',
+      appStoreUrl:
+          'https://apps.apple.com/cm/app/dupli-your-ai-clone/id6740580236',
       projectDescription:
           'DUPLI is an innovative AI avatar cloning application that allows users to create digital versions of themselves. Built while working for a tech company, this app enables users to train AI with their unique information to replicate their communication style, voice, and personality. Features include text chat with avatars, voice call functionality, access to user-created clones, and personalized AI assistance. The app implements advanced machine learning models with a clean, intuitive interface designed for seamless user experience.',
       techStacks: [
@@ -51,16 +58,25 @@ abstract class ProjectData {
           'Lead Flutter Developer responsible for app architecture, implementing real-time communication features, integrating AI models, and optimizing performance for resource-intensive operations',
       projectImageModel: dupliImages, // Define this variable for screenshots
       isLive: true,
-      appScreens: ImagesPath.dupliImgListScreens, // Define this path for app screens
+      appScreens:
+          ImagesPath.dupliImgListScreens, // Define this path for app screens
       carouselFullWidth: false,
     ),
     ProjectModel(
       projectId: 5,
-      projectTitle: 'Stretchy: Daily Stretches (v1)',
-      liveUrl: 'https://www.appbrain.com/app/stretchy:-daily-stretches/nz.dev.stretchy',
+      projectTitle: 'Stretchy (v1)',
+      tagline:
+          'My first published app — timer-guided daily stretching routines.',
+      liveUrl:
+          'https://www.appbrain.com/app/stretchy:-daily-stretches/nz.dev.stretchy',
       projectDescription:
           "The first version of Stretchy was inspired by the popular app 'Bend', created as a learning project to understand app development principles. This version offered daily stretching routines with timer-guided exercises designed for all experience levels. Featuring animated demonstrations and progress tracking, this initial release helped users improve mobility and flexibility through structured routines.",
-      techStacks: ['Flutter', 'BLoC/Cubit', 'Firebase Remote Config', 'Shared Preferences'],
+      techStacks: [
+        'Flutter',
+        'BLoC/Cubit',
+        'Firebase Remote Config',
+        'Shared Preferences',
+      ],
       role: 'Sole creator of the entire app',
       projectImageModel: stretchyV1Images,
       isLive: true,
@@ -70,12 +86,23 @@ abstract class ProjectData {
 
     ProjectModel(
       projectId: 4,
-      projectTitle: 'Stretchy: Daily Stretches (v2)',
-      playStoreUrl: 'https://play.google.com/store/apps/details?id=nz.dev.stretchyapp',
-      appStoreUrl: 'https://apps.apple.com/us/app/stretchy-posture-exercises/id6757081350',
+      projectTitle: 'Stretchy (v2)',
+      tagline:
+          'Redesigned stretching app with 10+ routines for mobility and posture.',
+      playStoreUrl:
+          'https://play.google.com/store/apps/details?id=nz.dev.stretchyapp',
+      appStoreUrl:
+          'https://apps.apple.com/us/app/stretchy-posture-exercises/id6757081350',
       projectDescription:
           'The completely redesigned version of Stretchy features an original UI/UX with enhanced functionality. This version offers 10+ specialized routines including morning stretches, desk breaks, posture correction, and targeted body workouts. With animated demonstrations, timer-guided sessions, and improved progress tracking, Stretchy v2 provides a comprehensive stretching experience for users of all fitness levels.',
-      techStacks: ['Flutter', 'BLoC/Cubit', 'Firebase Remote Config', 'Firebase Analytics', 'Repository Pattern', 'Shared Preferences'],
+      techStacks: [
+        'Flutter',
+        'BLoC/Cubit',
+        'Firebase Remote Config',
+        'Firebase Analytics',
+        'Repository Pattern',
+        'Shared Preferences',
+      ],
       role: 'Sole creator of the entire app',
       projectImageModel: stretchyV2Images,
       isLive: true,
@@ -85,10 +112,19 @@ abstract class ProjectData {
     ProjectModel(
       projectId: 3,
       projectTitle: 'Workout Finder',
-      playStoreUrl: 'https://play.google.com/store/apps/details?id=nz.dev.workoutfinder',
+      tagline:
+          'Pick exercises from a visual body map — 999+ moves with animated guides.',
+      playStoreUrl:
+          'https://play.google.com/store/apps/details?id=nz.dev.workoutfinder',
       projectDescription:
           'Find exercises by body part with this visual body map trainer. Featuring 999+ exercises with guides, animated demonstrations, and step-by-step instructions. Build custom routines, track your workouts with a body heatmap, and analyze your training patterns. Perfect for both beginners and experienced lifters.',
-      techStacks: ['Flutter', 'BLoC/Cubit', 'Firebase Remote Config', 'Firebase Analytics', 'Clean Architecture'],
+      techStacks: [
+        'Flutter',
+        'BLoC/Cubit',
+        'Firebase Remote Config',
+        'Firebase Analytics',
+        'Clean Architecture',
+      ],
       role: 'Sole creator of the entire app',
       projectImageModel: workoutFinderImages,
       isLive: true,
@@ -98,7 +134,10 @@ abstract class ProjectData {
     ProjectModel(
       projectId: 21,
       projectTitle: 'Wardrobe Snap',
-      playStoreUrl: 'https://play.google.com/store/apps/details?id=nz.dev.wardrobesnap',
+      tagline:
+          'Snap your clothes, organize a digital closet, and plan outfits.',
+      playStoreUrl:
+          'https://play.google.com/store/apps/details?id=nz.dev.wardrobesnap',
       projectDescription:
           'Wardrobe Snap is a Flutter app for building and organizing a digital closet. Snap photos of your clothes, sort them into categories, and keep an inventory of everything you own. Mix and match items to plan outfits, save your favorite looks, and decide what to wear without digging through your wardrobe. Built with Clean Architecture and the BLoC/Cubit pattern, with a freemium model powered by in-app purchases and rewarded ads.',
       techStacks: [
@@ -111,7 +150,8 @@ abstract class ProjectData {
         'Firebase Analytics',
         'Get It (DI)',
       ],
-      role: 'Sole creator of the entire app - architecture, UI/UX design, monetization, and deployment',
+      role:
+          'Sole creator of the entire app - architecture, UI/UX design, monetization, and deployment',
       projectImageModel: wardrobeSnapImages,
       isLive: true,
       appScreens: ImagesPath.wardrobeSnapImgListScreens,
@@ -120,7 +160,9 @@ abstract class ProjectData {
     ProjectModel(
       projectId: 22,
       projectTitle: 'GiggleClip',
-      playStoreUrl: 'https://play.google.com/store/apps/details?id=nz.dev.fliktag',
+      tagline: 'Turn videos and photos into captioned, shareable GIFs.',
+      playStoreUrl:
+          'https://play.google.com/store/apps/details?id=nz.dev.fliktag',
       projectDescription:
           'GiggleClip is a Flutter GIF maker that turns videos and photos into shareable GIFs. Trim clips, set speed and frame rate, add captions and stickers, then export and share anywhere. Built with Clean Architecture and the BLoC/Cubit pattern, with a freemium model powered by in-app purchases and rewarded ads.',
       techStacks: [
@@ -133,7 +175,8 @@ abstract class ProjectData {
         'Firebase Analytics',
         'Get It (DI)',
       ],
-      role: 'Sole creator of the entire app - architecture, UI/UX design, monetization, and deployment',
+      role:
+          'Sole creator of the entire app - architecture, UI/UX design, monetization, and deployment',
       projectImageModel: giggleClipImages,
       isLive: true,
       appScreens: ImagesPath.giggleClipImgListScreens,
@@ -142,8 +185,11 @@ abstract class ProjectData {
     ProjectModel(
       projectId: 23,
       projectTitle: 'Quran Reels Maker',
-      playStoreUrl: 'https://play.google.com/store/apps/details?id=nz.dev.quranreels',
-      appStoreUrl: 'https://apps.apple.com/us/app/quran-reels-maker/id6760150215',
+      tagline: 'Turn Quran verses into shareable vertical reels.',
+      playStoreUrl:
+          'https://play.google.com/store/apps/details?id=nz.dev.quranreels',
+      appStoreUrl:
+          'https://apps.apple.com/us/app/quran-reels-maker/id6760150215',
       projectDescription:
           'Quran Reels Maker is a Flutter app for creating short vertical videos with Quran verses. Pick a surah and ayah range, choose a reciter, set a background video, and overlay the Arabic text and translation, then export a ready-to-share reel for social media. Built with Clean Architecture and the BLoC/Cubit pattern, with a freemium model powered by in-app purchases and rewarded ads.',
       techStacks: [
@@ -156,7 +202,8 @@ abstract class ProjectData {
         'Firebase Analytics',
         'Get It (DI)',
       ],
-      role: 'Sole creator of the entire app - architecture, UI/UX design, monetization, and deployment',
+      role:
+          'Sole creator of the entire app - architecture, UI/UX design, monetization, and deployment',
       projectImageModel: quranReelsImages,
       isLive: true,
       appScreens: ImagesPath.quranReelsImgListScreens,
@@ -165,7 +212,10 @@ abstract class ProjectData {
     ProjectModel(
       projectId: 13,
       projectTitle: 'Just Delete Me',
-      playStoreUrl: 'https://play.google.com/store/apps/details?id=com.nizarztn.justdeleteme',
+      tagline:
+          'A directory that cuts through dark patterns to help you delete online accounts.',
+      playStoreUrl:
+          'https://play.google.com/store/apps/details?id=com.nizarztn.justdeleteme',
       projectDescription:
           '"JUST DELETE ME" is a directory simplifying the account deletion process by countering dark pattern techniques used by companies. With over 50k downloads on the store, this Flutter app has successfully provided users with a straightforward solution for managing their online presence.',
       techStacks: ['GetX', 'Shared Preferences'],
@@ -178,7 +228,9 @@ abstract class ProjectData {
     ProjectModel(
       projectId: 14,
       projectTitle: 'Live Stream Simulator',
-      playStoreUrl: 'https://play.google.com/store/apps/details?id=nz.dev.slivestreamsimulator',
+      tagline: 'Simulate a live stream — fake viewers, donations, and chat.',
+      playStoreUrl:
+          'https://play.google.com/store/apps/details?id=nz.dev.slivestreamsimulator',
       projectDescription:
           'Live Stream Simulator is a feature-rich application designed to simulate live streaming experiences. With its powerful capabilities, users can:\n\n'
           '• Create virtual live streams with customizable settings\n'
@@ -197,7 +249,9 @@ abstract class ProjectData {
     ProjectModel(
       projectId: 15,
       projectTitle: 'Quick QR Pro',
-      playStoreUrl: 'https://play.google.com/store/apps/details?id=com.nizarztn.quickqrpro',
+      tagline: 'Scan QR codes and create custom branded ones with your logo.',
+      playStoreUrl:
+          'https://play.google.com/store/apps/details?id=com.nizarztn.quickqrpro',
       projectDescription:
           'Quick QR Pro: The ultimate QR code app with easy scanning and custom code creation. Featuring logo integration, this app offers personalized and branded code experiences for various needs.\n\n\n'
           'Key Features:\n\n'
@@ -215,7 +269,10 @@ abstract class ProjectData {
     ProjectModel(
       projectId: 16,
       projectTitle: 'Speedy Invoice',
-      playStoreUrl: 'https://play.google.com/store/apps/details?id=com.nizarztn.speedyInvoice',
+      tagline:
+          'Create and send invoices and estimates straight from your phone.',
+      playStoreUrl:
+          'https://play.google.com/store/apps/details?id=com.nizarztn.speedyInvoice',
       projectDescription:
           'Speedy Invoice: A streamlined mobile tool for swift bill and estimate creation. Ideal for small businesses and freelancers, offering efficient on-the-go billing management.\n\n\n'
           'Key Features:\n\n'
@@ -232,14 +289,22 @@ abstract class ProjectData {
     ProjectModel(
       projectId: 17,
       projectTitle: 'Audio Libro',
-      playStoreUrl: 'https://play.google.com/store/apps/details?id=nz.dev.audiolibro.client',
+      tagline:
+          'A personalized audiobook player with background playback and bookmarks.',
+      playStoreUrl:
+          'https://play.google.com/store/apps/details?id=nz.dev.audiolibro.client',
       projectDescription:
           'Developed Audio Libro, a personalized audiobook platform using Flutter for an immersive listening experience. Leveraged Firebase for efficient data management and user authentication.\n\n\n'
           'Key Features:\n\n'
           '   ♦ Seamless Background Playback: Enjoy uninterrupted listening across your day.\n'
           '   ♦ Convenient Bookmarking: Save your spot and return to your favorite stories anytime.\n'
           '   ♦ User-Friendly Interface: Navigate through a vast library of audiobooks effortlessly.\n',
-      techStacks: ['Firebase', 'GetX', 'Rive Animations', 'Firebase Analyitics'],
+      techStacks: [
+        'Firebase',
+        'GetX',
+        'Rive Animations',
+        'Firebase Analyitics',
+      ],
       role: 'Sole developer for UI design and implementation',
       projectImageModel: audioLibroImages,
       isLive: true,
@@ -249,7 +314,10 @@ abstract class ProjectData {
     ProjectModel(
       projectId: 18,
       projectTitle: 'Sa3arli',
-      playStoreUrl: 'https://play.google.com/store/apps/details?id=nx.nizarztn.carimp',
+      tagline:
+          'Estimate car import costs to Algeria with up-to-date customs tariffs.',
+      playStoreUrl:
+          'https://play.google.com/store/apps/details?id=nx.nizarztn.carimp',
       projectDescription:
           'Facilitating car imports to Algeria Our Flutter app provides quick and accurate cost estimates, incorporating customs tariffs. Download now for confidence in your import decisions.\n\n\n'
           'Key Features:\n\n'
@@ -266,7 +334,9 @@ abstract class ProjectData {
     ProjectModel(
       projectId: 19,
       projectTitle: 'Tune Hub',
-      playStoreUrl: 'https://play.google.com/store/apps/details?id=nz.dev.tunehub',
+      tagline: 'Browse, preview, and set custom ringtones.',
+      playStoreUrl:
+          'https://play.google.com/store/apps/details?id=nz.dev.tunehub',
       isLive: true,
       projectDescription:
           'Developed Tune Hub, a personalized ringtone app using Flutter for a smooth user experience. Leveraged Supabase for efficient storage management.\n\n\n'
@@ -283,7 +353,9 @@ abstract class ProjectData {
     ProjectModel(
       projectId: 20,
       projectTitle: 'Sneakers Shop',
-      projectDescription: 'Prototype app for a local peak sneakers store. Check out the code on GitHub for a glimpse into the development process.',
+      tagline: 'Prototype storefront app for a local sneaker shop.',
+      projectDescription:
+          'Prototype app for a local peak sneakers store. Check out the code on GitHub for a glimpse into the development process.',
       techStacks: ['Flutter'],
       role: 'Sole developer for UI design and implementation',
       projectImageModel: peakStoreImages,
@@ -363,6 +435,8 @@ abstract class ProjectData {
     ProjectModel(
       projectId: 50,
       projectTitle: 'Double Jump',
+      tagline:
+          'Level design for a published mobile platformer, built in Unity and Blender.',
       liveUrl: 'https://www.doublejump.wtf/',
       projectDescription:
           "As a Level Designer at Blank Labs Gaming Studio, I've played a pivotal role in bringing the creative visions of game designers to life. My primary responsibilities involve utilizing the powerful combination of Blender and Unity to craft immersive game scenes that resonate with the intended user experience.\n\n"
@@ -378,13 +452,17 @@ abstract class ProjectData {
       isLive: true,
       appScreens: ImagesPath.doubleJumpScreens,
       carouselFullWidth: true,
-      behanceLink: 'https://www.behance.net/gallery/191290675/Double-Jump-Level-Design-Showcase',
+      behanceLink:
+          'https://www.behance.net/gallery/191290675/Double-Jump-Level-Design-Showcase',
     ),
     ProjectModel(
       projectId: 51,
       projectTitle: 'PolyTown',
+      tagline:
+          'An epic low-poly asset pack: buildings, characters, props, vehicles, environments.',
       isLive: true,
-      liveUrl: 'https://sketchfab.com/3d-models/polytown-low-poly-city-pack-699546b57f3e4b38986061e995ac20ad',
+      liveUrl:
+          'https://sketchfab.com/3d-models/polytown-low-poly-city-pack-699546b57f3e4b38986061e995ac20ad',
       projectDescription:
           'An Epic Low Poly asset pack of Buildings, Characters, Props, Viehcules and Environment assets to create a low poly themed polygonal style game',
       techStacks: ['Unity', 'Blender'],
@@ -396,8 +474,10 @@ abstract class ProjectData {
     ProjectModel(
       projectId: 52,
       projectTitle: 'Medieval Pack',
+      tagline: '100+ modular assets for building medieval interiors in Unity.',
       isLive: true,
-      liveUrl: 'https://assetstore.unity.com/packages/3d/environments/historic/medieval-indoor-kit-3d-224308',
+      liveUrl:
+          'https://assetstore.unity.com/packages/3d/environments/historic/medieval-indoor-kit-3d-224308',
       projectDescription:
           'Introducing my latest creation: a comprehensive asset pack tailored for game developers seeking to infuse their projects with the allure of medieval interiors. With over 100 meticulously crafted assets including modular walls, floors, and props, this pack offers boundless opportunities for creating immersive game environments.\n',
       techStacks: ['Unity', 'Blender', 'Gimp'],
@@ -405,7 +485,8 @@ abstract class ProjectData {
       projectImageModel: medievalImges,
       appScreens: ImagesPath.medievalPackScreens,
       carouselFullWidth: true,
-      behanceLink: 'https://www.behance.net/gallery/190658551/Level-Desing-Medieval-Indoor-Kit-3D',
+      behanceLink:
+          'https://www.behance.net/gallery/190658551/Level-Desing-Medieval-Indoor-Kit-3D',
     ),
     // ProjectModel(
     //   projectId: '53',

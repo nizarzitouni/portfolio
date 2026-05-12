@@ -3,7 +3,7 @@ class AppInformation {
   static const title = 'Nizar Zitouni';
   static const appIdAndroid = 'nz.dev.tunehub';
   static const appIdIos = 'nz.dev.tunehub';
-  static const masterAdminEmail = 'nzdev25@gmail.com';
+  static const masterAdminEmail = 'ztn.nizar@gmail.com';
   static const googleMapsKey = '';
   static const googleMapsKeyURL = '';
 

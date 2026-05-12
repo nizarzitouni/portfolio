@@ -130,7 +130,7 @@ The failure of the Service Provider to enforce any right or provision of these T
 
 If you have any questions or suggestions about these Terms and Conditions, please contact the Service Provider at **nzdev25@gmail.com**.
 
-*Effective Date: 2025-05-08*
+_Effective Date: 2026-05-08_
 
 ---
 

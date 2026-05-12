@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:responsive_grid_list/responsive_grid_list.dart';
 
 import '../../../../../core/pallete.dart';
 import '../../../../../core/routes/app_router.dart';
@@ -7,18 +6,41 @@ import '../../../../../core/singlton_init.dart';
 import '../../../../../models/project_model.dart';
 import '../../../../home_v_web/widgets/project_links_widget.dart';
 
-class MobProjectCard extends StatefulWidget {
+class MobProjectCard extends StatelessWidget {
   const MobProjectCard({super.key, required this.projectModel});
   final ProjectModel projectModel;
 
-  @override
-  State<MobProjectCard> createState() => _MobProjectCardState();
-}
+  static const Color _windowBarColor = Color(0xFF1C1C1C);
+  static const Color _hairline = Color(0xFF2E2E2E);
+  static const Color _greyText = Color(0xFFABB2BF);
 
-class _MobProjectCardState extends State<MobProjectCard> {
+  String get _windowPath {
+    final slug = projectModel.projectTitle
+        .toLowerCase()
+        .replaceAll(RegExp(r'[^a-z0-9]+'), '_')
+        .replaceAll(RegExp(r'^_+|_+$'), '');
+    return '~/projects/$slug';
+  }
+
+  String get _tagline {
+    final t = projectModel.tagline?.trim();
+    if (t != null && t.isNotEmpty) return t;
+    final d = projectModel.projectDescription.trim();
+    final match = RegExp(r'^.*?[.!?](\s|$)').firstMatch(d);
+    return (match?.group(0) ?? d).trim();
+  }
+
+  String get _techLine {
+    final tech = projectModel.techStacks;
+    final shown = tech.take(5).join('   ·   ');
+    final extra = tech.length - 5;
+    return extra > 0 ? '$shown   +$extra' : shown;
+  }
+
   @override
   Widget build(BuildContext context) {
-    return Padding(
+    return RepaintBoundary(
+      child: Padding(
       padding: const EdgeInsets.all(8.0),
       child: InkWell(
         hoverColor: Colors.transparent,
@@ -28,107 +50,132 @@ class _MobProjectCardState extends State<MobProjectCard> {
           await analytics.logEvent(
             name: 'project_clicks_tracked',
             parameters: {
-              'project_name': widget.projectModel.projectTitle,
+              'project_name': projectModel.projectTitle,
             },
           );
-          AppRouter.router.go('/projects/${widget.projectModel.projectId}');
+          AppRouter.router.go('/projects/${projectModel.projectId}');
         },
         child: Container(
           decoration: BoxDecoration(
             color: Pallete.blackColor,
-            border: Border.all(
-              width: 0.50,
-              color: const Color(0xFFABB2BF),
-            ),
-          ),
-          child: Column(
-            mainAxisSize: MainAxisSize.min,
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Container(
-                height: 300,
-                decoration: BoxDecoration(
-                  image: DecorationImage(
-                    image: AssetImage(widget.projectModel.projectImageModel.projectCover),
-                    fit: BoxFit.cover,
-                  ),
-                ),
-              ),
-              Padding(
-                padding: const EdgeInsets.only(left: 8, right: 8, top: 8),
-                child: SizedBox(
-                  height: 100,
-                  child: ResponsiveGridList(
-                    // Vertical space around the grid
-                    minItemWidth: 60, // The minimum item width (can be smaller, if the layout constraints are smaller)
-                    maxItemsPerRow: 2, // The maximum items to show in a single row. Can be useful on large screens
-                    listViewBuilderOptions: ListViewBuilderOptions(
-                      shrinkWrap: true,
-                      physics: const NeverScrollableScrollPhysics(),
-                    ), // Options that are getting passed to the ListView.builder() function
-                    children: List.generate(
-                      widget.projectModel.techStacks.length,
-                      (index) => Center(
-                        child: Padding(
-                          padding: const EdgeInsets.all(0.0),
-                          child: Text(
-                            widget.projectModel.techStacks[index],
-                            style: const TextStyle(
-                              color: Color(0xFFABB2BF),
-                              fontSize: 16,
-                              //fontFamily: 'Fira Code',
-                              fontWeight: FontWeight.w400,
-                            ),
-                            textAlign: TextAlign.center,
-                          ),
-                        ),
-                      ),
-                    ), // The list of widgets in the list
-                  ),
-                ),
-              ),
-              Container(
-                width: double.infinity,
-                // height: 153,
-                padding: const EdgeInsets.all(16),
-                decoration: const BoxDecoration(),
-                child: Column(
-                  mainAxisSize: MainAxisSize.min,
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    SizedBox(
-                      width: double.infinity,
-                      child: Text(
-                        widget.projectModel.projectTitle,
-                        style: const TextStyle(
-                          color: Colors.white,
-                          fontSize: 24,
-                          fontWeight: FontWeight.w500,
-                        ),
-                      ),
-                    ),
-                    const SizedBox(height: 16),
-                    SizedBox(
-                      width: double.infinity,
-                      child: Text(
-                        widget.projectModel.projectDescription,
-                        style: const TextStyle(
-                          color: Color(0xFFABB2BF),
-                          fontSize: 16,
-                          fontWeight: FontWeight.w400,
-                        ),
-                      ),
-                    ),
-                    const SizedBox(height: 16),
-                    //
-                    ProjectLinksWidget(projectModel: widget.projectModel),
-                  ],
-                ),
+            borderRadius: BorderRadius.circular(10),
+            border: Border.all(width: 0.50, color: _greyText),
+            boxShadow: [
+              BoxShadow(
+                color: Colors.black.withValues(alpha: .4),
+                blurRadius: 12,
+                offset: const Offset(0, 4),
               ),
             ],
           ),
+          child: ClipRRect(
+            borderRadius: BorderRadius.circular(9.5),
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                // window chrome bar
+                Container(
+                  height: 32,
+                  width: double.infinity,
+                  padding: const EdgeInsets.symmetric(horizontal: 10),
+                  decoration: const BoxDecoration(
+                    color: _windowBarColor,
+                    border: Border(bottom: BorderSide(color: _hairline, width: 0.5)),
+                  ),
+                  child: Row(
+                    children: [
+                      _trafficDot(const Color(0xFFFF5F57)),
+                      const SizedBox(width: 7),
+                      _trafficDot(const Color(0xFFFEBC2E)),
+                      const SizedBox(width: 7),
+                      _trafficDot(const Color(0xFF28C840)),
+                      const SizedBox(width: 12),
+                      Expanded(
+                        child: Text(
+                          _windowPath,
+                          maxLines: 1,
+                          overflow: TextOverflow.ellipsis,
+                          style: const TextStyle(
+                            color: _greyText,
+                            fontSize: 12,
+                            fontFeatures: [FontFeature.tabularFigures()],
+                            letterSpacing: 0.2,
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+                // cover — landscape covers locked into a 16:9 frame
+                AspectRatio(
+                  aspectRatio: 16 / 9,
+                  child: Container(
+                    color: _windowBarColor,
+                    child: Image.asset(
+                      projectModel.projectImageModel.projectCover,
+                      width: double.infinity,
+                      fit: BoxFit.cover,
+                      cacheWidth: 800,
+                      filterQuality: FilterQuality.low,
+                    ),
+                  ),
+                ),
+                Container(height: 0.5, color: _hairline),
+                Padding(
+                  padding: const EdgeInsets.all(16),
+                  child: Column(
+                    mainAxisSize: MainAxisSize.min,
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        projectModel.projectTitle,
+                        style: const TextStyle(
+                          color: Colors.white,
+                          fontSize: 22,
+                          fontWeight: FontWeight.w600,
+                        ),
+                      ),
+                      const SizedBox(height: 8),
+                      Text(
+                        _tagline,
+                        maxLines: 2,
+                        overflow: TextOverflow.ellipsis,
+                        style: const TextStyle(
+                          color: _greyText,
+                          fontSize: 16,
+                          height: 1.45,
+                          fontWeight: FontWeight.w400,
+                        ),
+                      ),
+                      const SizedBox(height: 16),
+                      Text(
+                        _techLine,
+                        maxLines: 1,
+                        overflow: TextOverflow.ellipsis,
+                        style: const TextStyle(
+                          color: _greyText,
+                          fontSize: 13,
+                          fontWeight: FontWeight.w400,
+                        ),
+                      ),
+                      const SizedBox(height: 14),
+                      ProjectLinksWidget(projectModel: projectModel),
+                    ],
+                  ),
+                ),
+              ],
+            ),
+          ),
         ),
+      ),
       ),
     );
   }
+
+  Widget _trafficDot(Color color) => Container(
+        width: 10,
+        height: 10,
+        decoration: BoxDecoration(color: color, shape: BoxShape.circle),
+      );
 }
