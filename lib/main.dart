@@ -24,11 +24,7 @@ void main() async {
  * 
  */
 
-//TODO:
-//i want to change the shape of each project and how is it displayed, isntead of rectangler a borring one, 
-// lets make somthing like Screenshot_2 file token from this https://www.kamranbekirov.com/
-// so basccly i need to find a trnasaprent movilme mock image, then i willusi and we put and image from the app
-// inside that mock  
+
 
 
 

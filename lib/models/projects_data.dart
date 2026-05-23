@@ -138,6 +138,8 @@ abstract class ProjectData {
           'Snap your clothes, organize a digital closet, and plan outfits.',
       playStoreUrl:
           'https://play.google.com/store/apps/details?id=nz.dev.wardrobesnap',
+      appStoreUrl:
+          'https://apps.apple.com/us/app/wardrobe-snap-closet-outfit/id6770147139',
       projectDescription:
           'Wardrobe Snap is a Flutter app for building and organizing a digital closet. Snap photos of your clothes, sort them into categories, and keep an inventory of everything you own. Mix and match items to plan outfits, save your favorite looks, and decide what to wear without digging through your wardrobe. Built with Clean Architecture and the BLoC/Cubit pattern, with a freemium model powered by in-app purchases and rewarded ads.',
       techStacks: [
