@@ -11,14 +11,15 @@ enum CustomUrl {
 
   final String url;
   final bool internal;
-  const CustomUrl(this.url, {this.internal = false});
+  const CustomUrl(this.url) : internal = false;
   Uri get uri => Uri.parse(url);
 
   @override
   String toString() => url;
 
-  Future<void> launch() =>
-      internal ? launchUrl(uri, mode: LaunchMode.inAppBrowserView) : launchUrl(uri, mode: LaunchMode.externalApplication);
+  Future<void> launch() => internal
+      ? launchUrl(uri, mode: LaunchMode.inAppBrowserView)
+      : launchUrl(uri, mode: LaunchMode.externalApplication);
 }
 
 final inTaypes = TypeSet(

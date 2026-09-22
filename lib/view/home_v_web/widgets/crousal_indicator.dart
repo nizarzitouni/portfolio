@@ -29,7 +29,6 @@ class CarouselWithIndicatorState extends State<CarouselWithIndicator> {
                 item,
                 fit: BoxFit.cover,
                 cacheWidth: 1080,
-                filterQuality: FilterQuality.medium,
               ),
             ),
           ),

@@ -8,6 +8,12 @@ analyzer:
     - "**/*.gr.dart"
     - "build/**"
     - "lib/generated_plugin_registrant.dart"
+    - android/**
+    - ios/**
+    - web/**
+    - windows/**
+    - macos/**
+    - linux/**
 
   errors:
     # Allow build context usage across async gaps

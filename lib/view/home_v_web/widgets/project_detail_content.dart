@@ -30,7 +30,11 @@ class ProjectDetailContent extends StatelessWidget {
       children: [
         Text(
           projectModel.projectTitle,
-          style: const TextStyle(fontSize: 30, fontWeight: FontWeight.w700, height: 1.15),
+          style: const TextStyle(
+            fontSize: 30,
+            fontWeight: FontWeight.w700,
+            height: 1.15,
+          ),
         ),
         if (_tagline != null) ...[
           const Gap(8),
@@ -104,7 +108,11 @@ class TechPill extends StatelessWidget {
       ),
       child: Text(
         label,
-        style: const TextStyle(color: _greyText, fontSize: 13, fontWeight: FontWeight.w500),
+        style: const TextStyle(
+          color: _greyText,
+          fontSize: 13,
+          fontWeight: FontWeight.w500,
+        ),
       ),
     );
   }
@@ -134,17 +142,28 @@ class _ProjectBackChipState extends State<ProjectBackChip> {
           duration: const Duration(milliseconds: 150),
           padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 8),
           decoration: BoxDecoration(
-            color: _hover ? Colors.white.withValues(alpha: .06) : Colors.transparent,
+            color: _hover
+                ? Colors.white.withValues(alpha: .06)
+                : Colors.transparent,
             borderRadius: BorderRadius.circular(6),
-            border: Border.all(width: 0.5, color: _hover ? Colors.white : _border),
+            border: Border.all(
+              width: 0.5,
+              color: _hover ? Colors.white : _border,
+            ),
           ),
           child: Row(
             mainAxisSize: MainAxisSize.min,
             children: [
               Icon(Icons.arrow_back_ios_new_rounded, size: 13, color: fg),
               const SizedBox(width: 8),
-              Text('Back to projects',
-                  style: TextStyle(color: fg, fontSize: 13, fontWeight: FontWeight.w500)),
+              Text(
+                'Back to projects',
+                style: TextStyle(
+                  color: fg,
+                  fontSize: 13,
+                  fontWeight: FontWeight.w500,
+                ),
+              ),
             ],
           ),
         ),
@@ -155,7 +174,12 @@ class _ProjectBackChipState extends State<ProjectBackChip> {
 
 /// Prev / next project navigation row shown at the bottom of a detail screen.
 class ProjectNav extends StatelessWidget {
-  const ProjectNav({super.key, required this.prev, required this.next, this.stacked = false});
+  const ProjectNav({
+    super.key,
+    required this.prev,
+    required this.next,
+    this.stacked = false,
+  });
   final ProjectModel? prev;
   final ProjectModel? next;
   final bool stacked;
@@ -164,18 +188,26 @@ class ProjectNav extends StatelessWidget {
   Widget build(BuildContext context) {
     final prevChip = prev == null
         ? null
-        : _NavChip(label: prev!.projectTitle, projectId: prev!.projectId, isNext: false);
+        : _NavChip(
+            label: prev!.projectTitle,
+            projectId: prev!.projectId,
+            isNext: false,
+          );
     final nextChip = next == null
         ? null
-        : _NavChip(label: next!.projectTitle, projectId: next!.projectId, isNext: true);
+        : _NavChip(
+            label: next!.projectTitle,
+            projectId: next!.projectId,
+            isNext: true,
+          );
 
     if (stacked) {
       return Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          if (prevChip != null) prevChip,
+          ?prevChip,
           if (prevChip != null && nextChip != null) const Gap(12),
-          if (nextChip != null) nextChip,
+          ?nextChip,
         ],
       );
     }
@@ -190,7 +222,11 @@ class ProjectNav extends StatelessWidget {
 }
 
 class _NavChip extends StatefulWidget {
-  const _NavChip({required this.label, required this.projectId, required this.isNext});
+  const _NavChip({
+    required this.label,
+    required this.projectId,
+    required this.isNext,
+  });
   final String label;
   final int projectId;
   final bool isNext;
@@ -205,7 +241,9 @@ class _NavChipState extends State<_NavChip> {
   @override
   Widget build(BuildContext context) {
     final Color fg = _hover ? Colors.white : _greyText;
-    final cross = widget.isNext ? CrossAxisAlignment.end : CrossAxisAlignment.start;
+    final cross = widget.isNext
+        ? CrossAxisAlignment.end
+        : CrossAxisAlignment.start;
     return MouseRegion(
       cursor: SystemMouseCursors.click,
       onEnter: (_) => setState(() => _hover = true),
@@ -216,9 +254,14 @@ class _NavChipState extends State<_NavChip> {
           duration: const Duration(milliseconds: 150),
           padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
           decoration: BoxDecoration(
-            color: _hover ? Colors.white.withValues(alpha: .06) : Colors.transparent,
+            color: _hover
+                ? Colors.white.withValues(alpha: .06)
+                : Colors.transparent,
             borderRadius: BorderRadius.circular(8),
-            border: Border.all(width: 0.5, color: _hover ? Colors.white : _border),
+            border: Border.all(
+              width: 0.5,
+              color: _hover ? Colors.white : _border,
+            ),
           ),
           child: Column(
             crossAxisAlignment: cross,
@@ -227,10 +270,21 @@ class _NavChipState extends State<_NavChip> {
               Text(
                 widget.isNext ? 'next  →' : '←  prev',
                 style: const TextStyle(
-                    color: Pallete.mainColor, fontSize: 11, letterSpacing: 1.2, fontWeight: FontWeight.w600),
+                  color: Pallete.mainColor,
+                  fontSize: 11,
+                  letterSpacing: 1.2,
+                  fontWeight: FontWeight.w600,
+                ),
               ),
               const SizedBox(height: 4),
-              Text(widget.label, style: TextStyle(color: fg, fontSize: 16, fontWeight: FontWeight.w600)),
+              Text(
+                widget.label,
+                style: TextStyle(
+                  color: fg,
+                  fontSize: 16,
+                  fontWeight: FontWeight.w600,
+                ),
+              ),
             ],
           ),
         ),
