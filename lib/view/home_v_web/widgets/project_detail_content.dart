@@ -5,22 +5,16 @@ import 'package:go_router/go_router.dart';
 import '../../../core/pallete.dart';
 import '../../../core/routes/app_router.dart';
 import '../../../models/project_model.dart';
-import 'project_links_widget.dart';
+import 'project_details/project_description.dart';
 
 const Color _greyText = Color(0xFFABB2BF);
 const Color _border = Color(0xFF3A3A3A);
 
-/// The textual side of a project detail screen: title, tagline, overview,
-/// role, tech stack and links. Layout-agnostic — the caller decides how wide
-/// it is (a column beside the carousel on web, full width on mobile).
+/// The textual side of a project detail screen: overview, role and tech stack.
+/// Title, tagline and store links live in ProjectHeader at the top of the page.
 class ProjectDetailContent extends StatelessWidget {
   const ProjectDetailContent({super.key, required this.projectModel});
   final ProjectModel projectModel;
-
-  String? get _tagline {
-    final t = projectModel.tagline?.trim();
-    return (t == null || t.isEmpty) ? null : t;
-  }
 
   @override
   Widget build(BuildContext context) {
@@ -28,29 +22,8 @@ class ProjectDetailContent extends StatelessWidget {
       mainAxisSize: MainAxisSize.min,
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Text(
-          projectModel.projectTitle,
-          style: const TextStyle(
-            fontSize: 30,
-            fontWeight: FontWeight.w700,
-            height: 1.15,
-          ),
-        ),
-        if (_tagline != null) ...[
-          const Gap(8),
-          Text(
-            _tagline!,
-            style: const TextStyle(fontSize: 18, color: _greyText, height: 1.4),
-          ),
-        ],
-        const Gap(28),
-        const ProjectSectionLabel('overview'),
-        const Gap(10),
-        Text(
-          projectModel.projectDescription,
-          style: const TextStyle(fontSize: 16, color: _greyText, height: 1.55),
-        ),
-        const Gap(28),
+        ProjectDescription(text: projectModel.projectDescription),
+        const Gap(16),
         const ProjectSectionLabel('role'),
         const Gap(10),
         Text(
@@ -65,10 +38,6 @@ class ProjectDetailContent extends StatelessWidget {
           runSpacing: 8,
           children: [for (final t in projectModel.techStacks) TechPill(t)],
         ),
-        const Gap(28),
-        const ProjectSectionLabel('links'),
-        const Gap(12),
-        ProjectLinksWidget(projectModel: projectModel),
       ],
     );
   }

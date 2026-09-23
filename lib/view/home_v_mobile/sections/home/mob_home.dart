@@ -33,10 +33,6 @@ class MobHome extends StatelessWidget {
                   assetImagePath: AssetsConstants.githubSvg,
                 ),
                 WebActionModel(
-                  webUrl: GITLAB,
-                  assetImagePath: AssetsConstants.gitlabSvg,
-                ),
-                WebActionModel(
                   webUrl: SKETCHFAB,
                   assetImagePath: AssetsConstants.sketchfabSvg,
                 ),

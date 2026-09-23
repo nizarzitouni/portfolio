@@ -28,7 +28,6 @@ abstract class AssetsConstants {
   // static const String voidSvg = '${_assetSvgPath}void$_svg';
   static const String emailSvg = '${_assetSvgPath}email$_svg';
   static const String githubSvg = '${_assetSvgPath}github$_svg';
-  static const String gitlabSvg = '${_assetSvgPath}gitlab$_svg';
   static const String linkedinSvg = '${_assetSvgPath}linkedin$_svg';
   static const String sketchfabSvg = '${_assetSvgPath}sketchfab$_svg';
   static const String playstoreSvg = '${_assetSvgPath}playstore$_svg';

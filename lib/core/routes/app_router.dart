@@ -29,9 +29,11 @@ abstract class AppRouter {
           GoRoute(
             path: kProjectView,
             builder: (context, state) {
+              final projectId = int.tryParse(state.pathParameters['projectId'] ?? '');
+              if (projectId == null) return const ErrorPage();
               return ResponsiveLayout(
-                screenWeb: ProjectDeatailsWeb(projectId: int.parse(state.pathParameters['projectId']!)),
-                screenMobile: ProjectDetailsMob(projectId: int.parse(state.pathParameters['projectId']!)),
+                screenWeb: ProjectDeatailsWeb(projectId: projectId),
+                screenMobile: ProjectDetailsMob(projectId: projectId),
               );
             },
           ),

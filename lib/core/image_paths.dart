@@ -9,8 +9,7 @@ class ImagesPath {
   static const String iconGitlab = 'assets/icons/icon_gitlab.png';
   static const String iconSketchfab = 'assets/icons/icon_sketchfab.png';
   static const String iconPlaystore = 'assets/icons/icon_playstore.png';
-  static const String iconStackOverflow =
-      'assets/icons/icon_stack_overflow.png';
+  static const String iconStackOverflow = 'assets/icons/icon_stack_overflow.png';
   static const String iconflutter = 'assets/icons/flutter_logo.png';
 
   static final List<String> dupliImgListScreens = [
@@ -114,10 +113,7 @@ class ImagesPath {
     'assets/images/mob/nx_shop/nx5.png',
     'assets/images/mob/nx_shop/nx6.png',
   ];
-  static final List<String> foodAppScreens = [
-    'assets/images/mob/food_app/foodapp1.jpg',
-    'assets/images/mob/food_app/foodapp2.jpg',
-  ];
+  static final List<String> foodAppScreens = ['assets/images/mob/food_app/foodapp1.jpg', 'assets/images/mob/food_app/foodapp2.jpg'];
   static final List<String> peakStoreScreens = [
     'assets/images/mob/peak_store/ps_1.png',
     'assets/images/mob/peak_store/ps_2.png',
@@ -143,6 +139,44 @@ class ImagesPath {
     'assets/images/mob/social_profile_prank/spp2.png',
     'assets/images/mob/social_profile_prank/spp3.png',
     'assets/images/mob/social_profile_prank/spp4.png',
+  ];
+
+  static final List<String> mocklyScreens = [
+    'assets/images/mob/mockly/mockly1.png',
+    'assets/images/mob/mockly/mockly2.png',
+    'assets/images/mob/mockly/mockly3.png',
+    'assets/images/mob/mockly/mockly4.png',
+    'assets/images/mob/mockly/mockly5.png',
+    'assets/images/mob/mockly/mockly6.png',
+    'assets/images/mob/mockly/mockly7.png',
+    'assets/images/mob/mockly/mockly8.png',
+  ];
+
+  static final List<String> daftariScreens = [
+    'assets/images/mob/daftari/daftari1.png',
+    'assets/images/mob/daftari/daftari2.png',
+    'assets/images/mob/daftari/daftari3.png',
+    'assets/images/mob/daftari/daftari4.png',
+    'assets/images/mob/daftari/daftari5.png',
+    'assets/images/mob/daftari/daftari6.png',
+    'assets/images/mob/daftari/daftari7.png',
+    'assets/images/mob/daftari/daftari8.png',
+  ];
+
+  static final List<String> poseGhostScreens = [
+    'assets/images/mob/poseghost/poseghost1.png',
+    'assets/images/mob/poseghost/poseghost2.png',
+    'assets/images/mob/poseghost/poseghost3.png',
+    'assets/images/mob/poseghost/poseghost4.png',
+    'assets/images/mob/poseghost/poseghost5.png',
+  ];
+
+  static final List<String> anatomiaImgListScreens = [
+    'assets/images/mob/anatomia/an1.png',
+    'assets/images/mob/anatomia/an2.png',
+    'assets/images/mob/anatomia/an3.png',
+    'assets/images/mob/anatomia/an4.png',
+    'assets/images/mob/anatomia/an5.png',
   ];
 
   //Game Disegn Screens ------------------------------------------------------------------------------

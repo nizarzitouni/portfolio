@@ -13,7 +13,6 @@ class WebActionModel {
 //WebAction Links
 const String LINKEDIN = 'https://www.linkedin.com/in/nizar-zitouni/';
 const String GITHUB = 'https://github.com/nizarzitouni';
-const String GITLAB = 'https://gitlab.com/nizarztn';
 const String SKETCHFAB = 'https://sketchfab.com/N1x';
 const String PLAYSTORE = 'https://play.google.com/store/apps/dev?id=7726987911219858293';
 // const String LD_RESUMEURL = "https://drive.google.com/file/d/1PQDMY-a-uwOUMyIHKezZDdIxtVT6N403/view?usp=sharing";
