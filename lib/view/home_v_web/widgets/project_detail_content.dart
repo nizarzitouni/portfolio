@@ -159,14 +159,14 @@ class ProjectNav extends StatelessWidget {
         ? null
         : _NavChip(
             label: prev!.projectTitle,
-            projectId: prev!.projectId,
+            slug: prev!.slug,
             isNext: false,
           );
     final nextChip = next == null
         ? null
         : _NavChip(
             label: next!.projectTitle,
-            projectId: next!.projectId,
+            slug: next!.slug,
             isNext: true,
           );
 
@@ -193,11 +193,11 @@ class ProjectNav extends StatelessWidget {
 class _NavChip extends StatefulWidget {
   const _NavChip({
     required this.label,
-    required this.projectId,
+    required this.slug,
     required this.isNext,
   });
   final String label;
-  final int projectId;
+  final String slug;
   final bool isNext;
 
   @override
@@ -218,7 +218,7 @@ class _NavChipState extends State<_NavChip> {
       onEnter: (_) => setState(() => _hover = true),
       onExit: (_) => setState(() => _hover = false),
       child: GestureDetector(
-        onTap: () => context.go('/projects/${widget.projectId}'),
+        onTap: () => context.go('/projects/${widget.slug}'),
         child: AnimatedContainer(
           duration: const Duration(milliseconds: 150),
           padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),

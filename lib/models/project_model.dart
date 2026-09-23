@@ -2,7 +2,7 @@ import '../core/constants.dart';
 import 'project_image_model.dart';
 
 class ProjectModel {
-  final int projectId;
+  final String slug;
   final String projectTitle;
   final bool isLive;
   String? liveUrl;
@@ -22,7 +22,7 @@ class ProjectModel {
   final bool carouselFullWidth;
 
   ProjectModel({
-    required this.projectId,
+    required this.slug,
     required this.projectTitle,
     required this.isLive,
     this.liveUrl,

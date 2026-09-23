@@ -11,7 +11,7 @@ import '../../view/privacy_terms/model/legal_content.dart';
 import 'error_page.dart';
 
 const kHomeView = '/';
-const kProjectView = 'projects/:projectId';
+const kProjectView = 'projects/:slug';
 const kPrivacy = 'privacy-policy';
 const kTerms = 'terms-of-service';
 
@@ -29,11 +29,10 @@ abstract class AppRouter {
           GoRoute(
             path: kProjectView,
             builder: (context, state) {
-              final projectId = int.tryParse(state.pathParameters['projectId'] ?? '');
-              if (projectId == null) return const ErrorPage();
+              final slug = state.pathParameters['slug'] ?? '';
               return ResponsiveLayout(
-                screenWeb: ProjectDeatailsWeb(projectId: projectId),
-                screenMobile: ProjectDetailsMob(projectId: projectId),
+                screenWeb: ProjectDeatailsWeb(slug: slug),
+                screenMobile: ProjectDetailsMob(slug: slug),
               );
             },
           ),

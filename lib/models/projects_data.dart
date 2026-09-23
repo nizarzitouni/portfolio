@@ -1,11 +1,10 @@
-import '../core/image_paths.dart';
-import 'project_image_model.dart';
+import 'project_images.dart';
 import 'project_model.dart';
 
 abstract class ProjectData {
   static List<ProjectModel> mobileDevProjectList = [
     ProjectModel(
-      projectId: 1,
+      slug: 'social-profile-prank',
       projectTitle: 'Social Profile Prank',
       tagline: 'Generate realistic fake social media profiles for harmless pranks.',
       playStoreUrl: 'https://play.google.com/store/apps/details?id=nz.dev.social_profile_prank.social_profile_prank',
@@ -26,13 +25,13 @@ abstract class ProjectData {
         'Get It (DI)',
       ],
       role: 'Sole creator of the entire app - architecture, UI/UX design, monetization implementation, and deployment',
-      projectImageModel: socialProfilePrankImages,
+      projectImageModel: ProjectImages.socialProfilePrank,
       isLive: true,
-      appScreens: ImagesPath.socialProfilePrankScreens,
+      appScreens: ProjectImages.socialProfilePrankScreens,
       carouselFullWidth: false,
     ),
     ProjectModel(
-      projectId: 25,
+      slug: 'mockly',
       projectTitle: 'Mockly',
       tagline: 'Create realistic fake social media posts and chat conversations in seconds.',
       playStoreUrl: 'https://play.google.com/store/apps/details?id=nz.dev.mockly',
@@ -54,13 +53,13 @@ abstract class ProjectData {
         'Screenshot',
       ],
       role: 'Sole creator of the entire app - architecture, UI/UX design, monetization, ad policy compliance, and Play Store release',
-      projectImageModel: mocklyImages,
+      projectImageModel: ProjectImages.mockly,
       isLive: true,
-      appScreens: ImagesPath.mocklyScreens,
+      appScreens: ProjectImages.mocklyScreens,
       carouselFullWidth: false,
     ),
     ProjectModel(
-      projectId: 26,
+      slug: 'daftari',
       projectTitle: 'Daftari',
       tagline: 'Offline invoicing for Algerian auto-entrepreneurs, from quote to paid.',
       playStoreUrl: 'https://play.google.com/store/apps/details?id=nz.dev.daftari',
@@ -86,13 +85,13 @@ abstract class ProjectData {
       ],
       role:
           'Sole creator of the entire app - product research, architecture, UI/UX design, PDF generation, localization, monetization, and Play Store release',
-      projectImageModel: daftariImages,
+      projectImageModel: ProjectImages.daftari,
       isLive: true,
-      appScreens: ImagesPath.daftariScreens,
+      appScreens: ProjectImages.daftariScreens,
       carouselFullWidth: false,
     ),
     ProjectModel(
-      projectId: 27,
+      slug: 'poseghost',
       projectTitle: 'PoseGhost',
       tagline: 'See the pose before you shoot, with a ghost guide right on your camera.',
       playStoreUrl: 'https://play.google.com/store/apps/details?id=nz.dev.poseghost',
@@ -114,13 +113,13 @@ abstract class ProjectData {
         'Microsoft Clarity',
       ],
       role: 'Sole creator of the entire app - architecture, UI/UX design, pose library art direction, monetization, and Play Store release',
-      projectImageModel: poseGhostImages,
+      projectImageModel: ProjectImages.poseGhost,
       isLive: true,
-      appScreens: ImagesPath.poseGhostScreens,
+      appScreens: ProjectImages.poseGhostScreens,
       carouselFullWidth: false,
     ),
     ProjectModel(
-      projectId: 2,
+      slug: 'dupli',
       projectTitle: 'DUPLI - Your AI Clone',
       tagline: 'Create an AI clone of yourself that chats and talks like you.',
       playStoreUrl: 'https://play.google.com/store/apps/details?id=com.techconsolidated.avatarcloneyourself',
@@ -139,13 +138,13 @@ abstract class ProjectData {
       ],
       role:
           'Lead Flutter Developer responsible for app architecture, implementing real-time communication features, integrating AI models, and optimizing performance for resource-intensive operations',
-      projectImageModel: dupliImages, // Define this variable for screenshots
+      projectImageModel: ProjectImages.dupli,
       isLive: true,
-      appScreens: ImagesPath.dupliImgListScreens, // Define this path for app screens
+      appScreens: ProjectImages.dupliScreens,
       carouselFullWidth: false,
     ),
     ProjectModel(
-      projectId: 5,
+      slug: 'stretchy-v1',
       projectTitle: 'Stretchy (v1)',
       tagline: 'My first published app — timer-guided daily stretching routines.',
       liveUrl: 'https://www.appbrain.com/app/stretchy:-daily-stretches/nz.dev.stretchy',
@@ -153,14 +152,14 @@ abstract class ProjectData {
           "The first version of Stretchy was inspired by the popular app 'Bend', created as a learning project to understand app development principles. This version offered daily stretching routines with timer-guided exercises designed for all experience levels. Featuring animated demonstrations and progress tracking, this initial release helped users improve mobility and flexibility through structured routines.",
       techStacks: ['Flutter', 'BLoC/Cubit', 'Firebase Remote Config', 'Shared Preferences'],
       role: 'Sole creator of the entire app',
-      projectImageModel: stretchyV1Images,
+      projectImageModel: ProjectImages.stretchyV1,
       isLive: true,
-      appScreens: ImagesPath.stretchyV1ImgListScreens,
+      appScreens: ProjectImages.stretchyV1Screens,
       carouselFullWidth: false,
     ),
 
     ProjectModel(
-      projectId: 4,
+      slug: 'stretchy-v2',
       projectTitle: 'Stretchy (v2)',
       tagline: 'Redesigned stretching app with 10+ routines for mobility and posture.',
       playStoreUrl: 'https://play.google.com/store/apps/details?id=nz.dev.stretchyapp',
@@ -169,13 +168,13 @@ abstract class ProjectData {
           'The completely redesigned version of Stretchy features an original UI/UX with enhanced functionality. This version offers 10+ specialized routines including morning stretches, desk breaks, posture correction, and targeted body workouts. With animated demonstrations, timer-guided sessions, and improved progress tracking, Stretchy v2 provides a comprehensive stretching experience for users of all fitness levels.',
       techStacks: ['Flutter', 'BLoC/Cubit', 'Firebase Remote Config', 'Firebase Analytics', 'Repository Pattern', 'Shared Preferences'],
       role: 'Sole creator of the entire app',
-      projectImageModel: stretchyV2Images,
+      projectImageModel: ProjectImages.stretchyV2,
       isLive: true,
-      appScreens: ImagesPath.stretchyV2ImgListScreens,
+      appScreens: ProjectImages.stretchyV2Screens,
       carouselFullWidth: false,
     ),
     ProjectModel(
-      projectId: 3,
+      slug: 'workout-finder',
       projectTitle: 'Workout Finder',
       tagline: 'Pick exercises from a visual body map — 999+ moves with animated guides.',
       playStoreUrl: 'https://play.google.com/store/apps/details?id=nz.dev.workoutfinder',
@@ -183,13 +182,13 @@ abstract class ProjectData {
           'Find exercises by body part with this visual body map trainer. Featuring 999+ exercises with guides, animated demonstrations, and step-by-step instructions. Build custom routines, track your workouts with a body heatmap, and analyze your training patterns. Perfect for both beginners and experienced lifters.',
       techStacks: ['Flutter', 'BLoC/Cubit', 'Firebase Remote Config', 'Firebase Analytics', 'Clean Architecture'],
       role: 'Sole creator of the entire app',
-      projectImageModel: workoutFinderImages,
+      projectImageModel: ProjectImages.workoutFinder,
       isLive: true,
-      appScreens: ImagesPath.workoutFinderImgListScreens,
+      appScreens: ProjectImages.workoutFinderScreens,
       carouselFullWidth: false,
     ),
     ProjectModel(
-      projectId: 21,
+      slug: 'wardrobe-snap',
       projectTitle: 'Wardrobe Snap',
       tagline: 'Snap your clothes, organize a digital closet, and plan outfits.',
       playStoreUrl: 'https://play.google.com/store/apps/details?id=nz.dev.wardrobesnap',
@@ -207,13 +206,13 @@ abstract class ProjectData {
         'Get It (DI)',
       ],
       role: 'Sole creator of the entire app - architecture, UI/UX design, monetization, and deployment',
-      projectImageModel: wardrobeSnapImages,
+      projectImageModel: ProjectImages.wardrobeSnap,
       isLive: true,
-      appScreens: ImagesPath.wardrobeSnapImgListScreens,
+      appScreens: ProjectImages.wardrobeSnapScreens,
       carouselFullWidth: false,
     ),
     ProjectModel(
-      projectId: 22,
+      slug: 'giggleclip',
       projectTitle: 'GiggleClip',
       tagline: 'Turn videos and photos into captioned, shareable GIFs.',
       playStoreUrl: 'https://play.google.com/store/apps/details?id=nz.dev.fliktag',
@@ -230,13 +229,13 @@ abstract class ProjectData {
         'Get It (DI)',
       ],
       role: 'Sole creator of the entire app - architecture, UI/UX design, monetization, and deployment',
-      projectImageModel: giggleClipImages,
+      projectImageModel: ProjectImages.giggleClip,
       isLive: true,
-      appScreens: ImagesPath.giggleClipImgListScreens,
+      appScreens: ProjectImages.giggleClipScreens,
       carouselFullWidth: false,
     ),
     ProjectModel(
-      projectId: 23,
+      slug: 'quran-reels-maker',
       projectTitle: 'Quran Reels Maker',
       tagline: 'Turn Quran verses into shareable vertical reels.',
       playStoreUrl: 'https://play.google.com/store/apps/details?id=nz.dev.quranreels',
@@ -254,13 +253,13 @@ abstract class ProjectData {
         'Get It (DI)',
       ],
       role: 'Sole creator of the entire app - architecture, UI/UX design, monetization, and deployment',
-      projectImageModel: quranReelsImages,
+      projectImageModel: ProjectImages.quranReels,
       isLive: true,
-      appScreens: ImagesPath.quranReelsImgListScreens,
+      appScreens: ProjectImages.quranReelsScreens,
       carouselFullWidth: false,
     ),
     ProjectModel(
-      projectId: 13,
+      slug: 'just-delete-me',
       projectTitle: 'Just Delete Me',
       tagline: 'A directory that cuts through dark patterns to help you delete online accounts.',
       playStoreUrl: 'https://play.google.com/store/apps/details?id=com.nizarztn.justdeleteme',
@@ -268,13 +267,13 @@ abstract class ProjectData {
           '"JUST DELETE ME" is a directory simplifying the account deletion process by countering dark pattern techniques used by companies. With over 50k downloads on the store, this Flutter app has successfully provided users with a straightforward solution for managing their online presence.',
       techStacks: ['GetX', 'Shared Preferences'],
       role: 'Sole creator of the entire app',
-      projectImageModel: jdmImges,
+      projectImageModel: ProjectImages.justDeleteMe,
       isLive: true,
-      appScreens: ImagesPath.jdmImgListScreens,
+      appScreens: ProjectImages.justDeleteMeScreens,
       carouselFullWidth: false,
     ),
     ProjectModel(
-      projectId: 14,
+      slug: 'live-stream-simulator',
       projectTitle: 'Live Stream Simulator',
       tagline: 'Simulate a live stream — fake viewers, donations, and chat.',
       playStoreUrl: 'https://play.google.com/store/apps/details?id=nz.dev.slivestreamsimulator',
@@ -287,14 +286,14 @@ abstract class ProjectData {
           'This app serves as an invaluable tool for content creators, streamers, and businesses looking to experiment with live streaming without the need for expensive equipment or setups.',
       techStacks: ['Cubit', 'Firebase', 'Amplitude SDK', 'RevenueCat SDK'],
       role: 'Sole creator of the entire app',
-      projectImageModel: lssImges,
+      projectImageModel: ProjectImages.liveStreamSimulator,
       isLive: true,
-      appScreens: ImagesPath.livstreamSimulatorListScreens,
+      appScreens: ProjectImages.liveStreamSimulatorScreens,
       carouselFullWidth: false,
     ),
 
     ProjectModel(
-      projectId: 15,
+      slug: 'quick-qr-pro',
       projectTitle: 'Quick QR Pro',
       tagline: 'Scan QR codes and create custom branded ones with your logo.',
       playStoreUrl: 'https://play.google.com/store/apps/details?id=com.nizarztn.quickqrpro',
@@ -306,14 +305,14 @@ abstract class ProjectData {
           '   ♦ Brand Integration: Perfect for businesses aiming to promote their brand or individuals wanting a personal touch.\n',
       techStacks: ['GetX', 'SqLite', 'Storage'],
       role: 'Sole creator of the entire app',
-      projectImageModel: qqpImges,
+      projectImageModel: ProjectImages.quickQrPro,
       isLive: true,
-      appScreens: ImagesPath.quickQRProImagesListScreens,
+      appScreens: ProjectImages.quickQrProScreens,
       carouselFullWidth: false,
     ),
 
     ProjectModel(
-      projectId: 16,
+      slug: 'speedy-invoice',
       projectTitle: 'Speedy Invoice',
       tagline: 'Create and send invoices and estimates straight from your phone.',
       playStoreUrl: 'https://play.google.com/store/apps/details?id=com.nizarztn.speedyInvoice',
@@ -325,13 +324,13 @@ abstract class ProjectData {
           '   ♦ Efficient Billing Management: Manage all billing aspects on the go, ensuring timely payments.\n',
       techStacks: ['GetX', 'SqLite', 'Storage'],
       role: 'Sole creator of the entire app',
-      projectImageModel: invoiceGeneratorImages,
+      projectImageModel: ProjectImages.speedyInvoice,
       isLive: true,
-      appScreens: ImagesPath.invoiceGeneratorImagesListScreens,
+      appScreens: ProjectImages.speedyInvoiceScreens,
       carouselFullWidth: false,
     ),
     ProjectModel(
-      projectId: 17,
+      slug: 'audio-libro',
       projectTitle: 'Audio Libro',
       tagline: 'A personalized audiobook player with background playback and bookmarks.',
       playStoreUrl: 'https://play.google.com/store/apps/details?id=nz.dev.audiolibro.client',
@@ -343,13 +342,13 @@ abstract class ProjectData {
           '   ♦ User-Friendly Interface: Navigate through a vast library of audiobooks effortlessly.\n',
       techStacks: ['Firebase', 'GetX', 'Rive Animations', 'Firebase Analyitics'],
       role: 'Sole developer for UI design and implementation',
-      projectImageModel: audioLibroImages,
+      projectImageModel: ProjectImages.audioLibro,
       isLive: true,
-      appScreens: ImagesPath.audioLibroScreens,
+      appScreens: ProjectImages.audioLibroScreens,
       carouselFullWidth: false,
     ),
     ProjectModel(
-      projectId: 18,
+      slug: 'sa3arli',
       projectTitle: 'Sa3arli',
       tagline: 'Estimate car import costs to Algeria with up-to-date customs tariffs.',
       playStoreUrl: 'https://play.google.com/store/apps/details?id=nx.nizarztn.carimp',
@@ -361,13 +360,13 @@ abstract class ProjectData {
           '   ♦ Regular Updates: Stay informed with the latest information about tariffs.\n',
       techStacks: ['Flutter', 'Bloc'],
       role: 'Sole creator of the entire app',
-      projectImageModel: sa3arliImges,
+      projectImageModel: ProjectImages.sa3arli,
       isLive: true,
-      appScreens: ImagesPath.saImgListScreens,
+      appScreens: ProjectImages.sa3arliScreens,
       carouselFullWidth: false,
     ),
     ProjectModel(
-      projectId: 19,
+      slug: 'tune-hub',
       projectTitle: 'Tune Hub',
       tagline: 'Browse, preview, and set custom ringtones.',
       playStoreUrl: 'https://play.google.com/store/apps/details?id=nz.dev.tunehub',
@@ -380,26 +379,26 @@ abstract class ProjectData {
           '   ♦ Easy customization of device sounds.\n',
       techStacks: ['Flutter', 'Supabase'],
       role: 'solo developer for UI design and implementation',
-      appScreens: ImagesPath.tuneHubScreens,
-      projectImageModel: tuneHubImages,
+      appScreens: ProjectImages.tuneHubScreens,
+      projectImageModel: ProjectImages.tuneHub,
       carouselFullWidth: false,
     ),
     ProjectModel(
-      projectId: 20,
+      slug: 'sneakers-shop',
       projectTitle: 'Sneakers Shop',
       tagline: 'Prototype storefront app for a local sneaker shop.',
       projectDescription:
           'Prototype app for a local peak sneakers store. Check out the code on GitHub for a glimpse into the development process.',
       techStacks: ['Flutter'],
       role: 'Sole developer for UI design and implementation',
-      projectImageModel: peakStoreImages,
+      projectImageModel: ProjectImages.sneakersShop,
       isLive: false,
       githubUrl: 'https://github.com/nizarzitouni/sneakerzi',
-      appScreens: ImagesPath.peakStoreScreens,
+      appScreens: ProjectImages.sneakersShopScreens,
       carouselFullWidth: false,
     ),
     ProjectModel(
-      projectId: 24,
+      slug: 'anatomia',
       projectTitle: 'Anatomia',
       tagline: 'Explore 3D human organs, tap labelled structures, and quiz yourself.',
       playStoreUrl: 'https://play.google.com/store/apps/details?id=nz.dev.anatomia',
@@ -420,14 +419,14 @@ abstract class ProjectData {
         'i18n (12 languages)',
       ],
       role: 'Sole creator of the entire app - 3D scene and camera system, quiz modes, UI/UX, localization, and deployment',
-      projectImageModel: anatomiaImages,
+      projectImageModel: ProjectImages.anatomia,
       isLive: false,
-      appScreens: ImagesPath.anatomiaImgListScreens,
+      appScreens: ProjectImages.anatomiaScreens,
       carouselFullWidth: false,
     ),
 
     // ProjectModel(
-    //   projectId: '10',
+    //   slug: 'tiktok-clone',
     //   projectTitle: "Tiktok Clone",
     //   liveUrl: null,
     //   projectDescription:
@@ -443,7 +442,7 @@ abstract class ProjectData {
     //     "Firestore DB",
     //   ],
     //   role: "Sole creator of the entire app",
-    //   projectImageModel: tiktokCloneImges,
+    //   projectImageModel: ProjectImages.tiktokClone,
     //   isLive: false,
     //   githubUrl: "https://github.com/nizarzitouni/Tiktok-flutter-clone",
     //   appScreens: appScreensEmpty,
@@ -451,7 +450,7 @@ abstract class ProjectData {
     //   behanceLink: null,
     // ),
     // ProjectModel(
-    //   projectId: '5',
+    //   slug: 'nx-shop',
     //   projectTitle: "NX Shop",
     //   liveUrl: null,
     //   projectDescription:
@@ -466,16 +465,16 @@ abstract class ProjectData {
     //     "Firestore",
     //   ],
     //   role: "Sole creator of both client and admin apps",
-    //   projectImageModel: nxShopImges,
+    //   projectImageModel: ProjectImages.nxShop,
     //   isLive: false,
     //   githubUrl: "https://github.com/nizarzitouni/NX-Shop",
-    //   appScreens: ImagesPath.nxShopistScreens,
+    //   appScreens: ProjectImages.nxShopScreens,
     //   carouselFullWidth: false,
     //   behanceLink: null,
     // ),
 
     // ProjectModel(
-    //   projectId: '6',
+    //   slug: 'food-app-ui',
     //   projectTitle: "Food App UI",
     //   liveUrl: null,
     //   projectDescription:
@@ -484,10 +483,10 @@ abstract class ProjectData {
     //     "Flutter",
     //   ],
     //   role: "Sole developer for UI design and implementation",
-    //   projectImageModel: foodAppImages,
+    //   projectImageModel: ProjectImages.foodApp,
     //   isLive: false,
     //   githubUrl: "https://github.com/nizarzitouni/Food-Flutter-App-UI",
-    //   appScreens: ImagesPath.foodAppScreens,
+    //   appScreens: ProjectImages.foodAppScreens,
     //   carouselFullWidth: false,
     //   behanceLink: null,
     // ),
@@ -495,7 +494,7 @@ abstract class ProjectData {
 
   static List<ProjectModel> threeDProjectList = [
     ProjectModel(
-      projectId: 50,
+      slug: 'double-jump',
       projectTitle: 'Double Jump',
       tagline: 'Level design for a published mobile platformer, built in Unity and Blender.',
       liveUrl: 'https://www.doublejump.wtf/',
@@ -509,14 +508,14 @@ abstract class ProjectData {
           'My journey at Blank Labs has been marked by a commitment to excellence, creativity, and effective teamwork. I take pride in contributing to the development of captivating games that engage and entertain users.\n',
       techStacks: ['Unity', 'Blender 3D'],
       role: 'Level Designer in a team of 20',
-      projectImageModel: djImges,
+      projectImageModel: ProjectImages.doubleJump,
       isLive: true,
-      appScreens: ImagesPath.doubleJumpScreens,
+      appScreens: ProjectImages.doubleJumpScreens,
       carouselFullWidth: true,
       behanceLink: 'https://www.behance.net/gallery/191290675/Double-Jump-Level-Design-Showcase',
     ),
     ProjectModel(
-      projectId: 51,
+      slug: 'polytown',
       projectTitle: 'PolyTown',
       tagline: 'An epic low-poly asset pack: buildings, characters, props, vehicles, environments.',
       isLive: true,
@@ -525,12 +524,12 @@ abstract class ProjectData {
           'An Epic Low Poly asset pack of Buildings, Characters, Props, Viehcules and Environment assets to create a low poly themed polygonal style game',
       techStacks: ['Unity', 'Blender'],
       role: 'I was the creator of the whole app',
-      projectImageModel: polyTownImges,
-      appScreens: ImagesPath.polyTownScreens,
+      projectImageModel: ProjectImages.polyTown,
+      appScreens: ProjectImages.polyTownScreens,
       carouselFullWidth: true,
     ),
     ProjectModel(
-      projectId: 52,
+      slug: 'medieval-pack',
       projectTitle: 'Medieval Pack',
       tagline: '100+ modular assets for building medieval interiors in Unity.',
       isLive: true,
@@ -539,13 +538,13 @@ abstract class ProjectData {
           'Introducing my latest creation: a comprehensive asset pack tailored for game developers seeking to infuse their projects with the allure of medieval interiors. With over 100 meticulously crafted assets including modular walls, floors, and props, this pack offers boundless opportunities for creating immersive game environments.\n',
       techStacks: ['Unity', 'Blender', 'Gimp'],
       role: 'I was the creator of the whole app',
-      projectImageModel: medievalImges,
-      appScreens: ImagesPath.medievalPackScreens,
+      projectImageModel: ProjectImages.medievalPack,
+      appScreens: ProjectImages.medievalPackScreens,
       carouselFullWidth: true,
       behanceLink: 'https://www.behance.net/gallery/190658551/Level-Desing-Medieval-Indoor-Kit-3D',
     ),
     // ProjectModel(
-    //   projectId: '53',
+    //   slug: 'blaster-pranks',
     //   projectTitle: "Blaster Pranks - Epic Toys",
     //   liveUrl: "https://apkcombo.com/blaster-pranks-epic-toys/com.blaster.prank.epic.toys.blast/",
     //   projectDescription:
@@ -560,134 +559,15 @@ abstract class ProjectData {
     //     "Blender",
     //   ],
     //   role: "I was the creator of the whole app",
-    //   projectImageModel: blasterImges,
+    //   projectImageModel: ProjectImages.blasterPranks,
     //   isLive: true,
     //   githubUrl: null,
-    //   appScreens: ImagesPath.blasterPranksScreens,
+    //   appScreens: ProjectImages.blasterPranksScreens,
     //   carouselFullWidth: false,
     //   behanceLink: null,
     // ),
   ];
+
+  static List<ProjectModel> listContaining(String slug) =>
+      mobileDevProjectList.any((p) => p.slug == slug) ? mobileDevProjectList : threeDProjectList;
 }
-
-//MobileDevProjectList
-final ProjectImageModel anatomiaImages = ProjectImageModel(
-  projectIcon: 'assets/images/mob/anatomia/an_icon.png',
-  projectCover: 'assets/images/mob/anatomia/an_cover.png',
-);
-
-final ProjectImageModel dupliImages = ProjectImageModel(
-  projectIcon: 'assets/images/mob/dupli/dupli_icon.png',
-  projectCover: 'assets/images/mob/dupli/dupli_cover.png',
-);
-final ProjectImageModel stretchyV1Images = ProjectImageModel(
-  projectIcon: 'assets/images/mob/stretchyv1/stv1_icon.png',
-  projectCover: 'assets/images/mob/stretchyv1/stv1_cover.png',
-);
-final ProjectImageModel stretchyV2Images = ProjectImageModel(
-  projectIcon: 'assets/images/mob/stretchyv2/stv2_icon.png',
-  projectCover: 'assets/images/mob/stretchyv2/stv2_cover.png',
-);
-final ProjectImageModel workoutFinderImages = ProjectImageModel(
-  projectIcon: 'assets/images/mob/workout_finder/wf_icon.png',
-  projectCover: 'assets/images/mob/workout_finder/wf_cover.png',
-);
-final ProjectImageModel wardrobeSnapImages = ProjectImageModel(
-  projectIcon: 'assets/images/mob/wardrobe_snap/ws_icon.png',
-  projectCover: 'assets/images/mob/wardrobe_snap/ws_cover.png',
-);
-final ProjectImageModel giggleClipImages = ProjectImageModel(
-  projectIcon: 'assets/images/mob/giggle_clip/gc_icon.png',
-  projectCover: 'assets/images/mob/giggle_clip/gc_cover.png',
-);
-final ProjectImageModel quranReelsImages = ProjectImageModel(
-  projectIcon: 'assets/images/mob/quran_reels/qr_icon.png',
-  projectCover: 'assets/images/mob/quran_reels/qr_cover.png',
-);
-final ProjectImageModel jdmImges = ProjectImageModel(
-  projectIcon: 'assets/images/mob/jdm/jdm_icon.png',
-  projectCover: 'assets/images/mob/jdm/jdm_cover.jpg',
-);
-final ProjectImageModel lssImges = ProjectImageModel(
-  projectIcon: 'assets/images/mob/live_stream_simulator/lss_icon.png',
-  projectCover: 'assets/images/mob/live_stream_simulator/lss_cover.png',
-);
-final ProjectImageModel qqpImges = ProjectImageModel(
-  projectIcon: 'assets/images/mob/quick_qr_pro/qqp_icon.png',
-  projectCover: 'assets/images/mob/quick_qr_pro/qqp_cover.png',
-);
-final ProjectImageModel invoiceGeneratorImages = ProjectImageModel(
-  projectIcon: 'assets/images/mob/ig/ig_icon.png',
-  projectCover: 'assets/images/mob/ig/ig_cover.png',
-);
-final ProjectImageModel sa3arliImges = ProjectImageModel(
-  projectIcon: 'assets/images/mob/sa3arli/sa_icon.png',
-  projectCover: 'assets/images/mob/sa3arli/sa_cover.png',
-);
-final ProjectImageModel tiktokCloneImges = ProjectImageModel(
-  projectIcon: 'assets/images/mob/tiktok/tiktok_icon.png',
-  projectCover: 'assets/images/mob/tiktok/tiktok_clone_cover.jpeg',
-);
-final ProjectImageModel nxShopImges = ProjectImageModel(
-  projectIcon: 'assets/images/mob/nx_shop/nx_icon.png',
-  projectCover: 'assets/images/mob/nx_shop/nx_cover.png',
-);
-final ProjectImageModel foodAppImages = ProjectImageModel(
-  projectIcon: 'assets/images/mob/food_app/foodapp_icon.png',
-  projectCover: 'assets/images/mob/food_app/foodapp_cover.png',
-);
-final ProjectImageModel tuneHubImages = ProjectImageModel(
-  projectIcon: 'assets/images/mob/tune_hub/th_icon.png',
-  projectCover: 'assets/images/mob/tune_hub/th_cover.png',
-);
-final ProjectImageModel peakStoreImages = ProjectImageModel(
-  projectIcon: 'assets/images/mob/peak_store/ps_icon.png',
-  projectCover: 'assets/images/mob/peak_store/ps_cover.png',
-);
-final ProjectImageModel audioLibroImages = ProjectImageModel(
-  projectIcon: 'assets/images/mob/audio_libro/audio_libro_icon.png',
-  projectCover: 'assets/images/mob/audio_libro/audio_libro_cover.png',
-);
-final ProjectImageModel socialProfilePrankImages = ProjectImageModel(
-  projectIcon: 'assets/images/mob/social_profile_prank/sp_icon.png',
-  projectCover: 'assets/images/mob/social_profile_prank/spp_cover.png',
-);
-
-final ProjectImageModel mocklyImages = ProjectImageModel(
-  projectIcon: 'assets/images/mob/mockly/mockly_icon.png',
-  projectCover: 'assets/images/mob/mockly/mockly_cover.png',
-);
-
-final ProjectImageModel daftariImages = ProjectImageModel(
-  projectIcon: 'assets/images/mob/daftari/daftari_icon.png',
-  projectCover: 'assets/images/mob/daftari/daftari_cover.png',
-);
-
-final ProjectImageModel poseGhostImages = ProjectImageModel(
-  projectIcon: 'assets/images/mob/poseghost/poseghost_icon.png',
-  projectCover: 'assets/images/mob/poseghost/poseghost_cover.png',
-);
-
-//threeDProjectList
-// final ProjectImageModel oneImges = ProjectImageModel(
-//   projectIcon: 'assets/images/game_design/double_jump/dj_icon.png',
-//   projectCover: 'assets/images/game_design/double_jump/dj_cover.png',
-// );
-
-//gameDesignProjectList
-final ProjectImageModel polyTownImges = ProjectImageModel(
-  projectIcon: 'assets/images/game_design/poly_town/polyTown_icon.png',
-  projectCover: 'assets/images/game_design/poly_town/polyTown_cover.png',
-);
-final ProjectImageModel medievalImges = ProjectImageModel(
-  projectIcon: 'assets/images/game_design/medieval_pack/med_icon.png',
-  projectCover: 'assets/images/game_design/medieval_pack/med_cover.png',
-);
-final ProjectImageModel blasterImges = ProjectImageModel(
-  projectIcon: 'assets/images/game_design/blaster_pranks/blaster_icon.png',
-  projectCover: 'assets/images/game_design/blaster_pranks/blaster_cover.png',
-);
-final ProjectImageModel djImges = ProjectImageModel(
-  projectIcon: 'assets/images/game_design/double_jump/dj_icon.png',
-  projectCover: 'assets/images/game_design/double_jump/dj_cover.png',
-);

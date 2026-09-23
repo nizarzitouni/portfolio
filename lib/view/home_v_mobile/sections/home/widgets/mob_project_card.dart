@@ -53,7 +53,7 @@ class MobProjectCard extends StatelessWidget {
               'project_name': projectModel.projectTitle,
             },
           );
-          AppRouter.router.go('/projects/${projectModel.projectId}');
+          AppRouter.router.go('/projects/${projectModel.slug}');
         },
         child: Container(
           decoration: BoxDecoration(

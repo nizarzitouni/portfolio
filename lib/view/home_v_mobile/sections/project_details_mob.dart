@@ -11,13 +11,13 @@ import '../../home_v_web/widgets/project_details/screenshot_strip.dart';
 const Color _hairline = Color(0xFF2E2E2E);
 
 class ProjectDetailsMob extends StatelessWidget {
-  const ProjectDetailsMob({super.key, required this.projectId});
-  final int projectId;
+  const ProjectDetailsMob({super.key, required this.slug});
+  final String slug;
 
   @override
   Widget build(BuildContext context) {
-    final List<ProjectModel> list = projectId < 50 ? ProjectData.mobileDevProjectList : ProjectData.threeDProjectList;
-    final int idx = list.indexWhere((p) => p.projectId == projectId);
+    final List<ProjectModel> list = ProjectData.listContaining(slug);
+    final int idx = list.indexWhere((p) => p.slug == slug);
     if (idx < 0) return const ErrorPage();
     final ProjectModel projectModel = list[idx];
     final ProjectModel? prev = idx > 0 ? list[idx - 1] : null;

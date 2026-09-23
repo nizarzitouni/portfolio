@@ -60,7 +60,7 @@ class _WebProjectCardState extends State<WebProjectCard> {
               'project_name': widget.projectModel.projectTitle,
             },
           );
-          AppRouter.router.go('/projects/${widget.projectModel.projectId}');
+          AppRouter.router.go('/projects/${widget.projectModel.slug}');
         },
         onHover: (isHovering) => setState(() => isHover = isHovering),
         child: AnimatedContainer(
